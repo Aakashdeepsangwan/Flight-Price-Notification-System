@@ -3,6 +3,5 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-data/
 Data_Fetching_Walkthrough.ipynb
 NB.ipynb
