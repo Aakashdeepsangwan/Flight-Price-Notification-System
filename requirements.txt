@@ -1,0 +1,33 @@
+# --- Ingestion (Phase 0) ---
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+
+# --- Data handling (used by every phase below) ---
+numpy>=2.4,<3
+pandas>=2.3,<4
+
+# --- Phase 1 — Unsupervised: K-Means, Isolation Forest, DBSCAN ---
+# --- Phase 3 — Supervised classification: Logistic Regression, Random Forest ---
+# --- Phase 2 — Supervised regression baseline: Linear / Ridge Regression ---
+scikit-learn>=1.9,<2
+
+# --- Phase 1.5 — Seasonality: STL Decomposition ---
+statsmodels>=0.14,<0.15
+
+# --- Phase 2 — Supervised regression, time-series model: Prophet ---
+prophet>=1.3,<2
+
+# --- Phase 2 — Supervised regression, primary model: XGBoost Regressor ---
+xgboost>=3.2,<4
+
+# --- Model persistence (save/load trained sklearn & XGBoost models) ---
+joblib>=1.5,<2
+
+# --- Diagnostics: Elbow method (K-Means), k-distance plot (DBSCAN eps tuning) ---
+matplotlib>=3.11,<4
+
+# --- Optional — Phase 3C LSTM (deep learning) ---
+# Per ML_STRUCTURE.md: only worth adding after 3-6 months of price history
+# (10k+ rows) and dropout regularization to control overfitting. Uncomment
+# when you actually start training an LSTM; it's a heavy dependency.
+# tensorflow>=2.21,<3
