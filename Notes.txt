@@ -1,3 +1,10 @@
 1) we can configure the routes in the config folder - it will only fetch out the data for those routes
 2) What criteria have been used to fetch the data - Conditions ?
-3)
+3) We need to write the code for Scheduler.py so it pull the data every 6-12 hours for ML Pipeline
+
+
+
+Purpose of Database 
+- Decides when to pull, where to keep then and prevent wastage of API calls
+- Used for ML Traning 
+- API -> Schedular (every 6-12 h) -> TimeScaleDB(.csv)
