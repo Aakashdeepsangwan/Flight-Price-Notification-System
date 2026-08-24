@@ -4,5 +4,5 @@
   "round_trip_stay_days": [7, 14],
   "currency": "usd",
   "sleep_seconds": 0.4,
-  "market": "in"
+  "market": "ca"
 }

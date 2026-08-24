@@ -2315,3 +2315,15 @@ DEL,New Delhi,LON,London,,,EY,219,250,USD,1,,2026-08-24 03:10:54.110767+00:00,tr
 DEL,New Delhi,LON,London,,,SV,761,253,USD,1,,2026-08-24 03:10:54.110767+00:00,travelpayouts,one_way,prices_for_dates,1110
 DEL,New Delhi,LON,London,,,EY,215,253,USD,1,,2026-08-24 03:10:54.110767+00:00,travelpayouts,one_way,prices_for_dates,1660
 DEL,New Delhi,LON,London,2026-11-12 00:00:00+00:00,,,,251,USD,1,,2026-08-24 03:10:54.584204+00:00,travelpayouts,one_way,latest,790
+YTO,Toronto,HAN,Hanoi,2026-08-26 00:00:00+00:00,,,,543,USD,2,,2026-08-24 04:05:01.787137+00:00,travelpayouts,one_way,month-matrix,2630
+YTO,Toronto,HAN,Hanoi,,,PR,3037,543,USD,2,,2026-08-24 04:05:02.276679+00:00,travelpayouts,one_way,prices_for_dates,2630
+YTO,Toronto,HAN,Hanoi,2026-08-26 00:00:00+00:00,,,,545,USD,2,,2026-08-24 04:05:02.757632+00:00,travelpayouts,one_way,latest,2630
+YTO,Toronto,HAN,Hanoi,2026-09-03 00:00:00+00:00,,,,574,USD,2,,2026-08-24 04:05:06.887579+00:00,travelpayouts,one_way,month-matrix,3130
+YTO,Toronto,HAN,Hanoi,,,WS,659,574,USD,2,,2026-08-24 04:05:07.415605+00:00,travelpayouts,one_way,prices_for_dates,3130
+YTO,Toronto,HAN,Hanoi,2026-09-03 00:00:00+00:00,,,,577,USD,2,,2026-08-24 04:05:07.979059+00:00,travelpayouts,one_way,latest,3130
+YTO,Toronto,HAN,Hanoi,,,AC,125,1194,USD,2,2026-08-24 05:05:19+00:00,2026-08-24 04:05:20.040456+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,HAN,Hanoi,,,WS,3035,998,USD,2,2026-08-24 05:05:19+00:00,2026-08-24 04:05:20.040456+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,HAN,Hanoi,,2026-12-06 19:35:00+00:00,WS,3037,998,USD,2,,2026-08-24 04:05:21.883375+00:00,travelpayouts,round_trip,prices_for_dates,5190
+YTO,Toronto,HAN,Hanoi,,2026-11-21 12:30:00+00:00,AC,103,1194,USD,2,,2026-08-24 04:05:21.883375+00:00,travelpayouts,round_trip,prices_for_dates,4759
+YTO,Toronto,HAN,Hanoi,2026-11-22 00:00:00+00:00,,,,1002,USD,2,,2026-08-24 04:05:22.383100+00:00,travelpayouts,round_trip,latest,5190
+YTO,Toronto,HAN,Hanoi,2026-11-01 00:00:00+00:00,,,,1199,USD,2,,2026-08-24 04:05:22.383100+00:00,travelpayouts,round_trip,latest,4759

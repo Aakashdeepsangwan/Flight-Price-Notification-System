@@ -3,5 +3,6 @@
   { "origin": "DEL", "destination": "BLR" },
   { "origin": "BOM", "destination": "GOI" },
   { "origin": "DEL", "destination": "DXB" },
-  { "origin": "DEL", "destination": "LON" }
+  { "origin": "DEL", "destination": "LON" },
+  { "origin": "YTO", "destination": "HAN" }
 ]
