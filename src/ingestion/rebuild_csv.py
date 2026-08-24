@@ -16,7 +16,7 @@ import logging
 from pathlib import Path
 from typing import Any
 
-from src.ingestion.normalizer import write_snapshots_csv
+from src.ingestion.normalizer import canonicalize_snapshot, write_snapshots_csv
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +27,8 @@ DEFAULT_CSV_PATH = Path("data/snapshots.csv")
 def load_all_snapshots(json_dir: Path) -> list[dict[str, Any]]:
     all_snapshots: list[dict[str, Any]] = []
     for path in sorted(json_dir.glob("*.json")):
-        all_snapshots.extend(json.loads(path.read_text()))
+        rows = json.loads(path.read_text())
+        all_snapshots.extend(canonicalize_snapshot(row) for row in rows)
     return all_snapshots
 
 

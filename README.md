@@ -16,27 +16,31 @@ Get a token from [Travelpayouts](https://www.travelpayouts.com/programs/100/tool
 Fetch a route's price snapshots directly from the command line:
 
 ```bash
-# Day-by-day calendar for a whole month (recommended for building price history)
-python -m src.ingestion.fetch_snapshots DEL BOM --depart-date 2026-09
-
-# Same-day cheapest offers across stop counts
+# Rolling 4-month horizon, one-way + 7/14-day round-trip (see config/fetch.json)
 python -m src.ingestion.fetch_snapshots DEL BOM
+
+# Single month, for debugging
+python -m src.ingestion.fetch_snapshots DEL BOM --depart-date 2026-09
 ```
 
-This calls `src/ingestion/api_client.py` (raw Travelpayouts requests) and
-`src/ingestion/normalizer.py` (flattens the response into the internal
-snapshot schema used throughout this README), printing the resulting
-snapshots as JSON. `scheduler.py` will call the same two functions on a
-cron cadence once storage (Phase 0) is wired up.
+This calls `src/ingestion/api_client.py` (Travelpayouts month-matrix,
+prices-for-dates, latest, with calendar/cheap fallback) and
+`src/ingestion/normalizer.py` (flattens responses into the internal
+snapshot schema), printing the resulting snapshots as JSON.
+`scheduler.py` will call `fetch_multi.run_fetch()` on a cron cadence
+once storage (Phase 0) is wired up.
 
-To fetch several routes at once and persist them, use `fetch_multi.py`
-instead — it reads `config/routes.json`, and on every run:
+To fetch every route in `config/routes.json` and persist them, use
+`fetch_multi.py`. Criteria live in `config/fetch.json` (horizon, trip
+types, stay buckets, market). On every run it:
 
-1. writes the raw snapshots to `data/snapshots/<timestamp>.json` (audit log)
-2. appends the same snapshots, as a typed pandas `DataFrame`, to `data/snapshots.csv` — the ML-ready, growing price-history file Phases 1-3 will train against
+1. writes snapshots to `data/snapshots/<timestamp>.json` (audit log)
+2. appends them, as a typed pandas `DataFrame`, to `data/snapshots.csv` — the ML-ready price-history file Phases 1-3 train against
 
 ```bash
-python -m src.ingestion.fetch_multi --depart-date 2026-08
+python -m src.ingestion.fetch_multi
+python -m src.ingestion.fetch_multi --horizon-months 4
+python -m src.ingestion.fetch_multi --depart-date 2026-09   # optional single-month debug
 ```
 
 Note: `data/snapshots.csv` stores plain text, so re-reading it later needs
@@ -63,11 +67,11 @@ Flight_Price_NotificationSystem/
 │
 ├── src/
 │   ├── ingestion/
-│   │   ├── api_client.py        # Travelpayouts Data API client (cheap / calendar / latest prices)
+│   │   ├── api_client.py        # Travelpayouts Data API client (cheap / calendar / latest / month-matrix / prices_for_dates)
 │   │   ├── reference.py         # Cached IATA code -> full city/airport name lookup (Travelpayouts static data)
 │   │   ├── normalizer.py        # Flattens API responses -> list[dict]; list[dict] -> typed DataFrame/CSV
-│   │   ├── fetch_snapshots.py   # CLI: client + normalizer wired together for a single route
-│   │   ├── fetch_multi.py       # CLI: fetches config/routes.json, writes JSON audit log + CSV history
+│   │   ├── fetch_snapshots.py   # CLI: rolling-horizon collector for a single route
+│   │   ├── fetch_multi.py       # CLI: fetches config/routes.json + config/fetch.json, writes JSON audit log + CSV history
 │   │   ├── rebuild_csv.py       # CLI: rebuilds data/snapshots.csv from data/snapshots/*.json after a schema change
 │   │   └── scheduler.py        # Airflow / Celery Beat job definitions
 │   │

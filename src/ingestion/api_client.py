@@ -7,16 +7,19 @@ or as a `token` query parameter. Get a token at
 https://www.travelpayouts.com/programs/100/tools/api
 
 Endpoints wrapped here:
-    GET /v1/prices/cheap     - cheapest non-stop / 1-stop / 2-stop offers for a route
-    GET /v1/prices/calendar  - one cheapest offer per calendar day for a route+month
-    GET /v2/prices/latest    - prices found by real travelers in the last 48h (market-wide)
+    GET /v1/prices/cheap              - cheapest non-stop / 1-stop / 2-stop offers for a route
+    GET /v1/prices/calendar           - one cheapest offer per calendar day for a route+month
+    GET /v2/prices/latest             - prices found by real travelers in the last 48h
+    GET /v2/prices/month-matrix       - cheapest fare per day, grouped by stop count
+    GET /aviasales/v3/prices_for_dates - many cached offers for a route+month
 """
 
 from __future__ import annotations
 
+import calendar
 import logging
 import time
-from dataclasses import dataclass, field 
+from dataclasses import dataclass, field
 from typing import Any
 
 import requests
@@ -107,6 +110,8 @@ class TravelpayoutsClient:
         params: dict[str, Any] = {
             "origin": origin.upper(),
             "destination": destination.upper(),
+            # Official examples use depart_date; some docs use departure_date.
+            "depart_date": departure_date,
             "departure_date": departure_date,
             "calendar_type": calendar_type,
             "currency": currency,
@@ -132,12 +137,13 @@ class TravelpayoutsClient:
         page: int = 1,
         sorting: str = "price",
         trip_duration: int | None = None,
+        show_to_affiliates: bool = False,
     ) -> dict[str, Any]:
-        """Prices found by real travelers in the last 48 hours (market-wide).
+        """Prices found by real travelers in the last 48 hours.
 
-        Maps to `GET /v2/prices/latest`. Not scoped to a single route by
-        default, so it's useful for market-level trend features rather
-        than per-route alerting.
+        Maps to `GET /v2/prices/latest`. Pass origin and destination to
+        scope the result to one route. `show_to_affiliates=False` returns
+        the full cache, not only partner-found fares.
         """
         params: dict[str, Any] = {
             "currency": currency,
@@ -146,7 +152,7 @@ class TravelpayoutsClient:
             "limit": limit,
             "page": page,
             "sorting": sorting,
-            "show_to_affiliates": "true",
+            "show_to_affiliates": str(show_to_affiliates).lower(),
         }
         if origin:
             params["origin"] = origin.upper()
@@ -161,8 +167,80 @@ class TravelpayoutsClient:
 
         return self._get("/v2/prices/latest", params)
 
+    def get_month_matrix(
+        self,
+        origin: str,
+        destination: str,
+        month: str,
+        one_way: bool = True,
+        trip_duration: int | None = None,
+        currency: str = "usd",
+        show_to_affiliates: bool = False,
+        limit: int | None = None,
+    ) -> dict[str, Any]:
+        """Cheapest fare per day of a month, grouped by number of stops.
+
+        Maps to `GET /v2/prices/month-matrix`. `month` is `yyyy-mm` or
+        `yyyy-mm-01`. `trip_duration` is stay length in weeks (round-trip).
+        """
+        month_start = _month_start(month)
+        year, month_num = int(month_start[:4]), int(month_start[5:7])
+        params: dict[str, Any] = {
+            "origin": origin.upper(),
+            "destination": destination.upper(),
+            "month": month_start,
+            "one_way": str(one_way).lower(),
+            "currency": currency,
+            "show_to_affiliates": str(show_to_affiliates).lower(),
+            "limit": limit or calendar.monthrange(year, month_num)[1],
+        }
+        if trip_duration:
+            params["trip_duration"] = trip_duration
+        if self.market:
+            params["market"] = self.market
+        return self._get("/v2/prices/month-matrix", params)
+
+    def get_prices_for_dates(
+        self,
+        origin: str,
+        destination: str,
+        departure_at: str,
+        return_at: str | None = None,
+        one_way: bool = True,
+        currency: str = "usd",
+        unique: bool = False,
+        sorting: str = "price",
+        direct: bool = False,
+        limit: int = 1000,
+        page: int = 1,
+    ) -> dict[str, Any]:
+        """Many cached offers for a route and month (or exact date).
+
+        Maps to `GET /aviasales/v3/prices_for_dates`. `departure_at` is
+        `yyyy-mm` or `yyyy-mm-dd`. Omit `return_at` for one-way.
+        """
+        params: dict[str, Any] = {
+            "origin": origin.upper(),
+            "destination": destination.upper(),
+            "departure_at": departure_at,
+            "one_way": str(one_way).lower(),
+            "currency": currency,
+            "cy": currency,
+            "unique": str(unique).lower(),
+            "sorting": sorting,
+            "direct": str(direct).lower(),
+            "limit": limit,
+            "page": page,
+        }
+        if return_at:
+            params["return_at"] = return_at
+        if self.market:
+            params["market"] = self.market
+        return self._get("/aviasales/v3/prices_for_dates", params)
+
     def _get(self, path: str, params: dict[str, Any]) -> dict[str, Any]:
         url = f"{BASE_URL}{path}"
+        params = {**params, "token": self.token}
         last_error: Exception | None = None
 
         for attempt in range(1, self.max_retries + 1):
@@ -196,7 +274,7 @@ class TravelpayoutsClient:
             response.raise_for_status()
             payload = response.json()
 
-            if not payload.get("success", False):
+            if not _payload_ok(payload):
                 raise TravelpayoutsAPIError(
                     f"{path} returned an error: {payload.get('error')}"
                 )
@@ -206,6 +284,27 @@ class TravelpayoutsClient:
         raise TravelpayoutsAPIError(
             f"Exhausted {self.max_retries} retries calling {path}: {last_error}"
         )
+
+
+def _payload_ok(payload: Any) -> bool:
+    """v1 uses `success`; v2/v3 use `success`. Some payloads only include `data`."""
+    if not isinstance(payload, dict):
+        return False
+    if payload.get("error"):
+        return False
+    for key in ("success", "ok"):
+        if key in payload:
+            return bool(payload[key])
+    return "data" in payload
+
+
+def _month_start(month: str) -> str:
+    """Normalize `yyyy-mm` or `yyyy-mm-dd` to the first day of that month."""
+    if len(month) >= 10:
+        return month[:10]
+    if len(month) == 7:
+        return f"{month}-01"
+    raise ValueError(f"month must be yyyy-mm or yyyy-mm-dd, got {month!r}")
 
 
 def _build_client_from_env() -> TravelpayoutsClient:
