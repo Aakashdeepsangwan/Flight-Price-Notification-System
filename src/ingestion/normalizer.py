@@ -344,7 +344,10 @@ def snapshots_to_dataframe(
     df = pd.DataFrame(rows, columns=CSV_COLUMNS)
 
     for col in ("departure_at", "return_at", "expires_at", "fetched_at"):
-        df[col] = pd.to_datetime(df[col], utc=True, errors="coerce")
+        # Endpoints mix date-only and full-timestamp values in the same column;
+        # without an explicit format pandas infers one from the first row and
+        # silently coerces every other shape to NaT.
+        df[col] = pd.to_datetime(df[col], utc=True, errors="coerce", format="ISO8601")
 
     df["price"] = pd.to_numeric(df["price"], errors="coerce")
     df["stops"] = pd.to_numeric(df["stops"], errors="coerce").astype("Int64")

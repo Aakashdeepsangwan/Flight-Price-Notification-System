@@ -1,8 +1,24 @@
 [
-  { "origin": "DEL", "destination": "BOM" },
-  { "origin": "DEL", "destination": "BLR" },
-  { "origin": "BOM", "destination": "GOI" },
-  { "origin": "DEL", "destination": "DXB" },
-  { "origin": "DEL", "destination": "LON" },
-  { "origin": "YTO", "destination": "HAN" }
+  { "origin": "YTO", "destination": "CUN" },  
+  { "origin": "YTO", "destination": "PVR" },
+  { "origin": "YTO", "destination": "PUJ" },
+  { "origin": "YTO", "destination": "NYC" },
+  { "origin": "YTO", "destination": "LAX" },
+  { "origin": "YTO", "destination": "PAR" }, 
+  { "origin": "YTO", "destination": "AMS" },  
+  { "origin": "YTO", "destination": "LON" },
+  { "origin": "YTO", "destination": "YVR" },
+  { "origin": "YTO", "destination": "YMQ" },
+  { "origin": "YTO", "destination": "MIA" },
+  { "origin": "YTO", "destination": "BCN" }, 
+  { "origin": "YTO", "destination": "MAD" },
+  { "origin": "YTO", "destination": "SFO" },
+
+  { "origin": "YTO", "destination": "TYO" },
+  { "origin": "YTO", "destination": "SEL" },
+  { "origin": "YTO", "destination": "HKG" }, 
+  { "origin": "YTO", "destination": "SIN" },
+  { "origin": "YTO", "destination": "DEL" }, 
+  { "origin": "YTO", "destination": "SHA" } 
+
 ]

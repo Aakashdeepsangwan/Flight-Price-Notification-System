@@ -47,23 +47,24 @@ DEFAULT_FETCH_CONFIG: dict[str, Any] = {
 
 
 def load_fetch_config(path: Path = DEFAULT_FETCH_CONFIG_PATH) -> dict[str, Any]:
-    cfg = dict(DEFAULT_FETCH_CONFIG)
+    cfg = dict(DEFAULT_FETCH_CONFIG) #make a copy of the dict to prevent the case of touching the real default 
     if path.exists():
         with path.open() as f:
-            loaded = json.load(f)
+            loaded = json.load(f) #convert json form to python
         if isinstance(loaded, dict):
-            cfg.update({k: v for k, v in loaded.items() if v is not None})
+            cfg.update({k: v for k, v in loaded.items() if v is not None}) # overwrites keys that have non-null value, if null values then it leaves the default untouched
+            
     return cfg
 
 
 def rolling_months(horizon_months: int, today: date | None = None) -> list[str]:
     """Current month plus the next (horizon_months - 1) months, as yyyy-mm."""
-    start = today or datetime.now(timezone.utc).date()
+    start = today or datetime.now(timezone.utc).date() # date form (2026, 8, 26)
     year, month = start.year, start.month
     months: list[str] = []
     for offset in range(max(1, horizon_months)):
         m = month + offset
-        y = year + (m - 1) // 12
+        y = year + (m - 1) // 12 
         m = (m - 1) % 12 + 1
         months.append(f"{y:04d}-{m:02d}")
     return months
@@ -180,23 +181,24 @@ def _fetch_month(
                 )
             )
     else:
-        for stay in stay_days:
-            payload = _call(
-                client.get_month_matrix,
-                sleep_seconds,
-                origin=origin,
-                destination=destination,
-                month=month,
-                one_way=False,
-                trip_duration=max(1, stay // 7),
-                currency=currency,
-            )
-            if payload:
-                rows.extend(
-                    normalize_month_matrix(
-                        payload, origin, destination, currency, trip_type="round_trip"
-                    )
+        # No trip_duration: it filters to an exact stay length in days, and the
+        # cache holds few exact matches. Omitting it returns every stay length
+        # in one call; filter on return_at - departure_at downstream instead.
+        payload = _call(
+            client.get_month_matrix,
+            sleep_seconds,
+            origin=origin,
+            destination=destination,
+            month=month,
+            one_way=False,
+            currency=currency,
+        )
+        if payload:
+            rows.extend(
+                normalize_month_matrix(
+                    payload, origin, destination, currency, trip_type="round_trip"
                 )
+            )
 
     rows.extend(
         _prices_for_dates_pages(

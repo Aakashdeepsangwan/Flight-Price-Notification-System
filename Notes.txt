@@ -8,3 +8,60 @@ Purpose of Database
 - Decides when to pull, where to keep then and prevent wastage of API calls
 - Used for ML Traning 
 - API -> Schedular (every 6-12 h) -> TimeScaleDB(.csv)
+
+
+------- Sat Oct 03 -------
+1. Fix applied — datetime format bug
+- File: `src/ingestion/normalizer.py` → `snapshots_to_dataframe()`
+- Bug: Endpoints send two date shapes: `2026-09-30` (`latest`, `month-matrix`) and `2026-09-30T11:00:00-04:00` (`prices_for_dates`, `calendar`). `pd.to_datetime()` guessed one format per column from the first value and coerced the rest to `NaT` — wiping `departure_at` on timestamp rows and `return_at` on date-only rows.
+- Result — 605 values recovered.`departure_at` nulls 316 → 0; `return_at` nulls 1195 → 906 (the rest are genuine one-way rows). Tests 9/9 pass.
+`snapshots.csv` still has the damaged rows — rebuildable from `data/snapshots/1790719877.json`.
+
+
+
+
+2. BUG — trip_duration is in DAYS, not weeks
+Problem:
+- Config has round_trip_stay_days: [7, 14] (meaning 7- and 14-day stays), but the code divides by 7 before sending:
+- trip_duration = max(1, stay // 7)   ->  sends 1 and 2
+- The API reads that number as DAYS, so it was asked for 1- and 2-day trips.
+
+Impact on fetching (tested on 4 routes x 2 months):
+- The 9 rows we do have are 1-2 day trips (Toronto -> Delhi, 1 day, $1341) — trips nobody books. So it isn't a small sample of good data, it's useless data.
+- It also means stay length never changes in our data (always 1 or 2 days), so the model can't learn how trip length affects price 
+--> Later, it can give you the alert of cheaper price but also shorter days. 
+
+ACTION: remove trip_duration from the month-matrix call.
+  - returns all stay lengths, at half the API calls
+  - filter by length later:  (return_at - departure_at).days
+ 
+
+
+
+
+3. BUG — 7 routes return 0 rows (airport code vs city code)
+Problem:
+  Travelpayouts works in CITY codes. If you ask for an airport code, it resolves
+  it to the city and labels the returned rows with the CITY code:
+      asked JFK -> API returns destination = "NYC"
+      asked LHR -> API returns destination = "LON"
+      asked CUN -> API returns destination = "CUN"   (same code, so it works)
+
+  Our code then keeps only rows whose destination matches what we asked:
+      if row["destination"].upper() == dest_u          # dest_u = "JFK"
+  "NYC" != "JFK", so every row is deleted. The data arrived; our filter threw it away.
+
+Affected (7 of 20 routes) — rows lost per fetch cycle:
+      JFK -> NYC    33
+      CDG -> PAR    41
+      LHR -> LON    24
+      YUL -> YMQ    17
+      NRT -> TYO    37
+      ICN -> SEL    14
+      PVG -> SHA     4
+                   ---
+                   170 rows/cycle
+ None of these routes are genuinely empty — all have data under the city code.
+
+FIX (chosen): change config/routes.json to city codes
+      JFK->NYC   CDG->PAR   LHR->LON   YUL->YMQ   NRT->TYO   ICN->SEL   PVG->SHA

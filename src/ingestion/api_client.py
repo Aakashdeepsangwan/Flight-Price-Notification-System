@@ -181,7 +181,8 @@ class TravelpayoutsClient:
         """Cheapest fare per day of a month, grouped by number of stops.
 
         Maps to `GET /v2/prices/month-matrix`. `month` is `yyyy-mm` or
-        `yyyy-mm-01`. `trip_duration` is stay length in weeks (round-trip).
+        `yyyy-mm-01`. `trip_duration` is stay length in DAYS (round-trip) and
+        matches exactly, so omit it unless you want one specific stay length.
         """
         month_start = _month_start(month)
         year, month_num = int(month_start[:4]), int(month_start[5:7])

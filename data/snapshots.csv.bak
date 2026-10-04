@@ -1,0 +1,1367 @@
+origin,origin_city,destination,destination_city,departure_at,return_at,airline,flight_number,price,currency,stops,expires_at,fetched_at,source,trip_type,source_endpoint,flight_duration_min
+YTO,Toronto,CUN,Cancun,2026-09-30 00:00:00+00:00,,,,209,USD,2,,2026-09-29 22:05:37.609843+00:00,travelpayouts,one_way,month-matrix,559
+YTO,Toronto,CUN,Cancun,,,UA,2860,209,USD,2,,2026-09-29 22:05:38.074571+00:00,travelpayouts,one_way,prices_for_dates,559
+YTO,Toronto,CUN,Cancun,2026-09-30 00:00:00+00:00,,,,207,USD,2,,2026-09-29 22:05:38.591757+00:00,travelpayouts,one_way,latest,559
+YTO,Toronto,CUN,Cancun,,2026-10-06 18:12:00+00:00,UA,1345,329,USD,1,,2026-09-29 22:05:40.019239+00:00,travelpayouts,round_trip,prices_for_dates,1353
+YTO,Toronto,CUN,Cancun,,2026-10-05 22:22:00+00:00,UA,2860,368,USD,2,,2026-09-29 22:05:40.019239+00:00,travelpayouts,round_trip,prices_for_dates,1606
+YTO,Toronto,CUN,Cancun,2026-09-30 00:00:00+00:00,,,,326,USD,1,,2026-09-29 22:05:40.520611+00:00,travelpayouts,round_trip,latest,1353
+YTO,Toronto,CUN,Cancun,2026-09-30 00:00:00+00:00,,,,365,USD,2,,2026-09-29 22:05:40.520611+00:00,travelpayouts,round_trip,latest,1606
+YTO,Toronto,CUN,Cancun,2026-10-05 00:00:00+00:00,,,,197,USD,2,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,965
+YTO,Toronto,CUN,Cancun,2026-10-24 00:00:00+00:00,,,,200,USD,1,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,1775
+YTO,Toronto,CUN,Cancun,2026-10-04 00:00:00+00:00,,,,203,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-25 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,209,USD,2,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,559
+YTO,Toronto,CUN,Cancun,2026-10-01 00:00:00+00:00,,,,211,USD,2,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,799
+YTO,Toronto,CUN,Cancun,2026-10-26 00:00:00+00:00,,,,212,USD,1,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,1053
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,217,USD,1,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,412
+YTO,Toronto,CUN,Cancun,2026-10-12 00:00:00+00:00,,,,221,USD,1,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,849
+YTO,Toronto,CUN,Cancun,2026-10-11 00:00:00+00:00,,,,225,USD,2,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,1962
+YTO,Toronto,CUN,Cancun,2026-10-16 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-17 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-18 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-19 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-20 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-21 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-22 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-23 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-13 00:00:00+00:00,,,,274,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-14 00:00:00+00:00,,,,274,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-06 00:00:00+00:00,,,,278,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,278,USD,0,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-10-15 00:00:00+00:00,,,,327,USD,1,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,871
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,358,USD,2,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,1916
+YTO,Toronto,CUN,Cancun,2026-10-10 00:00:00+00:00,,,,405,USD,2,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,1985
+YTO,Toronto,CUN,Cancun,2026-10-09 00:00:00+00:00,,,,416,USD,1,,2026-09-29 22:05:41.025358+00:00,travelpayouts,one_way,month-matrix,871
+YTO,Toronto,CUN,Cancun,,,UA,3711,197,USD,2,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,965
+YTO,Toronto,CUN,Cancun,,,WS,381,200,USD,1,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,1775
+YTO,Toronto,CUN,Cancun,,,UA,2860,209,USD,2,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,559
+YTO,Toronto,CUN,Cancun,,,UA,1612,211,USD,2,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,799
+YTO,Toronto,CUN,Cancun,,,AA,1111,212,USD,1,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,1053
+YTO,Toronto,CUN,Cancun,,,UA,1345,217,USD,1,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,412
+YTO,Toronto,CUN,Cancun,,,UA,1345,221,USD,1,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,849
+YTO,Toronto,CUN,Cancun,,,UA,3435,225,USD,2,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,1962
+YTO,Toronto,CUN,Cancun,,,CM,471,327,USD,1,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,871
+YTO,Toronto,CUN,Cancun,,,F8,2660,358,USD,2,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,1916
+YTO,Toronto,CUN,Cancun,,,UA,2236,405,USD,2,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,1985
+YTO,Toronto,CUN,Cancun,,,CM,471,416,USD,1,,2026-09-29 22:05:41.486593+00:00,travelpayouts,one_way,prices_for_dates,871
+YTO,Toronto,CUN,Cancun,2026-10-05 00:00:00+00:00,,,,195,USD,2,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,965
+YTO,Toronto,CUN,Cancun,2026-10-24 00:00:00+00:00,,,,199,USD,1,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,1775
+YTO,Toronto,CUN,Cancun,2026-10-04 00:00:00+00:00,,,,201,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-25 00:00:00+00:00,,,,204,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,207,USD,2,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,559
+YTO,Toronto,CUN,Cancun,2026-10-01 00:00:00+00:00,,,,209,USD,2,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,799
+YTO,Toronto,CUN,Cancun,2026-10-26 00:00:00+00:00,,,,210,USD,1,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,1053
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,215,USD,1,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,412
+YTO,Toronto,CUN,Cancun,2026-10-12 00:00:00+00:00,,,,219,USD,1,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,849
+YTO,Toronto,CUN,Cancun,2026-10-11 00:00:00+00:00,,,,223,USD,2,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,1962
+YTO,Toronto,CUN,Cancun,2026-10-16 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-17 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-18 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-19 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-20 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-21 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-22 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-23 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-13 00:00:00+00:00,,,,272,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-14 00:00:00+00:00,,,,272,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-06 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-15 00:00:00+00:00,,,,325,USD,1,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,871
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,355,USD,2,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,1916
+YTO,Toronto,CUN,Cancun,2026-10-10 00:00:00+00:00,,,,402,USD,2,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,1985
+YTO,Toronto,CUN,Cancun,2026-10-09 00:00:00+00:00,,,,412,USD,1,,2026-09-29 22:05:41.971646+00:00,travelpayouts,one_way,latest,871
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,356,USD,2,,2026-09-29 22:05:43.063296+00:00,travelpayouts,round_trip,month-matrix,2502
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,543,USD,0,,2026-09-29 22:05:43.063296+00:00,travelpayouts,round_trip,month-matrix,495
+YTO,Toronto,CUN,Cancun,2026-10-09 00:00:00+00:00,,,,822,USD,1,,2026-09-29 22:05:43.063296+00:00,travelpayouts,round_trip,month-matrix,730
+YTO,Toronto,CUN,Cancun,,2026-10-10 12:51:00+00:00,UA,1345,339,USD,1,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1392
+YTO,Toronto,CUN,Cancun,,2026-10-04 22:22:00+00:00,UA,278,356,USD,2,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,2502
+YTO,Toronto,CUN,Cancun,,2026-10-14 12:51:00+00:00,UA,2860,365,USD,2,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,2418
+YTO,Toronto,CUN,Cancun,,2026-10-14 12:51:00+00:00,UA,2860,371,USD,2,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1272
+YTO,Toronto,CUN,Cancun,,2026-10-15 20:38:00+00:00,UA,5874,372,USD,2,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1998
+YTO,Toronto,CUN,Cancun,,2026-10-10 01:00:00+00:00,AC,129,380,USD,1,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1804
+YTO,Toronto,CUN,Cancun,,2026-10-20 18:54:00+00:00,CM,471,448,USD,1,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,2209
+YTO,Toronto,CUN,Cancun,,2026-10-21 16:15:00+00:00,CM,471,498,USD,1,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,2160
+YTO,Toronto,CUN,Cancun,,2026-10-11 00:15:00+00:00,UA,763,529,USD,3,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1208
+YTO,Toronto,CUN,Cancun,,2026-10-11 00:15:00+00:00,WS,2128,543,USD,0,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,495
+YTO,Toronto,CUN,Cancun,,2026-10-23 02:05:00+00:00,AA,5887,642,USD,1,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1972
+YTO,Toronto,CUN,Cancun,,2026-10-11 18:30:00+00:00,UA,763,647,USD,2,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,934
+YTO,Toronto,CUN,Cancun,,2026-10-17 22:20:00+00:00,AA,4542,696,USD,2,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,1064
+YTO,Toronto,CUN,Cancun,,2026-10-11 18:30:00+00:00,WS,2128,716,USD,0,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,500
+YTO,Toronto,CUN,Cancun,,2026-10-11 00:15:00+00:00,PD,791,773,USD,0,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,484
+YTO,Toronto,CUN,Cancun,,2026-10-11 18:30:00+00:00,P3,2221,822,USD,1,,2026-09-29 22:05:43.589445+00:00,travelpayouts,round_trip,prices_for_dates,730
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,336,USD,1,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1392
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,352,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,352,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,352,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,353,USD,2,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,2502
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,365,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,365,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,365,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,365,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-03 00:00:00+00:00,,,,368,USD,2,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1272
+YTO,Toronto,CUN,Cancun,2026-10-05 00:00:00+00:00,,,,369,USD,2,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1998
+YTO,Toronto,CUN,Cancun,2026-10-04 00:00:00+00:00,,,,369,USD,2,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1681
+YTO,Toronto,CUN,Cancun,2026-10-02 00:00:00+00:00,,,,377,USD,1,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1804
+YTO,Toronto,CUN,Cancun,2026-10-15 00:00:00+00:00,,,,444,USD,1,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,2209
+YTO,Toronto,CUN,Cancun,2026-10-15 00:00:00+00:00,,,,494,USD,1,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,2160
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,525,USD,3,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1208
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,538,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,495
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,637,USD,1,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1972
+YTO,Toronto,CUN,Cancun,2026-10-06 00:00:00+00:00,,,,642,USD,2,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,934
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,673,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,CUN,Cancun,2026-10-07 00:00:00+00:00,,,,690,USD,2,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,1064
+YTO,Toronto,CUN,Cancun,2026-10-08 00:00:00+00:00,,,,710,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,500
+YTO,Toronto,CUN,Cancun,2026-10-10 00:00:00+00:00,,,,766,USD,0,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,484
+YTO,Toronto,CUN,Cancun,2026-10-09 00:00:00+00:00,,,,815,USD,1,,2026-09-29 22:05:44.110300+00:00,travelpayouts,round_trip,latest,730
+YTO,Toronto,CUN,Cancun,2026-11-15 00:00:00+00:00,,,,151,USD,1,,2026-09-29 22:05:44.584760+00:00,travelpayouts,one_way,month-matrix,390
+YTO,Toronto,CUN,Cancun,2026-11-14 00:00:00+00:00,,,,176,USD,0,,2026-09-29 22:05:44.584760+00:00,travelpayouts,one_way,month-matrix,260
+YTO,Toronto,CUN,Cancun,,,PD,2259,151,USD,1,,2026-09-29 22:05:45.114247+00:00,travelpayouts,one_way,prices_for_dates,390
+YTO,Toronto,CUN,Cancun,,,AC,1814,176,USD,0,,2026-09-29 22:05:45.114247+00:00,travelpayouts,one_way,prices_for_dates,260
+YTO,Toronto,CUN,Cancun,2026-11-15 00:00:00+00:00,,,,170,USD,0,,2026-09-29 22:05:45.677795+00:00,travelpayouts,one_way,latest,270
+YTO,Toronto,CUN,Cancun,2026-11-14 00:00:00+00:00,,,,174,USD,0,,2026-09-29 22:05:45.677795+00:00,travelpayouts,one_way,latest,260
+YTO,Toronto,CUN,Cancun,,2026-12-01 02:35:00+00:00,WS,2136,278,USD,0,,2026-09-29 22:05:47.215004+00:00,travelpayouts,round_trip,prices_for_dates,515
+YTO,Toronto,CUN,Cancun,,2026-11-24 02:35:00+00:00,WS,2136,284,USD,0,,2026-09-29 22:05:47.215004+00:00,travelpayouts,round_trip,prices_for_dates,515
+YTO,Toronto,CUN,Cancun,,2026-11-09 02:05:00+00:00,PD,766,289,USD,0,,2026-09-29 22:05:47.215004+00:00,travelpayouts,round_trip,prices_for_dates,478
+YTO,Toronto,CUN,Cancun,,2026-12-02 02:30:00+00:00,AC,1814,304,USD,0,,2026-09-29 22:05:47.215004+00:00,travelpayouts,round_trip,prices_for_dates,495
+YTO,Toronto,CUN,Cancun,,2026-11-09 02:05:00+00:00,PD,763,305,USD,0,,2026-09-29 22:05:47.215004+00:00,travelpayouts,round_trip,prices_for_dates,478
+YTO,Toronto,CUN,Cancun,,2027-01-14 19:45:00+00:00,AC,1814,330,USD,0,,2026-09-29 22:05:47.215004+00:00,travelpayouts,round_trip,prices_for_dates,510
+YTO,Toronto,CUN,Cancun,2026-11-20 00:00:00+00:00,,,,276,USD,0,,2026-09-29 22:05:47.739261+00:00,travelpayouts,round_trip,latest,515
+YTO,Toronto,CUN,Cancun,2026-11-16 00:00:00+00:00,,,,281,USD,0,,2026-09-29 22:05:47.739261+00:00,travelpayouts,round_trip,latest,515
+YTO,Toronto,CUN,Cancun,2026-11-01 00:00:00+00:00,,,,286,USD,0,,2026-09-29 22:05:47.739261+00:00,travelpayouts,round_trip,latest,478
+YTO,Toronto,CUN,Cancun,2026-11-20 00:00:00+00:00,,,,301,USD,0,,2026-09-29 22:05:47.739261+00:00,travelpayouts,round_trip,latest,495
+YTO,Toronto,CUN,Cancun,2026-11-02 00:00:00+00:00,,,,302,USD,0,,2026-09-29 22:05:47.739261+00:00,travelpayouts,round_trip,latest,478
+YTO,Toronto,CUN,Cancun,2026-11-26 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:05:47.739261+00:00,travelpayouts,round_trip,latest,510
+YTO,Toronto,CUN,Cancun,2026-12-24 00:00:00+00:00,,,,232,USD,2,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,1561
+YTO,Toronto,CUN,Cancun,2026-12-17 00:00:00+00:00,,,,301,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,250
+YTO,Toronto,CUN,Cancun,2026-12-19 00:00:00+00:00,,,,302,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-12-20 00:00:00+00:00,,,,302,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-12-21 00:00:00+00:00,,,,302,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-12-22 00:00:00+00:00,,,,302,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-12-23 00:00:00+00:00,,,,302,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,CUN,Cancun,2026-12-18 00:00:00+00:00,,,,371,USD,0,,2026-09-29 22:05:48.259897+00:00,travelpayouts,one_way,month-matrix,250
+YTO,Toronto,CUN,Cancun,,,UA,3499,232,USD,2,,2026-09-29 22:05:48.821417+00:00,travelpayouts,one_way,prices_for_dates,1561
+YTO,Toronto,CUN,Cancun,,,PD,763,301,USD,0,,2026-09-29 22:05:48.821417+00:00,travelpayouts,one_way,prices_for_dates,250
+YTO,Toronto,CUN,Cancun,,,PD,766,371,USD,0,,2026-09-29 22:05:48.821417+00:00,travelpayouts,one_way,prices_for_dates,250
+YTO,Toronto,CUN,Cancun,2026-12-24 00:00:00+00:00,,,,230,USD,2,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,1561
+YTO,Toronto,CUN,Cancun,2026-12-17 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,250
+YTO,Toronto,CUN,Cancun,2026-12-19 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-12-20 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-12-21 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-12-22 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-12-23 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,CUN,Cancun,2026-12-18 00:00:00+00:00,,,,368,USD,0,,2026-09-29 22:05:49.346286+00:00,travelpayouts,one_way,latest,250
+YTO,Toronto,CUN,Cancun,,2026-12-14 01:15:00+00:00,TS,7005,266,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,478
+YTO,Toronto,CUN,Cancun,,2026-12-14 18:10:00+00:00,PD,763,272,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,478
+YTO,Toronto,CUN,Cancun,,2026-12-14 01:15:00+00:00,PD,763,274,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,478
+YTO,Toronto,CUN,Cancun,,2026-12-12 17:55:00+00:00,F8,2612,282,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,505
+YTO,Toronto,CUN,Cancun,,2026-12-12 00:45:00+00:00,PD,766,298,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,490
+YTO,Toronto,CUN,Cancun,,2026-12-10 19:55:00+00:00,PD,766,299,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,685
+YTO,Toronto,CUN,Cancun,,2026-12-24 00:40:00+00:00,F8,2610,323,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,510
+YTO,Toronto,CUN,Cancun,,2027-01-05 16:45:00+00:00,WS,385,438,USD,1,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,1365
+YTO,Toronto,CUN,Cancun,,2026-12-29 17:55:00+00:00,WS,2136,453,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,520
+YTO,Toronto,CUN,Cancun,,2026-12-26 17:55:00+00:00,WS,447,465,USD,1,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,1735
+YTO,Toronto,CUN,Cancun,,2026-12-28 20:25:00+00:00,WS,2136,480,USD,0,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,1130
+YTO,Toronto,CUN,Cancun,,2027-01-10 02:00:00+00:00,AC,119,498,USD,1,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,1028
+YTO,Toronto,CUN,Cancun,,2027-01-03 22:15:00+00:00,WS,629,856,USD,1,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,2090
+YTO,Toronto,CUN,Cancun,,2027-01-03 03:25:00+00:00,WS,657,876,USD,1,,2026-09-29 22:05:50.894934+00:00,travelpayouts,round_trip,prices_for_dates,2510
+YTO,Toronto,CUN,Cancun,2026-12-06 00:00:00+00:00,,,,264,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,478
+YTO,Toronto,CUN,Cancun,2026-12-06 00:00:00+00:00,,,,270,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,478
+YTO,Toronto,CUN,Cancun,2026-12-07 00:00:00+00:00,,,,272,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,478
+YTO,Toronto,CUN,Cancun,2026-12-05 00:00:00+00:00,,,,280,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,505
+YTO,Toronto,CUN,Cancun,2026-12-04 00:00:00+00:00,,,,296,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,490
+YTO,Toronto,CUN,Cancun,2026-12-04 00:00:00+00:00,,,,297,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,685
+YTO,Toronto,CUN,Cancun,2026-12-15 00:00:00+00:00,,,,320,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,510
+YTO,Toronto,CUN,Cancun,2026-12-29 00:00:00+00:00,,,,434,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,1365
+YTO,Toronto,CUN,Cancun,2026-12-22 00:00:00+00:00,,,,449,USD,0,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,520
+YTO,Toronto,CUN,Cancun,2026-12-19 00:00:00+00:00,,,,461,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,1735
+YTO,Toronto,CUN,Cancun,2026-12-22 00:00:00+00:00,,,,476,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,1130
+YTO,Toronto,CUN,Cancun,2026-12-26 00:00:00+00:00,,,,494,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,1028
+YTO,Toronto,CUN,Cancun,2026-12-27 00:00:00+00:00,,,,849,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,2090
+YTO,Toronto,CUN,Cancun,2026-12-25 00:00:00+00:00,,,,868,USD,1,,2026-09-29 22:05:51.405852+00:00,travelpayouts,round_trip,latest,2510
+YTO,Toronto,PVR,Puerto Vallarta,2026-10-09 00:00:00+00:00,,,,347,USD,1,,2026-09-29 22:05:58.221604+00:00,travelpayouts,one_way,month-matrix,1367
+YTO,Toronto,PVR,Puerto Vallarta,,,UA,3705,347,USD,1,,2026-09-29 22:05:58.742758+00:00,travelpayouts,one_way,prices_for_dates,1367
+YTO,Toronto,PVR,Puerto Vallarta,2026-10-09 00:00:00+00:00,,,,344,USD,1,,2026-09-29 22:05:59.301768+00:00,travelpayouts,one_way,latest,1367
+YTO,Toronto,PVR,Puerto Vallarta,,2026-11-16 21:31:00+00:00,UA,450,334,USD,2,,2026-09-29 22:06:00.881899+00:00,travelpayouts,round_trip,prices_for_dates,2526
+YTO,Toronto,PVR,Puerto Vallarta,2026-10-30 00:00:00+00:00,,,,331,USD,2,,2026-09-29 22:06:01.406642+00:00,travelpayouts,round_trip,latest,2526
+YTO,Toronto,PVR,Puerto Vallarta,,,PD,771,329,USD,0,2026-09-29 23:06:03+00:00,2026-09-29 22:06:03.535914+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,PVR,Puerto Vallarta,,2026-11-26 00:10:00+00:00,PD,771,329,USD,0,,2026-09-29 22:06:05.053462+00:00,travelpayouts,round_trip,prices_for_dates,624
+YTO,Toronto,PVR,Puerto Vallarta,2026-11-21 00:00:00+00:00,,,,326,USD,0,,2026-09-29 22:06:05.599729+00:00,travelpayouts,round_trip,latest,624
+YTO,Toronto,PVR,Puerto Vallarta,,,TS,7057,330,USD,0,2026-09-29 23:06:07+00:00,2026-09-29 22:06:07.735141+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,PVR,Puerto Vallarta,,2026-12-22 19:00:00+00:00,TS,7057,330,USD,0,,2026-09-29 22:06:09.274300+00:00,travelpayouts,round_trip,prices_for_dates,635
+YTO,Toronto,PVR,Puerto Vallarta,2026-12-15 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:06:09.753445+00:00,travelpayouts,round_trip,latest,635
+YTO,Toronto,PUJ,Punta Cana,2026-09-30 00:00:00+00:00,,,,493,USD,0,,2026-09-29 22:06:10.321427+00:00,travelpayouts,one_way,month-matrix,270
+YTO,Toronto,PUJ,Punta Cana,,,DM,4179,493,USD,0,,2026-09-29 22:06:10.803739+00:00,travelpayouts,one_way,prices_for_dates,270
+YTO,Toronto,PUJ,Punta Cana,2026-09-30 00:00:00+00:00,,,,489,USD,0,,2026-09-29 22:06:11.364674+00:00,travelpayouts,one_way,latest,270
+YTO,Toronto,PUJ,Punta Cana,2026-10-06 00:00:00+00:00,,,,361,USD,1,,2026-09-29 22:06:15.564273+00:00,travelpayouts,one_way,month-matrix,486
+YTO,Toronto,PUJ,Punta Cana,2026-10-07 00:00:00+00:00,,,,363,USD,0,,2026-09-29 22:06:15.564273+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-10-08 00:00:00+00:00,,,,363,USD,0,,2026-09-29 22:06:15.564273+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-10-09 00:00:00+00:00,,,,363,USD,0,,2026-09-29 22:06:15.564273+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-10-10 00:00:00+00:00,,,,366,USD,2,,2026-09-29 22:06:15.564273+00:00,travelpayouts,one_way,month-matrix,2440
+YTO,Toronto,PUJ,Punta Cana,,,AA,1746,361,USD,1,,2026-09-29 22:06:16.088790+00:00,travelpayouts,one_way,prices_for_dates,486
+YTO,Toronto,PUJ,Punta Cana,,,UA,3711,366,USD,2,,2026-09-29 22:06:16.088790+00:00,travelpayouts,one_way,prices_for_dates,2440
+YTO,Toronto,PUJ,Punta Cana,2026-10-06 00:00:00+00:00,,,,358,USD,1,,2026-09-29 22:06:16.580643+00:00,travelpayouts,one_way,latest,486
+YTO,Toronto,PUJ,Punta Cana,2026-10-07 00:00:00+00:00,,,,360,USD,0,,2026-09-29 22:06:16.580643+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-10-08 00:00:00+00:00,,,,360,USD,0,,2026-09-29 22:06:16.580643+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-10-09 00:00:00+00:00,,,,360,USD,0,,2026-09-29 22:06:16.580643+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-10-10 00:00:00+00:00,,,,363,USD,2,,2026-09-29 22:06:16.580643+00:00,travelpayouts,one_way,latest,2440
+YTO,Toronto,PUJ,Punta Cana,2026-10-03 00:00:00+00:00,,,,676,USD,1,,2026-09-29 22:06:17.136781+00:00,travelpayouts,round_trip,month-matrix,1860
+YTO,Toronto,PUJ,Punta Cana,,2026-11-07 11:04:00+00:00,F8,2634,292,USD,0,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,561
+YTO,Toronto,PUJ,Punta Cana,,2026-11-01 21:33:00+00:00,AA,5886,386,USD,1,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,1706
+YTO,Toronto,PUJ,Punta Cana,,2026-10-27 23:09:00+00:00,AA,5887,433,USD,1,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,823
+YTO,Toronto,PUJ,Punta Cana,,2026-10-29 23:09:00+00:00,DM,5863,451,USD,0,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,556
+YTO,Toronto,PUJ,Punta Cana,,2026-10-09 20:12:00+00:00,UA,2236,464,USD,1,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,2929
+YTO,Toronto,PUJ,Punta Cana,,2026-10-04 19:05:00+00:00,TS,186,676,USD,0,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,1860
+YTO,Toronto,PUJ,Punta Cana,,2026-10-18 19:35:00+00:00,UA,8556,679,USD,1,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,1444
+YTO,Toronto,PUJ,Punta Cana,,2026-10-18 23:35:00+00:00,DM,5863,981,USD,0,,2026-09-29 22:06:18.295301+00:00,travelpayouts,round_trip,prices_for_dates,2470
+YTO,Toronto,PUJ,Punta Cana,2026-10-31 00:00:00+00:00,,,,289,USD,0,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,561
+YTO,Toronto,PUJ,Punta Cana,2026-10-26 00:00:00+00:00,,,,383,USD,1,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,1706
+YTO,Toronto,PUJ,Punta Cana,2026-10-20 00:00:00+00:00,,,,429,USD,1,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,823
+YTO,Toronto,PUJ,Punta Cana,2026-10-23 00:00:00+00:00,,,,447,USD,0,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,556
+YTO,Toronto,PUJ,Punta Cana,2026-10-02 00:00:00+00:00,,,,460,USD,1,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,2929
+YTO,Toronto,PUJ,Punta Cana,2026-10-03 00:00:00+00:00,,,,671,USD,1,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,1860
+YTO,Toronto,PUJ,Punta Cana,2026-10-11 00:00:00+00:00,,,,674,USD,1,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,1444
+YTO,Toronto,PUJ,Punta Cana,2026-10-07 00:00:00+00:00,,,,973,USD,1,,2026-09-29 22:06:18.810696+00:00,travelpayouts,round_trip,latest,2470
+YTO,Toronto,PUJ,Punta Cana,2026-11-24 00:00:00+00:00,,,,210,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,280
+YTO,Toronto,PUJ,Punta Cana,2026-11-04 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-05 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-06 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-07 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-08 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-09 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-10 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-11 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-12 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-13 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-14 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-15 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-16 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-17 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-18 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-19 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-20 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-21 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-22 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-23 00:00:00+00:00,,,,227,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-03 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:19.316577+00:00,travelpayouts,one_way,month-matrix,260
+YTO,Toronto,PUJ,Punta Cana,,,AC,1798,210,USD,0,,2026-09-29 22:06:19.828684+00:00,travelpayouts,one_way,prices_for_dates,280
+YTO,Toronto,PUJ,Punta Cana,,,TS,286,244,USD,0,,2026-09-29 22:06:19.828684+00:00,travelpayouts,one_way,prices_for_dates,260
+YTO,Toronto,PUJ,Punta Cana,2026-11-24 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,280
+YTO,Toronto,PUJ,Punta Cana,2026-11-04 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-05 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-06 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-07 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-08 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-09 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-10 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-11 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-12 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-13 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-14 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-15 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-16 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-17 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-18 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-19 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-20 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-21 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-22 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-23 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-11-03 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:20.337367+00:00,travelpayouts,one_way,latest,260
+YTO,Toronto,PUJ,Punta Cana,2026-12-02 00:00:00+00:00,,,,201,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,282
+YTO,Toronto,PUJ,Punta Cana,2026-12-01 00:00:00+00:00,,,,220,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,260
+YTO,Toronto,PUJ,Punta Cana,2026-12-03 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-04 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-05 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-06 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-07 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-08 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-09 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-10 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-11 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-12 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-13 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-14 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-15 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-16 00:00:00+00:00,,,,244,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-28 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,275
+YTO,Toronto,PUJ,Punta Cana,2026-12-17 00:00:00+00:00,,,,287,USD,1,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,920
+YTO,Toronto,PUJ,Punta Cana,2026-12-24 00:00:00+00:00,,,,331,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-25 00:00:00+00:00,,,,331,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-26 00:00:00+00:00,,,,331,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-27 00:00:00+00:00,,,,331,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-18 00:00:00+00:00,,,,343,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-19 00:00:00+00:00,,,,343,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-20 00:00:00+00:00,,,,343,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-21 00:00:00+00:00,,,,343,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-22 00:00:00+00:00,,,,343,USD,0,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-23 00:00:00+00:00,,,,400,USD,1,,2026-09-29 22:06:24.452095+00:00,travelpayouts,one_way,month-matrix,885
+YTO,Toronto,PUJ,Punta Cana,,,DM,5863,201,USD,0,,2026-09-29 22:06:25.004565+00:00,travelpayouts,one_way,prices_for_dates,282
+YTO,Toronto,PUJ,Punta Cana,,,TS,286,220,USD,0,,2026-09-29 22:06:25.004565+00:00,travelpayouts,one_way,prices_for_dates,260
+YTO,Toronto,PUJ,Punta Cana,,,F8,2634,262,USD,0,,2026-09-29 22:06:25.004565+00:00,travelpayouts,one_way,prices_for_dates,275
+YTO,Toronto,PUJ,Punta Cana,,,PD,2267,287,USD,1,,2026-09-29 22:06:25.004565+00:00,travelpayouts,one_way,prices_for_dates,920
+YTO,Toronto,PUJ,Punta Cana,,,PD,151,400,USD,1,,2026-09-29 22:06:25.004565+00:00,travelpayouts,one_way,prices_for_dates,885
+YTO,Toronto,PUJ,Punta Cana,2026-12-02 00:00:00+00:00,,,,199,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,282
+YTO,Toronto,PUJ,Punta Cana,2026-12-01 00:00:00+00:00,,,,218,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,260
+YTO,Toronto,PUJ,Punta Cana,2026-12-03 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-04 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-05 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-06 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-07 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-08 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-09 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-10 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-11 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-12 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-13 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-14 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-15 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-16 00:00:00+00:00,,,,242,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-28 00:00:00+00:00,,,,260,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,275
+YTO,Toronto,PUJ,Punta Cana,2026-12-17 00:00:00+00:00,,,,284,USD,1,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,920
+YTO,Toronto,PUJ,Punta Cana,2026-12-24 00:00:00+00:00,,,,328,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-25 00:00:00+00:00,,,,328,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-26 00:00:00+00:00,,,,328,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-27 00:00:00+00:00,,,,328,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-18 00:00:00+00:00,,,,340,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-19 00:00:00+00:00,,,,340,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-20 00:00:00+00:00,,,,340,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-21 00:00:00+00:00,,,,340,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-22 00:00:00+00:00,,,,340,USD,0,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-23 00:00:00+00:00,,,,396,USD,1,,2026-09-29 22:06:25.544218+00:00,travelpayouts,one_way,latest,885
+YTO,Toronto,PUJ,Punta Cana,,2027-01-18 00:04:00+00:00,F8,2634,313,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,561
+YTO,Toronto,PUJ,Punta Cana,,2026-12-05 01:25:00+00:00,TS,286,393,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,535
+YTO,Toronto,PUJ,Punta Cana,,2026-12-14 19:40:00+00:00,TS,286,394,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,535
+YTO,Toronto,PUJ,Punta Cana,,2027-01-08 19:35:00+00:00,DM,5863,523,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,572
+YTO,Toronto,PUJ,Punta Cana,,2027-01-10 19:35:00+00:00,DM,4179,528,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,572
+YTO,Toronto,PUJ,Punta Cana,,2026-12-26 21:19:00+00:00,AA,3604,576,USD,1,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,2742
+YTO,Toronto,PUJ,Punta Cana,,2026-12-29 01:15:00+00:00,TS,286,579,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,980
+YTO,Toronto,PUJ,Punta Cana,,2027-01-07 19:35:00+00:00,F8,2634,587,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,565
+YTO,Toronto,PUJ,Punta Cana,,2027-01-07 21:41:00+00:00,AA,5030,754,USD,1,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,2217
+YTO,Toronto,PUJ,Punta Cana,,2027-01-02 03:55:00+00:00,PD,2477,759,USD,1,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,2263
+YTO,Toronto,PUJ,Punta Cana,,2027-01-04 03:55:00+00:00,TS,7217,771,USD,1,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,940
+YTO,Toronto,PUJ,Punta Cana,,2027-01-04 18:05:00+00:00,WS,2108,1021,USD,0,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,565
+YTO,Toronto,PUJ,Punta Cana,,2027-01-04 03:55:00+00:00,AC,480,1046,USD,1,,2026-09-29 22:06:27.178025+00:00,travelpayouts,round_trip,prices_for_dates,1613
+YTO,Toronto,PUJ,Punta Cana,2026-12-31 00:00:00+00:00,,,,311,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,561
+YTO,Toronto,PUJ,Punta Cana,2026-12-01 00:00:00+00:00,,,,389,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,535
+YTO,Toronto,PUJ,Punta Cana,2026-12-07 00:00:00+00:00,,,,391,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,535
+YTO,Toronto,PUJ,Punta Cana,2026-12-28 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,572
+YTO,Toronto,PUJ,Punta Cana,2026-12-30 00:00:00+00:00,,,,524,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,572
+YTO,Toronto,PUJ,Punta Cana,2026-12-20 00:00:00+00:00,,,,571,USD,1,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,2742
+YTO,Toronto,PUJ,Punta Cana,2026-12-21 00:00:00+00:00,,,,575,USD,1,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,980
+YTO,Toronto,PUJ,Punta Cana,2026-12-29 00:00:00+00:00,,,,582,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,565
+YTO,Toronto,PUJ,Punta Cana,2026-12-27 00:00:00+00:00,,,,748,USD,1,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,2217
+YTO,Toronto,PUJ,Punta Cana,2026-12-23 00:00:00+00:00,,,,753,USD,1,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,2263
+YTO,Toronto,PUJ,Punta Cana,2026-12-23 00:00:00+00:00,,,,758,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-23 00:00:00+00:00,,,,764,USD,1,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,940
+YTO,Toronto,PUJ,Punta Cana,2026-12-27 00:00:00+00:00,,,,880,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-27 00:00:00+00:00,,,,880,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,PUJ,Punta Cana,2026-12-27 00:00:00+00:00,,,,1012,USD,0,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,565
+YTO,Toronto,PUJ,Punta Cana,2026-12-19 00:00:00+00:00,,,,1037,USD,1,,2026-09-29 22:06:27.684843+00:00,travelpayouts,round_trip,latest,1613
+YTO,Toronto,LAX,Los Angeles,2026-10-14 00:00:00+00:00,,,,220,USD,1,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,436
+YTO,Toronto,LAX,Los Angeles,2026-10-13 00:00:00+00:00,,,,272,USD,1,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,546
+YTO,Toronto,LAX,Los Angeles,2026-10-03 00:00:00+00:00,,,,305,USD,2,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,2405
+YTO,Toronto,LAX,Los Angeles,2026-10-04 00:00:00+00:00,,,,324,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,2026-10-05 00:00:00+00:00,,,,324,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,2026-10-10 00:00:00+00:00,,,,335,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,2026-10-11 00:00:00+00:00,,,,335,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,2026-10-12 00:00:00+00:00,,,,335,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,2026-10-06 00:00:00+00:00,,,,342,USD,2,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,639
+YTO,Toronto,LAX,Los Angeles,2026-10-07 00:00:00+00:00,,,,370,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,2026-10-08 00:00:00+00:00,,,,370,USD,0,,2026-09-29 22:06:48.068393+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,LAX,Los Angeles,,,UA,763,220,USD,1,,2026-09-29 22:06:48.552171+00:00,travelpayouts,one_way,prices_for_dates,436
+YTO,Toronto,LAX,Los Angeles,,,UA,1612,272,USD,1,,2026-09-29 22:06:48.552171+00:00,travelpayouts,one_way,prices_for_dates,546
+YTO,Toronto,LAX,Los Angeles,,,F8,637,305,USD,2,,2026-09-29 22:06:48.552171+00:00,travelpayouts,one_way,prices_for_dates,2405
+YTO,Toronto,LAX,Los Angeles,,,AA,5192,342,USD,2,,2026-09-29 22:06:48.552171+00:00,travelpayouts,one_way,prices_for_dates,639
+YTO,Toronto,LAX,Los Angeles,2026-10-14 00:00:00+00:00,,,,225,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,315
+YTO,Toronto,LAX,Los Angeles,2026-10-13 00:00:00+00:00,,,,270,USD,1,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,546
+YTO,Toronto,LAX,Los Angeles,2026-10-03 00:00:00+00:00,,,,302,USD,2,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,2405
+YTO,Toronto,LAX,Los Angeles,2026-10-04 00:00:00+00:00,,,,321,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,2026-10-05 00:00:00+00:00,,,,321,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,2026-10-10 00:00:00+00:00,,,,332,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,2026-10-11 00:00:00+00:00,,,,332,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,2026-10-12 00:00:00+00:00,,,,332,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,2026-10-06 00:00:00+00:00,,,,339,USD,2,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,639
+YTO,Toronto,LAX,Los Angeles,2026-10-07 00:00:00+00:00,,,,367,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,2026-10-08 00:00:00+00:00,,,,367,USD,0,,2026-09-29 22:06:49.076063+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,LAX,Los Angeles,,2026-11-03 19:45:00+00:00,WS,627,376,USD,1,,2026-09-29 22:06:50.689032+00:00,travelpayouts,round_trip,prices_for_dates,1027
+YTO,Toronto,LAX,Los Angeles,,2026-10-19 14:30:00+00:00,PD,663,535,USD,0,,2026-09-29 22:06:50.689032+00:00,travelpayouts,round_trip,prices_for_dates,1190
+YTO,Toronto,LAX,Los Angeles,2026-10-25 00:00:00+00:00,,,,373,USD,1,,2026-09-29 22:06:51.215033+00:00,travelpayouts,round_trip,latest,1027
+YTO,Toronto,LAX,Los Angeles,2026-10-16 00:00:00+00:00,,,,521,USD,1,,2026-09-29 22:06:51.215033+00:00,travelpayouts,round_trip,latest,750
+YTO,Toronto,LAX,Los Angeles,2026-11-26 00:00:00+00:00,,,,226,USD,1,,2026-09-29 22:06:51.698311+00:00,travelpayouts,one_way,month-matrix,472
+YTO,Toronto,LAX,Los Angeles,,,UA,3514,226,USD,1,,2026-09-29 22:06:52.259055+00:00,travelpayouts,one_way,prices_for_dates,472
+YTO,Toronto,LAX,Los Angeles,2026-11-26 00:00:00+00:00,,,,224,USD,1,,2026-09-29 22:06:52.801346+00:00,travelpayouts,one_way,latest,472
+YTO,Toronto,LAX,Los Angeles,2026-11-14 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:06:53.832715+00:00,travelpayouts,round_trip,month-matrix,620
+YTO,Toronto,LAX,Los Angeles,,2026-11-17 01:35:00+00:00,AC,789,407,USD,0,,2026-09-29 22:06:54.319793+00:00,travelpayouts,round_trip,prices_for_dates,620
+YTO,Toronto,LAX,Los Angeles,,2026-12-01 01:35:00+00:00,UA,568,411,USD,1,,2026-09-29 22:06:54.319793+00:00,travelpayouts,round_trip,prices_for_dates,816
+YTO,Toronto,LAX,Los Angeles,2026-11-14 00:00:00+00:00,,,,404,USD,0,,2026-09-29 22:06:54.878202+00:00,travelpayouts,round_trip,latest,620
+YTO,Toronto,LAX,Los Angeles,2026-11-24 00:00:00+00:00,,,,407,USD,1,,2026-09-29 22:06:54.878202+00:00,travelpayouts,round_trip,latest,816
+YTO,Toronto,LAX,Los Angeles,2026-12-19 00:00:00+00:00,,,,290,USD,1,,2026-09-29 22:06:55.366439+00:00,travelpayouts,one_way,month-matrix,514
+YTO,Toronto,LAX,Los Angeles,,,P3,2705,290,USD,1,,2026-09-29 22:06:55.891573+00:00,travelpayouts,one_way,prices_for_dates,514
+YTO,Toronto,LAX,Los Angeles,2026-12-19 00:00:00+00:00,,,,287,USD,1,,2026-09-29 22:06:56.447874+00:00,travelpayouts,one_way,latest,514
+YTO,Toronto,LAX,Los Angeles,,2026-12-12 21:35:00+00:00,PD,663,375,USD,0,,2026-09-29 22:06:58.034016+00:00,travelpayouts,round_trip,prices_for_dates,622
+YTO,Toronto,LAX,Los Angeles,,2026-12-20 01:00:00+00:00,WS,433,467,USD,2,,2026-09-29 22:06:58.034016+00:00,travelpayouts,round_trip,prices_for_dates,1625
+YTO,Toronto,LAX,Los Angeles,2026-12-01 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:06:58.548917+00:00,travelpayouts,round_trip,latest,622
+YTO,Toronto,LAX,Los Angeles,2026-12-15 00:00:00+00:00,,,,463,USD,2,,2026-09-29 22:06:58.548917+00:00,travelpayouts,round_trip,latest,1625
+YTO,Toronto,AMS,Amsterdam,2026-09-29 00:00:00+00:00,,,,261,USD,1,,2026-09-29 22:07:15.367476+00:00,travelpayouts,one_way,month-matrix,900
+YTO,Toronto,AMS,Amsterdam,2026-09-30 00:00:00+00:00,,,,299,USD,1,,2026-09-29 22:07:15.367476+00:00,travelpayouts,one_way,month-matrix,1285
+YTO,Toronto,AMS,Amsterdam,,,TS,230,261,USD,1,,2026-09-29 22:07:15.853878+00:00,travelpayouts,one_way,prices_for_dates,900
+YTO,Toronto,AMS,Amsterdam,,,WS,800,299,USD,1,,2026-09-29 22:07:15.853878+00:00,travelpayouts,one_way,prices_for_dates,1285
+YTO,Toronto,AMS,Amsterdam,2026-09-30 00:00:00+00:00,,,,462,USD,2,,2026-09-29 22:07:16.378499+00:00,travelpayouts,one_way,latest,1345
+YTO,Toronto,AMS,Amsterdam,2026-09-29 00:00:00+00:00,,,,508,USD,2,,2026-09-29 22:07:16.378499+00:00,travelpayouts,one_way,latest,1770
+YTO,Toronto,AMS,Amsterdam,2026-10-10 00:00:00+00:00,,,,230,USD,1,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,1660
+YTO,Toronto,AMS,Amsterdam,2026-10-11 00:00:00+00:00,,,,265,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-05 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-06 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-07 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-08 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-09 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-12 00:00:00+00:00,,,,299,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,445
+YTO,Toronto,AMS,Amsterdam,2026-10-13 00:00:00+00:00,,,,300,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-14 00:00:00+00:00,,,,300,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,445
+YTO,Toronto,AMS,Amsterdam,2026-10-04 00:00:00+00:00,,,,321,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,445
+YTO,Toronto,AMS,Amsterdam,2026-10-03 00:00:00+00:00,,,,338,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,445
+YTO,Toronto,AMS,Amsterdam,2026-10-15 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-16 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-17 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-18 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-19 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-20 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-21 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-22 00:00:00+00:00,,,,375,USD,0,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-10-01 00:00:00+00:00,,,,424,USD,2,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,1935
+YTO,Toronto,AMS,Amsterdam,2026-10-02 00:00:00+00:00,,,,450,USD,2,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,2360
+YTO,Toronto,AMS,Amsterdam,2026-10-23 00:00:00+00:00,,,,450,USD,1,,2026-09-29 22:07:20.603847+00:00,travelpayouts,one_way,month-matrix,1000
+YTO,Toronto,AMS,Amsterdam,,,TS,230,230,USD,1,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,1660
+YTO,Toronto,AMS,Amsterdam,,,TS,376,299,USD,0,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,445
+YTO,Toronto,AMS,Amsterdam,,,TS,376,300,USD,0,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,445
+YTO,Toronto,AMS,Amsterdam,,,TS,376,321,USD,0,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,445
+YTO,Toronto,AMS,Amsterdam,,,TS,376,338,USD,0,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,445
+YTO,Toronto,AMS,Amsterdam,,,TS,541,424,USD,2,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,1935
+YTO,Toronto,AMS,Amsterdam,,,PD,2221,450,USD,2,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,2360
+YTO,Toronto,AMS,Amsterdam,,,AC,836,450,USD,1,,2026-09-29 22:07:21.107152+00:00,travelpayouts,one_way,prices_for_dates,1000
+YTO,Toronto,AMS,Amsterdam,2026-10-10 00:00:00+00:00,,,,228,USD,1,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,1660
+YTO,Toronto,AMS,Amsterdam,2026-10-11 00:00:00+00:00,,,,262,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-05 00:00:00+00:00,,,,273,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-06 00:00:00+00:00,,,,273,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-07 00:00:00+00:00,,,,273,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-08 00:00:00+00:00,,,,273,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-09 00:00:00+00:00,,,,273,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-12 00:00:00+00:00,,,,297,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,445
+YTO,Toronto,AMS,Amsterdam,2026-10-13 00:00:00+00:00,,,,297,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-14 00:00:00+00:00,,,,297,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,445
+YTO,Toronto,AMS,Amsterdam,2026-10-04 00:00:00+00:00,,,,318,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,445
+YTO,Toronto,AMS,Amsterdam,2026-10-03 00:00:00+00:00,,,,335,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,445
+YTO,Toronto,AMS,Amsterdam,2026-10-15 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-16 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-17 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-18 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-19 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-20 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-21 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-22 00:00:00+00:00,,,,372,USD,0,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-10-01 00:00:00+00:00,,,,421,USD,2,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,1935
+YTO,Toronto,AMS,Amsterdam,2026-10-02 00:00:00+00:00,,,,446,USD,2,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,2360
+YTO,Toronto,AMS,Amsterdam,2026-10-23 00:00:00+00:00,,,,446,USD,1,,2026-09-29 22:07:21.665340+00:00,travelpayouts,one_way,latest,1000
+YTO,Toronto,AMS,Amsterdam,,2026-10-17 12:55:00+00:00,TS,376,474,USD,0,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,940
+YTO,Toronto,AMS,Amsterdam,,2026-10-19 12:55:00+00:00,TS,376,496,USD,0,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,940
+YTO,Toronto,AMS,Amsterdam,,2026-11-16 11:05:00+00:00,AC,7862,536,USD,2,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,1615
+YTO,Toronto,AMS,Amsterdam,,2026-11-10 11:05:00+00:00,AC,416,549,USD,2,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,1270
+YTO,Toronto,AMS,Amsterdam,,2026-11-15 06:00:00+00:00,AC,7862,553,USD,2,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,2040
+YTO,Toronto,AMS,Amsterdam,,2026-11-15 06:00:00+00:00,AC,7862,553,USD,2,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,2040
+YTO,Toronto,AMS,Amsterdam,,2026-11-10 15:50:00+00:00,VS,148,555,USD,1,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,1115
+YTO,Toronto,AMS,Amsterdam,,2026-10-17 16:30:00+00:00,AC,428,589,USD,1,,2026-09-29 22:07:23.198117+00:00,travelpayouts,round_trip,prices_for_dates,3245
+YTO,Toronto,AMS,Amsterdam,2026-10-11 00:00:00+00:00,,,,470,USD,0,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,940
+YTO,Toronto,AMS,Amsterdam,2026-10-12 00:00:00+00:00,,,,492,USD,0,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,940
+YTO,Toronto,AMS,Amsterdam,2026-10-30 00:00:00+00:00,,,,531,USD,2,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,1615
+YTO,Toronto,AMS,Amsterdam,2026-10-25 00:00:00+00:00,,,,544,USD,2,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,1270
+YTO,Toronto,AMS,Amsterdam,2026-10-29 00:00:00+00:00,,,,548,USD,2,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,2040
+YTO,Toronto,AMS,Amsterdam,2026-10-30 00:00:00+00:00,,,,548,USD,2,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,2040
+YTO,Toronto,AMS,Amsterdam,2026-10-24 00:00:00+00:00,,,,550,USD,1,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,1115
+YTO,Toronto,AMS,Amsterdam,2026-10-10 00:00:00+00:00,,,,584,USD,2,,2026-09-29 22:07:23.686585+00:00,travelpayouts,round_trip,latest,3245
+YTO,Toronto,AMS,Amsterdam,2026-11-25 00:00:00+00:00,,,,335,USD,3,,2026-09-29 22:07:24.260935+00:00,travelpayouts,one_way,month-matrix,1630
+YTO,Toronto,AMS,Amsterdam,2026-11-26 00:00:00+00:00,,,,350,USD,0,,2026-09-29 22:07:24.260935+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-11-27 00:00:00+00:00,,,,350,USD,0,,2026-09-29 22:07:24.260935+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-11-28 00:00:00+00:00,,,,350,USD,0,,2026-09-29 22:07:24.260935+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-11-29 00:00:00+00:00,,,,366,USD,2,,2026-09-29 22:07:24.260935+00:00,travelpayouts,one_way,month-matrix,1030
+YTO,Toronto,AMS,Amsterdam,,,PD,2471,335,USD,3,,2026-09-29 22:07:24.794340+00:00,travelpayouts,one_way,prices_for_dates,1630
+YTO,Toronto,AMS,Amsterdam,,,PD,2477,366,USD,2,,2026-09-29 22:07:24.794340+00:00,travelpayouts,one_way,prices_for_dates,1030
+YTO,Toronto,AMS,Amsterdam,2026-11-25 00:00:00+00:00,,,,332,USD,3,,2026-09-29 22:07:25.288597+00:00,travelpayouts,one_way,latest,1630
+YTO,Toronto,AMS,Amsterdam,2026-11-26 00:00:00+00:00,,,,347,USD,0,,2026-09-29 22:07:25.288597+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-11-27 00:00:00+00:00,,,,347,USD,0,,2026-09-29 22:07:25.288597+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-11-28 00:00:00+00:00,,,,347,USD,0,,2026-09-29 22:07:25.288597+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-11-29 00:00:00+00:00,,,,363,USD,2,,2026-09-29 22:07:25.288597+00:00,travelpayouts,one_way,latest,1030
+YTO,Toronto,AMS,Amsterdam,,2026-12-01 11:55:00+00:00,FI,602,428,USD,1,,2026-09-29 22:07:26.871284+00:00,travelpayouts,round_trip,prices_for_dates,1740
+YTO,Toronto,AMS,Amsterdam,,2026-12-05 11:55:00+00:00,FI,602,430,USD,1,,2026-09-29 22:07:26.871284+00:00,travelpayouts,round_trip,prices_for_dates,1295
+YTO,Toronto,AMS,Amsterdam,,2026-12-05 11:55:00+00:00,FI,602,493,USD,1,,2026-09-29 22:07:26.871284+00:00,travelpayouts,round_trip,prices_for_dates,1295
+YTO,Toronto,AMS,Amsterdam,,2026-11-14 11:05:00+00:00,AC,808,518,USD,0,,2026-09-29 22:07:26.871284+00:00,travelpayouts,round_trip,prices_for_dates,935
+YTO,Toronto,AMS,Amsterdam,,2026-12-01 11:05:00+00:00,AC,808,542,USD,0,,2026-09-29 22:07:26.871284+00:00,travelpayouts,round_trip,prices_for_dates,935
+YTO,Toronto,AMS,Amsterdam,2026-11-21 00:00:00+00:00,,,,427,USD,1,,2026-09-29 22:07:27.370672+00:00,travelpayouts,round_trip,latest,1295
+YTO,Toronto,AMS,Amsterdam,2026-11-22 00:00:00+00:00,,,,489,USD,1,,2026-09-29 22:07:27.370672+00:00,travelpayouts,round_trip,latest,1295
+YTO,Toronto,AMS,Amsterdam,2026-11-19 00:00:00+00:00,,,,491,USD,0,,2026-09-29 22:07:27.370672+00:00,travelpayouts,round_trip,latest,935
+YTO,Toronto,AMS,Amsterdam,2026-11-07 00:00:00+00:00,,,,513,USD,0,,2026-09-29 22:07:27.370672+00:00,travelpayouts,round_trip,latest,935
+YTO,Toronto,AMS,Amsterdam,2026-11-20 00:00:00+00:00,,,,538,USD,0,,2026-09-29 22:07:27.370672+00:00,travelpayouts,round_trip,latest,935
+YTO,Toronto,AMS,Amsterdam,2026-12-02 00:00:00+00:00,,,,352,USD,1,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,1360
+YTO,Toronto,AMS,Amsterdam,2026-12-01 00:00:00+00:00,,,,371,USD,2,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,1250
+YTO,Toronto,AMS,Amsterdam,2026-12-03 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-04 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-05 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-06 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-07 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-08 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-09 00:00:00+00:00,,,,407,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-10 00:00:00+00:00,,,,461,USD,2,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,1010
+YTO,Toronto,AMS,Amsterdam,2026-12-11 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-12 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-13 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-14 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-15 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-16 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-17 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-18 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-19 00:00:00+00:00,,,,559,USD,0,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,AMS,Amsterdam,2026-12-20 00:00:00+00:00,,,,657,USD,1,,2026-09-29 22:07:27.913437+00:00,travelpayouts,one_way,month-matrix,1975
+YTO,Toronto,AMS,Amsterdam,,,TS,480,352,USD,1,,2026-09-29 22:07:28.400590+00:00,travelpayouts,one_way,prices_for_dates,1360
+YTO,Toronto,AMS,Amsterdam,,,TP,258,371,USD,2,,2026-09-29 22:07:28.400590+00:00,travelpayouts,one_way,prices_for_dates,1250
+YTO,Toronto,AMS,Amsterdam,,,TP,258,461,USD,2,,2026-09-29 22:07:28.400590+00:00,travelpayouts,one_way,prices_for_dates,1010
+YTO,Toronto,AMS,Amsterdam,,,TS,122,657,USD,1,,2026-09-29 22:07:28.400590+00:00,travelpayouts,one_way,prices_for_dates,1975
+YTO,Toronto,AMS,Amsterdam,2026-12-02 00:00:00+00:00,,,,349,USD,1,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,1360
+YTO,Toronto,AMS,Amsterdam,2026-12-01 00:00:00+00:00,,,,368,USD,2,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,1250
+YTO,Toronto,AMS,Amsterdam,2026-12-03 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-04 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-05 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-06 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-07 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-08 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-09 00:00:00+00:00,,,,403,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-10 00:00:00+00:00,,,,457,USD,2,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,1010
+YTO,Toronto,AMS,Amsterdam,2026-12-11 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-12 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-13 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-14 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-15 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-16 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-17 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-18 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-19 00:00:00+00:00,,,,554,USD,0,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,AMS,Amsterdam,2026-12-20 00:00:00+00:00,,,,651,USD,1,,2026-09-29 22:07:28.962114+00:00,travelpayouts,one_way,latest,1975
+YTO,Toronto,AMS,Amsterdam,,2026-12-19 11:55:00+00:00,FI,602,667,USD,1,,2026-09-29 22:07:30.542787+00:00,travelpayouts,round_trip,prices_for_dates,1740
+YTO,Toronto,AMS,Amsterdam,,2027-01-07 12:30:00+00:00,VS,148,724,USD,1,,2026-09-29 22:07:30.542787+00:00,travelpayouts,round_trip,prices_for_dates,1690
+YTO,Toronto,AMS,Amsterdam,2026-12-05 00:00:00+00:00,,,,661,USD,1,,2026-09-29 22:07:31.057484+00:00,travelpayouts,round_trip,latest,1740
+YTO,Toronto,AMS,Amsterdam,2026-12-24 00:00:00+00:00,,,,718,USD,1,,2026-09-29 22:07:31.057484+00:00,travelpayouts,round_trip,latest,1690
+YTO,Toronto,YVR,Vancouver,2026-09-30 00:00:00+00:00,,,,390,USD,0,,2026-09-29 22:07:46.265940+00:00,travelpayouts,one_way,month-matrix,315
+YTO,Toronto,YVR,Vancouver,,,WS,713,390,USD,0,,2026-09-29 22:07:46.744952+00:00,travelpayouts,one_way,prices_for_dates,315
+YTO,Toronto,YVR,Vancouver,2026-09-30 00:00:00+00:00,,,,387,USD,0,,2026-09-29 22:07:47.314475+00:00,travelpayouts,one_way,latest,315
+YTO,Toronto,YVR,Vancouver,2026-10-21 00:00:00+00:00,,,,104,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,630
+YTO,Toronto,YVR,Vancouver,2026-10-20 00:00:00+00:00,,,,105,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-19 00:00:00+00:00,,,,106,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,630
+YTO,Toronto,YVR,Vancouver,2026-10-22 00:00:00+00:00,,,,107,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-23 00:00:00+00:00,,,,107,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-24 00:00:00+00:00,,,,107,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-25 00:00:00+00:00,,,,107,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-26 00:00:00+00:00,,,,107,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-27 00:00:00+00:00,,,,107,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-30 00:00:00+00:00,,,,110,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,460
+YTO,Toronto,YVR,Vancouver,2026-10-29 00:00:00+00:00,,,,110,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-28 00:00:00+00:00,,,,110,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,460
+YTO,Toronto,YVR,Vancouver,2026-10-17 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-18 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-14 00:00:00+00:00,,,,174,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,495
+YTO,Toronto,YVR,Vancouver,2026-10-11 00:00:00+00:00,,,,176,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,310
+YTO,Toronto,YVR,Vancouver,2026-10-15 00:00:00+00:00,,,,177,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-10-16 00:00:00+00:00,,,,180,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,530
+YTO,Toronto,YVR,Vancouver,2026-10-13 00:00:00+00:00,,,,189,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,495
+YTO,Toronto,YVR,Vancouver,2026-10-03 00:00:00+00:00,,,,190,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,494
+YTO,Toronto,YVR,Vancouver,2026-10-05 00:00:00+00:00,,,,196,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,310
+YTO,Toronto,YVR,Vancouver,2026-10-06 00:00:00+00:00,,,,196,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,495
+YTO,Toronto,YVR,Vancouver,2026-10-07 00:00:00+00:00,,,,196,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,495
+YTO,Toronto,YVR,Vancouver,2026-10-08 00:00:00+00:00,,,,223,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,309
+YTO,Toronto,YVR,Vancouver,2026-10-12 00:00:00+00:00,,,,231,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,440
+YTO,Toronto,YVR,Vancouver,2026-10-10 00:00:00+00:00,,,,235,USD,1,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,630
+YTO,Toronto,YVR,Vancouver,2026-10-04 00:00:00+00:00,,,,254,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,310
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,273,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,310
+YTO,Toronto,YVR,Vancouver,2026-10-01 00:00:00+00:00,,,,286,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,310
+YTO,Toronto,YVR,Vancouver,2026-10-09 00:00:00+00:00,,,,314,USD,0,,2026-09-29 22:07:51.615221+00:00,travelpayouts,one_way,month-matrix,310
+YTO,Toronto,YVR,Vancouver,,,PD,2525,104,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,630
+YTO,Toronto,YVR,Vancouver,,,P3,2525,106,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,630
+YTO,Toronto,YVR,Vancouver,,,PD,2529,110,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,460
+YTO,Toronto,YVR,Vancouver,,,PD,2529,110,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,460
+YTO,Toronto,YVR,Vancouver,,,PD,2438,174,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,495
+YTO,Toronto,YVR,Vancouver,,,F8,609,176,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,310
+YTO,Toronto,YVR,Vancouver,,,PD,2436,180,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,530
+YTO,Toronto,YVR,Vancouver,,,PD,2438,189,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,495
+YTO,Toronto,YVR,Vancouver,,,PD,125,190,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,494
+YTO,Toronto,YVR,Vancouver,,,F8,601,196,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,310
+YTO,Toronto,YVR,Vancouver,,,PD,2438,196,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,495
+YTO,Toronto,YVR,Vancouver,,,PD,2438,196,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,495
+YTO,Toronto,YVR,Vancouver,,,PD,305,223,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,309
+YTO,Toronto,YVR,Vancouver,,,PD,153,231,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,440
+YTO,Toronto,YVR,Vancouver,,,PD,2525,235,USD,1,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,630
+YTO,Toronto,YVR,Vancouver,,,F8,609,254,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,310
+YTO,Toronto,YVR,Vancouver,,,F8,611,273,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,310
+YTO,Toronto,YVR,Vancouver,,,F8,611,286,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,310
+YTO,Toronto,YVR,Vancouver,,,F8,609,314,USD,0,,2026-09-29 22:07:52.139941+00:00,travelpayouts,one_way,prices_for_dates,310
+YTO,Toronto,YVR,Vancouver,2026-10-21 00:00:00+00:00,,,,103,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,630
+YTO,Toronto,YVR,Vancouver,2026-10-20 00:00:00+00:00,,,,104,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-19 00:00:00+00:00,,,,105,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,630
+YTO,Toronto,YVR,Vancouver,2026-10-22 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-23 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-24 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-25 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-26 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-27 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-30 00:00:00+00:00,,,,109,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,460
+YTO,Toronto,YVR,Vancouver,2026-10-29 00:00:00+00:00,,,,111,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-28 00:00:00+00:00,,,,114,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,460
+YTO,Toronto,YVR,Vancouver,2026-10-17 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-18 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-14 00:00:00+00:00,,,,173,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,495
+YTO,Toronto,YVR,Vancouver,2026-10-11 00:00:00+00:00,,,,174,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,310
+YTO,Toronto,YVR,Vancouver,2026-10-15 00:00:00+00:00,,,,176,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-16 00:00:00+00:00,,,,179,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,530
+YTO,Toronto,YVR,Vancouver,2026-10-13 00:00:00+00:00,,,,187,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,495
+YTO,Toronto,YVR,Vancouver,2026-10-05 00:00:00+00:00,,,,194,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,310
+YTO,Toronto,YVR,Vancouver,2026-10-06 00:00:00+00:00,,,,194,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,495
+YTO,Toronto,YVR,Vancouver,2026-10-07 00:00:00+00:00,,,,205,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,495
+YTO,Toronto,YVR,Vancouver,2026-10-04 00:00:00+00:00,,,,218,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,308
+YTO,Toronto,YVR,Vancouver,2026-10-08 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,309
+YTO,Toronto,YVR,Vancouver,2026-10-03 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,310
+YTO,Toronto,YVR,Vancouver,2026-10-12 00:00:00+00:00,,,,229,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,440
+YTO,Toronto,YVR,Vancouver,2026-10-10 00:00:00+00:00,,,,233,USD,1,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,630
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,271,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,310
+YTO,Toronto,YVR,Vancouver,2026-10-01 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,310
+YTO,Toronto,YVR,Vancouver,2026-10-09 00:00:00+00:00,,,,311,USD,0,,2026-09-29 22:07:52.662036+00:00,travelpayouts,one_way,latest,310
+YTO,Toronto,YVR,Vancouver,2026-10-28 00:00:00+00:00,,,,220,USD,1,,2026-09-29 22:07:53.711765+00:00,travelpayouts,round_trip,month-matrix,870
+YTO,Toronto,YVR,Vancouver,2026-10-13 00:00:00+00:00,,,,301,USD,1,,2026-09-29 22:07:53.711765+00:00,travelpayouts,round_trip,month-matrix,770
+YTO,Toronto,YVR,Vancouver,,2026-11-07 21:20:00+00:00,PD,481,207,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,584
+YTO,Toronto,YVR,Vancouver,,2026-10-28 17:30:00+00:00,PD,2438,215,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,1015
+YTO,Toronto,YVR,Vancouver,,2026-10-30 17:30:00+00:00,PD,2529,220,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,870
+YTO,Toronto,YVR,Vancouver,,2026-10-11 23:50:00+00:00,F8,601,226,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,585
+YTO,Toronto,YVR,Vancouver,,2026-10-22 14:00:00+00:00,F8,601,235,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,880
+YTO,Toronto,YVR,Vancouver,,2026-10-25 23:55:00+00:00,F8,605,245,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,580
+YTO,Toronto,YVR,Vancouver,,2026-10-21 16:30:00+00:00,WS,755,258,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,1445
+YTO,Toronto,YVR,Vancouver,,2026-10-20 16:50:00+00:00,F8,605,290,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,735
+YTO,Toronto,YVR,Vancouver,,2026-10-15 23:50:00+00:00,PD,2438,301,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,770
+YTO,Toronto,YVR,Vancouver,,2026-10-19 14:00:00+00:00,PD,2259,309,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,878
+YTO,Toronto,YVR,Vancouver,,2026-10-06 18:15:00+00:00,F8,603,332,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,590
+YTO,Toronto,YVR,Vancouver,,2026-10-17 14:00:00+00:00,P3,2525,337,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,1200
+YTO,Toronto,YVR,Vancouver,,2026-10-15 05:45:00+00:00,P3,2438,342,USD,1,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,775
+YTO,Toronto,YVR,Vancouver,,2026-10-13 13:00:00+00:00,F8,601,346,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,805
+YTO,Toronto,YVR,Vancouver,,2026-10-18 23:50:00+00:00,F8,601,398,USD,0,,2026-09-29 22:07:54.239237+00:00,travelpayouts,round_trip,prices_for_dates,585
+YTO,Toronto,YVR,Vancouver,2026-10-31 00:00:00+00:00,,,,205,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,584
+YTO,Toronto,YVR,Vancouver,2026-10-25 00:00:00+00:00,,,,213,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,1015
+YTO,Toronto,YVR,Vancouver,2026-10-28 00:00:00+00:00,,,,218,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,870
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,224,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,585
+YTO,Toronto,YVR,Vancouver,2026-10-19 00:00:00+00:00,,,,233,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,880
+YTO,Toronto,YVR,Vancouver,2026-10-21 00:00:00+00:00,,,,243,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,580
+YTO,Toronto,YVR,Vancouver,2026-10-17 00:00:00+00:00,,,,256,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,1445
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,277,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,277,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,277,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,277,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-17 00:00:00+00:00,,,,288,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,735
+YTO,Toronto,YVR,Vancouver,2026-10-13 00:00:00+00:00,,,,299,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,770
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,309,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,309,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,309,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,309,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,309,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,309,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-10-16 00:00:00+00:00,,,,325,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,583
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,329,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,590
+YTO,Toronto,YVR,Vancouver,2026-10-14 00:00:00+00:00,,,,334,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,1200
+YTO,Toronto,YVR,Vancouver,2026-10-11 00:00:00+00:00,,,,339,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,775
+YTO,Toronto,YVR,Vancouver,2026-10-05 00:00:00+00:00,,,,343,USD,1,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,805
+YTO,Toronto,YVR,Vancouver,2026-10-02 00:00:00+00:00,,,,394,USD,0,,2026-09-29 22:07:54.764649+00:00,travelpayouts,round_trip,latest,585
+YTO,Toronto,YVR,Vancouver,2026-11-18 00:00:00+00:00,,,,108,USD,1,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,460
+YTO,Toronto,YVR,Vancouver,2026-11-14 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-15 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-17 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-04 00:00:00+00:00,,,,109,USD,1,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,460
+YTO,Toronto,YVR,Vancouver,2026-11-05 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-06 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-07 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-08 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-09 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-10 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-11 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-12 00:00:00+00:00,,,,109,USD,0,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,YVR,Vancouver,2026-11-13 00:00:00+00:00,,,,109,USD,1,,2026-09-29 22:07:55.285702+00:00,travelpayouts,one_way,month-matrix,460
+YTO,Toronto,YVR,Vancouver,,,P3,2529,108,USD,1,,2026-09-29 22:07:55.809963+00:00,travelpayouts,one_way,prices_for_dates,460
+YTO,Toronto,YVR,Vancouver,,,PD,2529,109,USD,1,,2026-09-29 22:07:55.809963+00:00,travelpayouts,one_way,prices_for_dates,460
+YTO,Toronto,YVR,Vancouver,,,P3,2529,109,USD,1,,2026-09-29 22:07:55.809963+00:00,travelpayouts,one_way,prices_for_dates,460
+YTO,Toronto,YVR,Vancouver,2026-11-18 00:00:00+00:00,,,,107,USD,1,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,460
+YTO,Toronto,YVR,Vancouver,2026-11-04 00:00:00+00:00,,,,108,USD,1,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,460
+YTO,Toronto,YVR,Vancouver,2026-11-05 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-06 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-07 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-08 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-09 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-10 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-11 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-12 00:00:00+00:00,,,,108,USD,0,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-13 00:00:00+00:00,,,,108,USD,1,,2026-09-29 22:07:56.335194+00:00,travelpayouts,one_way,latest,460
+YTO,Toronto,YVR,Vancouver,,2026-11-08 07:30:00+00:00,PD,481,209,USD,0,,2026-09-29 22:07:57.906653+00:00,travelpayouts,round_trip,prices_for_dates,597
+YTO,Toronto,YVR,Vancouver,,2026-11-30 19:30:00+00:00,PD,2438,214,USD,1,,2026-09-29 22:07:57.906653+00:00,travelpayouts,round_trip,prices_for_dates,945
+YTO,Toronto,YVR,Vancouver,,2026-11-22 19:30:00+00:00,P3,2529,234,USD,1,,2026-09-29 22:07:57.906653+00:00,travelpayouts,round_trip,prices_for_dates,905
+YTO,Toronto,YVR,Vancouver,2026-11-01 00:00:00+00:00,,,,207,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,597
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,212,USD,1,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,945
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,222,USD,0,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-11-16 00:00:00+00:00,,,,232,USD,1,,2026-09-29 22:07:58.429776+00:00,travelpayouts,round_trip,latest,905
+YTO,Toronto,YVR,Vancouver,2026-12-15 00:00:00+00:00,,,,114,USD,1,,2026-09-29 22:07:58.955557+00:00,travelpayouts,one_way,month-matrix,460
+YTO,Toronto,YVR,Vancouver,,,PD,2529,114,USD,1,,2026-09-29 22:07:59.483399+00:00,travelpayouts,one_way,prices_for_dates,460
+YTO,Toronto,YVR,Vancouver,2026-12-15 00:00:00+00:00,,,,113,USD,1,,2026-09-29 22:08:00.002948+00:00,travelpayouts,one_way,latest,460
+YTO,Toronto,YVR,Vancouver,2026-12-04 00:00:00+00:00,,,,220,USD,1,,2026-09-29 22:08:01.075652+00:00,travelpayouts,round_trip,month-matrix,905
+YTO,Toronto,YVR,Vancouver,,2026-12-02 07:30:00+00:00,PD,2529,217,USD,1,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,730
+YTO,Toronto,YVR,Vancouver,,2026-12-06 19:30:00+00:00,PD,2529,220,USD,1,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,905
+YTO,Toronto,YVR,Vancouver,,2026-12-06 19:30:00+00:00,P3,2529,235,USD,1,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,975
+YTO,Toronto,YVR,Vancouver,,2026-12-12 19:30:00+00:00,PD,2471,239,USD,1,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,1058
+YTO,Toronto,YVR,Vancouver,,2027-01-05 01:55:00+00:00,WS,737,291,USD,0,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,600
+YTO,Toronto,YVR,Vancouver,,2027-01-04 05:55:00+00:00,WS,737,337,USD,0,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,880
+YTO,Toronto,YVR,Vancouver,,2027-01-03 01:35:00+00:00,PD,481,343,USD,0,,2026-09-29 22:08:01.628139+00:00,travelpayouts,round_trip,prices_for_dates,584
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,215,USD,1,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,730
+YTO,Toronto,YVR,Vancouver,2026-12-04 00:00:00+00:00,,,,218,USD,1,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,905
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,226,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,YVR,Vancouver,2026-12-02 00:00:00+00:00,,,,233,USD,1,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,975
+YTO,Toronto,YVR,Vancouver,2026-12-01 00:00:00+00:00,,,,237,USD,1,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,1058
+YTO,Toronto,YVR,Vancouver,2026-12-08 00:00:00+00:00,,,,289,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,600
+YTO,Toronto,YVR,Vancouver,2026-12-08 00:00:00+00:00,,,,334,USD,1,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,880
+YTO,Toronto,YVR,Vancouver,2026-12-15 00:00:00+00:00,,,,340,USD,0,,2026-09-29 22:08:02.191683+00:00,travelpayouts,round_trip,latest,584
+YTO,Toronto,MIA,Miami,2026-09-30 00:00:00+00:00,,,,241,USD,1,,2026-09-29 22:08:21.349011+00:00,travelpayouts,one_way,month-matrix,404
+YTO,Toronto,MIA,Miami,,,AC,418,245,USD,1,,2026-09-29 22:08:21.870857+00:00,travelpayouts,one_way,prices_for_dates,377
+YTO,Toronto,MIA,Miami,2026-09-30 00:00:00+00:00,,,,265,USD,1,,2026-09-29 22:08:22.437503+00:00,travelpayouts,one_way,latest,377
+YTO,Toronto,MIA,Miami,2026-10-27 00:00:00+00:00,,,,147,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-24 00:00:00+00:00,,,,185,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,185,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-11 00:00:00+00:00,,,,200,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-12 00:00:00+00:00,,,,200,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-13 00:00:00+00:00,,,,200,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-14 00:00:00+00:00,,,,200,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-15 00:00:00+00:00,,,,200,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-17 00:00:00+00:00,,,,212,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-18 00:00:00+00:00,,,,212,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-04 00:00:00+00:00,,,,213,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-05 00:00:00+00:00,,,,213,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-06 00:00:00+00:00,,,,213,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-07 00:00:00+00:00,,,,213,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-20 00:00:00+00:00,,,,216,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-21 00:00:00+00:00,,,,216,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-22 00:00:00+00:00,,,,216,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-10-16 00:00:00+00:00,,,,231,USD,1,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,998
+YTO,Toronto,MIA,Miami,2026-10-23 00:00:00+00:00,,,,239,USD,1,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,1433
+YTO,Toronto,MIA,Miami,2026-10-08 00:00:00+00:00,,,,277,USD,1,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,388
+YTO,Toronto,MIA,Miami,2026-10-09 00:00:00+00:00,,,,284,USD,1,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,367
+YTO,Toronto,MIA,Miami,2026-10-02 00:00:00+00:00,,,,293,USD,1,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,519
+YTO,Toronto,MIA,Miami,2026-10-01 00:00:00+00:00,,,,296,USD,0,,2026-09-29 22:08:26.678018+00:00,travelpayouts,one_way,month-matrix,217
+YTO,Toronto,MIA,Miami,,,AC,8786,231,USD,1,,2026-09-29 22:08:27.212609+00:00,travelpayouts,one_way,prices_for_dates,998
+YTO,Toronto,MIA,Miami,,,P3,2725,239,USD,1,,2026-09-29 22:08:27.212609+00:00,travelpayouts,one_way,prices_for_dates,1433
+YTO,Toronto,MIA,Miami,,,AA,4623,277,USD,1,,2026-09-29 22:08:27.212609+00:00,travelpayouts,one_way,prices_for_dates,388
+YTO,Toronto,MIA,Miami,,,AA,5667,284,USD,1,,2026-09-29 22:08:27.212609+00:00,travelpayouts,one_way,prices_for_dates,367
+YTO,Toronto,MIA,Miami,,,UA,3705,293,USD,1,,2026-09-29 22:08:27.212609+00:00,travelpayouts,one_way,prices_for_dates,519
+YTO,Toronto,MIA,Miami,,,AA,2589,296,USD,0,,2026-09-29 22:08:27.212609+00:00,travelpayouts,one_way,prices_for_dates,217
+YTO,Toronto,MIA,Miami,2026-10-27 00:00:00+00:00,,,,146,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-24 00:00:00+00:00,,,,183,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,183,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-11 00:00:00+00:00,,,,198,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-12 00:00:00+00:00,,,,198,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-13 00:00:00+00:00,,,,198,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-14 00:00:00+00:00,,,,198,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-15 00:00:00+00:00,,,,198,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-17 00:00:00+00:00,,,,210,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-18 00:00:00+00:00,,,,210,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-20 00:00:00+00:00,,,,214,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-21 00:00:00+00:00,,,,214,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-22 00:00:00+00:00,,,,214,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-16 00:00:00+00:00,,,,229,USD,1,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,998
+YTO,Toronto,MIA,Miami,2026-10-23 00:00:00+00:00,,,,237,USD,1,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,1433
+YTO,Toronto,MIA,Miami,2026-10-08 00:00:00+00:00,,,,275,USD,1,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,388
+YTO,Toronto,MIA,Miami,2026-10-09 00:00:00+00:00,,,,282,USD,1,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,367
+YTO,Toronto,MIA,Miami,2026-10-04 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-05 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-06 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-07 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-10-02 00:00:00+00:00,,,,290,USD,1,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,519
+YTO,Toronto,MIA,Miami,2026-10-03 00:00:00+00:00,,,,290,USD,1,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,441
+YTO,Toronto,MIA,Miami,2026-10-01 00:00:00+00:00,,,,294,USD,0,,2026-09-29 22:08:27.711375+00:00,travelpayouts,one_way,latest,217
+YTO,Toronto,MIA,Miami,,2026-10-15 00:06:00+00:00,AA,5667,396,USD,1,,2026-09-29 22:08:29.270906+00:00,travelpayouts,round_trip,prices_for_dates,570
+YTO,Toronto,MIA,Miami,,2026-10-10 01:45:00+00:00,AC,7866,413,USD,2,,2026-09-29 22:08:29.270906+00:00,travelpayouts,round_trip,prices_for_dates,788
+YTO,Toronto,MIA,Miami,,2026-10-14 01:45:00+00:00,UA,3711,510,USD,1,,2026-09-29 22:08:29.270906+00:00,travelpayouts,round_trip,prices_for_dates,1043
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,250,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,250,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,250,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,250,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-25 00:00:00+00:00,,,,250,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-31 00:00:00+00:00,,,,253,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-31 00:00:00+00:00,,,,253,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-31 00:00:00+00:00,,,,253,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-31 00:00:00+00:00,,,,253,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-31 00:00:00+00:00,,,,253,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-23 00:00:00+00:00,,,,265,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-23 00:00:00+00:00,,,,265,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-23 00:00:00+00:00,,,,265,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-28 00:00:00+00:00,,,,290,USD,0,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,MIA,Miami,2026-10-09 00:00:00+00:00,,,,393,USD,1,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,570
+YTO,Toronto,MIA,Miami,2026-10-05 00:00:00+00:00,,,,410,USD,2,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,788
+YTO,Toronto,MIA,Miami,2026-10-09 00:00:00+00:00,,,,506,USD,1,,2026-09-29 22:08:29.801547+00:00,travelpayouts,round_trip,latest,1043
+YTO,Toronto,MIA,Miami,2026-11-08 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-09 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-10 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-11 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-12 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-13 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-14 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-15 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-16 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-17 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-18 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-19 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-20 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-21 00:00:00+00:00,,,,143,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-23 00:00:00+00:00,,,,150,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-24 00:00:00+00:00,,,,150,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-25 00:00:00+00:00,,,,150,USD,0,,2026-09-29 22:08:30.303071+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-11-08 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-09 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-10 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-11 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-12 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-13 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-14 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-15 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-16 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-17 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-18 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-19 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-20 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-21 00:00:00+00:00,,,,142,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-23 00:00:00+00:00,,,,149,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-24 00:00:00+00:00,,,,149,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-11-25 00:00:00+00:00,,,,149,USD,0,,2026-09-29 22:08:31.352976+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-04 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-05 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-06 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-07 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-08 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-09 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-10 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-11 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-12 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-13 00:00:00+00:00,,,,208,USD,0,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MIA,Miami,2026-12-03 00:00:00+00:00,,,,268,USD,1,,2026-09-29 22:08:33.935792+00:00,travelpayouts,one_way,month-matrix,582
+YTO,Toronto,MIA,Miami,,,UA,1062,268,USD,1,,2026-09-29 22:08:34.461598+00:00,travelpayouts,one_way,prices_for_dates,582
+YTO,Toronto,MIA,Miami,2026-12-04 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-05 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-06 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-07 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-08 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-09 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-10 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-11 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-12 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-13 00:00:00+00:00,,,,206,USD,0,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MIA,Miami,2026-12-03 00:00:00+00:00,,,,266,USD,1,,2026-09-29 22:08:34.988653+00:00,travelpayouts,one_way,latest,582
+YTO,Toronto,MIA,Miami,,2026-12-18 21:45:00+00:00,UA,3500,494,USD,1,,2026-09-29 22:08:36.594942+00:00,travelpayouts,round_trip,prices_for_dates,829
+YTO,Toronto,MIA,Miami,2026-12-03 00:00:00+00:00,,,,490,USD,1,,2026-09-29 22:08:37.083818+00:00,travelpayouts,round_trip,latest,829
+YTO,Toronto,BCN,Barcelona,2026-09-29 00:00:00+00:00,,,,275,USD,2,,2026-09-29 22:08:37.656010+00:00,travelpayouts,one_way,month-matrix,1155
+YTO,Toronto,BCN,Barcelona,2026-09-30 00:00:00+00:00,,,,481,USD,2,,2026-09-29 22:08:37.656010+00:00,travelpayouts,one_way,month-matrix,1325
+YTO,Toronto,BCN,Barcelona,,,TS,230,275,USD,2,,2026-09-29 22:08:38.131052+00:00,travelpayouts,one_way,prices_for_dates,1155
+YTO,Toronto,BCN,Barcelona,,,PD,2473,481,USD,2,,2026-09-29 22:08:38.131052+00:00,travelpayouts,one_way,prices_for_dates,1325
+YTO,Toronto,BCN,Barcelona,2026-09-29 00:00:00+00:00,,,,273,USD,2,,2026-09-29 22:08:38.653411+00:00,travelpayouts,one_way,latest,1155
+YTO,Toronto,BCN,Barcelona,2026-09-30 00:00:00+00:00,,,,477,USD,2,,2026-09-29 22:08:38.653411+00:00,travelpayouts,one_way,latest,1325
+YTO,Toronto,BCN,Barcelona,2026-10-06 00:00:00+00:00,,,,205,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,1000
+YTO,Toronto,BCN,Barcelona,2026-10-05 00:00:00+00:00,,,,213,USD,0,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,221,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,1165
+YTO,Toronto,BCN,Barcelona,2026-10-11 00:00:00+00:00,,,,260,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,2435
+YTO,Toronto,BCN,Barcelona,2026-10-15 00:00:00+00:00,,,,262,USD,2,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,1160
+YTO,Toronto,BCN,Barcelona,2026-10-13 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,BCN,Barcelona,2026-10-14 00:00:00+00:00,,,,275,USD,0,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,BCN,Barcelona,2026-10-10 00:00:00+00:00,,,,281,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,995
+YTO,Toronto,BCN,Barcelona,2026-10-12 00:00:00+00:00,,,,288,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,665
+YTO,Toronto,BCN,Barcelona,2026-10-19 00:00:00+00:00,,,,308,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,1440
+YTO,Toronto,BCN,Barcelona,2026-10-17 00:00:00+00:00,,,,316,USD,0,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,BCN,Barcelona,2026-10-18 00:00:00+00:00,,,,316,USD,0,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,BCN,Barcelona,2026-10-09 00:00:00+00:00,,,,324,USD,2,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,1485
+YTO,Toronto,BCN,Barcelona,2026-10-16 00:00:00+00:00,,,,325,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,1040
+YTO,Toronto,BCN,Barcelona,2026-10-07 00:00:00+00:00,,,,332,USD,2,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,870
+YTO,Toronto,BCN,Barcelona,2026-10-08 00:00:00+00:00,,,,348,USD,1,,2026-09-29 22:08:42.883270+00:00,travelpayouts,one_way,month-matrix,2480
+YTO,Toronto,BCN,Barcelona,,,TS,230,205,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,1000
+YTO,Toronto,BCN,Barcelona,,,TS,230,221,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,1165
+YTO,Toronto,BCN,Barcelona,,,TS,230,260,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,2435
+YTO,Toronto,BCN,Barcelona,,,TS,230,262,USD,2,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,1160
+YTO,Toronto,BCN,Barcelona,,,TS,230,281,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,995
+YTO,Toronto,BCN,Barcelona,,,P3,2485,288,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,665
+YTO,Toronto,BCN,Barcelona,,,PD,7326,308,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,1440
+YTO,Toronto,BCN,Barcelona,,,PD,2221,324,USD,2,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,1485
+YTO,Toronto,BCN,Barcelona,,,TS,308,325,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,1040
+YTO,Toronto,BCN,Barcelona,,,TS,531,332,USD,2,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,870
+YTO,Toronto,BCN,Barcelona,,,TS,308,348,USD,1,,2026-09-29 22:08:43.411534+00:00,travelpayouts,one_way,prices_for_dates,2480
+YTO,Toronto,BCN,Barcelona,2026-10-06 00:00:00+00:00,,,,230,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,660
+YTO,Toronto,BCN,Barcelona,2026-10-05 00:00:00+00:00,,,,239,USD,0,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,248,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,2435
+YTO,Toronto,BCN,Barcelona,2026-10-11 00:00:00+00:00,,,,258,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,2435
+YTO,Toronto,BCN,Barcelona,2026-10-15 00:00:00+00:00,,,,260,USD,2,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,1160
+YTO,Toronto,BCN,Barcelona,2026-10-10 00:00:00+00:00,,,,278,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,995
+YTO,Toronto,BCN,Barcelona,2026-10-13 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-14 00:00:00+00:00,,,,283,USD,0,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-19 00:00:00+00:00,,,,305,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,1440
+YTO,Toronto,BCN,Barcelona,2026-10-12 00:00:00+00:00,,,,305,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,665
+YTO,Toronto,BCN,Barcelona,2026-10-17 00:00:00+00:00,,,,314,USD,0,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-18 00:00:00+00:00,,,,314,USD,0,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-16 00:00:00+00:00,,,,322,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,1040
+YTO,Toronto,BCN,Barcelona,2026-10-07 00:00:00+00:00,,,,329,USD,2,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,870
+YTO,Toronto,BCN,Barcelona,2026-10-08 00:00:00+00:00,,,,345,USD,1,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,2480
+YTO,Toronto,BCN,Barcelona,2026-10-09 00:00:00+00:00,,,,358,USD,2,,2026-09-29 22:08:43.933335+00:00,travelpayouts,one_way,latest,1320
+YTO,Toronto,BCN,Barcelona,,2026-11-18 08:30:00+00:00,P3,2485,566,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2390
+YTO,Toronto,BCN,Barcelona,,2026-11-06 11:45:00+00:00,TS,230,567,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,1910
+YTO,Toronto,BCN,Barcelona,,2026-10-09 08:15:00+00:00,DE,2403,656,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2035
+YTO,Toronto,BCN,Barcelona,,2026-11-08 06:20:00+00:00,TS,480,679,USD,2,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2750
+YTO,Toronto,BCN,Barcelona,,2026-10-06 11:30:00+00:00,AA,3524,686,USD,2,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2104
+YTO,Toronto,BCN,Barcelona,,2026-10-10 09:15:00+00:00,UA,3466,695,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2659
+YTO,Toronto,BCN,Barcelona,,2026-10-10 09:15:00+00:00,UA,8266,698,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,1567
+YTO,Toronto,BCN,Barcelona,,2026-10-10 09:15:00+00:00,AC,3904,698,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2659
+YTO,Toronto,BCN,Barcelona,,2026-10-16 10:50:00+00:00,AA,4438,716,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,2775
+YTO,Toronto,BCN,Barcelona,,2026-10-17 21:10:00+00:00,AA,4438,874,USD,1,,2026-09-29 22:08:45.518584+00:00,travelpayouts,round_trip,prices_for_dates,3120
+YTO,Toronto,BCN,Barcelona,2026-10-18 00:00:00+00:00,,,,561,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2390
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,562,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,1910
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,627,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-05 00:00:00+00:00,,,,650,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2035
+YTO,Toronto,BCN,Barcelona,2026-10-31 00:00:00+00:00,,,,673,USD,2,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2750
+YTO,Toronto,BCN,Barcelona,2026-10-03 00:00:00+00:00,,,,680,USD,2,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2104
+YTO,Toronto,BCN,Barcelona,2026-10-03 00:00:00+00:00,,,,684,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-03 00:00:00+00:00,,,,684,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-03 00:00:00+00:00,,,,684,USD,0,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,BCN,Barcelona,2026-10-03 00:00:00+00:00,,,,689,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2659
+YTO,Toronto,BCN,Barcelona,2026-10-04 00:00:00+00:00,,,,692,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,1567
+YTO,Toronto,BCN,Barcelona,2026-10-05 00:00:00+00:00,,,,692,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2659
+YTO,Toronto,BCN,Barcelona,2026-10-09 00:00:00+00:00,,,,710,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,2775
+YTO,Toronto,BCN,Barcelona,2026-10-09 00:00:00+00:00,,,,866,USD,1,,2026-09-29 22:08:45.996130+00:00,travelpayouts,round_trip,latest,3120
+YTO,Toronto,BCN,Barcelona,2026-11-09 00:00:00+00:00,,,,298,USD,1,,2026-09-29 22:08:46.518209+00:00,travelpayouts,one_way,month-matrix,1725
+YTO,Toronto,BCN,Barcelona,2026-11-06 00:00:00+00:00,,,,341,USD,1,,2026-09-29 22:08:46.518209+00:00,travelpayouts,one_way,month-matrix,1725
+YTO,Toronto,BCN,Barcelona,2026-11-03 00:00:00+00:00,,,,395,USD,1,,2026-09-29 22:08:46.518209+00:00,travelpayouts,one_way,month-matrix,735
+YTO,Toronto,BCN,Barcelona,,,PD,2487,298,USD,1,,2026-09-29 22:08:47.082488+00:00,travelpayouts,one_way,prices_for_dates,1725
+YTO,Toronto,BCN,Barcelona,,,TS,7041,341,USD,1,,2026-09-29 22:08:47.082488+00:00,travelpayouts,one_way,prices_for_dates,1725
+YTO,Toronto,BCN,Barcelona,,,TP,258,395,USD,1,,2026-09-29 22:08:47.082488+00:00,travelpayouts,one_way,prices_for_dates,735
+YTO,Toronto,BCN,Barcelona,2026-11-09 00:00:00+00:00,,,,295,USD,1,,2026-09-29 22:08:47.598500+00:00,travelpayouts,one_way,latest,1725
+YTO,Toronto,BCN,Barcelona,2026-11-06 00:00:00+00:00,,,,338,USD,1,,2026-09-29 22:08:47.598500+00:00,travelpayouts,one_way,latest,1725
+YTO,Toronto,BCN,Barcelona,2026-11-03 00:00:00+00:00,,,,392,USD,1,,2026-09-29 22:08:47.598500+00:00,travelpayouts,one_way,latest,735
+YTO,Toronto,BCN,Barcelona,,2026-11-29 08:30:00+00:00,PD,2471,604,USD,1,,2026-09-29 22:08:49.191083+00:00,travelpayouts,round_trip,prices_for_dates,1585
+YTO,Toronto,BCN,Barcelona,,2026-11-29 05:45:00+00:00,TP,262,609,USD,1,,2026-09-29 22:08:49.191083+00:00,travelpayouts,round_trip,prices_for_dates,1755
+YTO,Toronto,BCN,Barcelona,,2026-11-15 05:20:00+00:00,AC,7976,701,USD,1,,2026-09-29 22:08:49.191083+00:00,travelpayouts,round_trip,prices_for_dates,2820
+YTO,Toronto,BCN,Barcelona,,2026-11-28 08:55:00+00:00,AC,7958,710,USD,1,,2026-09-29 22:08:49.191083+00:00,travelpayouts,round_trip,prices_for_dates,1750
+YTO,Toronto,BCN,Barcelona,,2026-11-15 11:00:00+00:00,AA,2589,716,USD,1,,2026-09-29 22:08:49.191083+00:00,travelpayouts,round_trip,prices_for_dates,2016
+YTO,Toronto,BCN,Barcelona,,2026-11-27 13:40:00+00:00,BA,98,727,USD,1,,2026-09-29 22:08:49.191083+00:00,travelpayouts,round_trip,prices_for_dates,1405
+YTO,Toronto,BCN,Barcelona,2026-11-21 00:00:00+00:00,,,,599,USD,1,,2026-09-29 22:08:49.665327+00:00,travelpayouts,round_trip,latest,1585
+YTO,Toronto,BCN,Barcelona,2026-11-22 00:00:00+00:00,,,,604,USD,1,,2026-09-29 22:08:49.665327+00:00,travelpayouts,round_trip,latest,1755
+YTO,Toronto,BCN,Barcelona,2026-11-02 00:00:00+00:00,,,,695,USD,1,,2026-09-29 22:08:49.665327+00:00,travelpayouts,round_trip,latest,2820
+YTO,Toronto,BCN,Barcelona,2026-11-21 00:00:00+00:00,,,,704,USD,1,,2026-09-29 22:08:49.665327+00:00,travelpayouts,round_trip,latest,1750
+YTO,Toronto,BCN,Barcelona,2026-11-01 00:00:00+00:00,,,,710,USD,1,,2026-09-29 22:08:49.665327+00:00,travelpayouts,round_trip,latest,2016
+YTO,Toronto,BCN,Barcelona,2026-11-19 00:00:00+00:00,,,,721,USD,1,,2026-09-29 22:08:49.665327+00:00,travelpayouts,round_trip,latest,1405
+YTO,Toronto,BCN,Barcelona,,,TP,262,394,USD,1,2026-09-29 23:08:51+00:00,2026-09-29 22:08:51.832952+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,BCN,Barcelona,,,TP,258,412,USD,1,2026-09-29 23:08:51+00:00,2026-09-29 22:08:51.832952+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,BCN,Barcelona,,,S4,322,1022,USD,2,2026-09-29 23:08:51+00:00,2026-09-29 22:08:51.832952+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,BCN,Barcelona,,2027-01-13 13:35:00+00:00,TP,262,394,USD,1,,2026-09-29 22:08:53.381067+00:00,travelpayouts,round_trip,prices_for_dates,2520
+YTO,Toronto,BCN,Barcelona,,2027-01-13 17:05:00+00:00,TP,258,412,USD,1,,2026-09-29 22:08:53.381067+00:00,travelpayouts,round_trip,prices_for_dates,3055
+YTO,Toronto,BCN,Barcelona,,2027-01-03 17:05:00+00:00,S4,322,1022,USD,2,,2026-09-29 22:08:53.381067+00:00,travelpayouts,round_trip,prices_for_dates,4195
+YTO,Toronto,BCN,Barcelona,2026-12-02 00:00:00+00:00,,,,390,USD,1,,2026-09-29 22:08:53.904284+00:00,travelpayouts,round_trip,latest,2520
+YTO,Toronto,BCN,Barcelona,2026-12-03 00:00:00+00:00,,,,408,USD,1,,2026-09-29 22:08:53.904284+00:00,travelpayouts,round_trip,latest,3055
+YTO,Toronto,BCN,Barcelona,2026-12-22 00:00:00+00:00,,,,1013,USD,2,,2026-09-29 22:08:53.904284+00:00,travelpayouts,round_trip,latest,4195
+YTO,Toronto,MAD,Madrid,2026-09-29 00:00:00+00:00,,,,470,USD,2,,2026-09-29 22:08:54.462149+00:00,travelpayouts,one_way,month-matrix,2590
+YTO,Toronto,MAD,Madrid,,,TS,308,470,USD,2,,2026-09-29 22:08:54.964132+00:00,travelpayouts,one_way,prices_for_dates,2590
+YTO,Toronto,MAD,Madrid,2026-09-29 00:00:00+00:00,,,,466,USD,2,,2026-09-29 22:08:55.431469+00:00,travelpayouts,one_way,latest,2590
+YTO,Toronto,MAD,Madrid,2026-10-10 00:00:00+00:00,,,,330,USD,3,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,1080
+YTO,Toronto,MAD,Madrid,2026-10-11 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-12 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-13 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-14 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-15 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-16 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-17 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-18 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,MAD,Madrid,2026-10-19 00:00:00+00:00,,,,330,USD,1,,2026-09-29 22:08:59.665354+00:00,travelpayouts,one_way,month-matrix,645
+YTO,Toronto,MAD,Madrid,,,WS,46,330,USD,3,,2026-09-29 22:09:00.189919+00:00,travelpayouts,one_way,prices_for_dates,1080
+YTO,Toronto,MAD,Madrid,,,PD,2485,330,USD,1,,2026-09-29 22:09:00.189919+00:00,travelpayouts,one_way,prices_for_dates,645
+YTO,Toronto,MAD,Madrid,2026-10-10 00:00:00+00:00,,,,327,USD,3,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,1080
+YTO,Toronto,MAD,Madrid,2026-10-11 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-12 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-13 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-14 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-15 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-16 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-17 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-18 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,MAD,Madrid,2026-10-19 00:00:00+00:00,,,,327,USD,1,,2026-09-29 22:09:00.711599+00:00,travelpayouts,one_way,latest,645
+YTO,Toronto,MAD,Madrid,,2026-11-14 12:15:00+00:00,AA,5884,728,USD,1,,2026-09-29 22:09:02.287741+00:00,travelpayouts,round_trip,prices_for_dates,1570
+YTO,Toronto,MAD,Madrid,,2026-10-05 14:20:00+00:00,AA,4542,736,USD,1,,2026-09-29 22:09:02.287741+00:00,travelpayouts,round_trip,prices_for_dates,2405
+YTO,Toronto,MAD,Madrid,2026-10-31 00:00:00+00:00,,,,722,USD,1,,2026-09-29 22:09:02.833315+00:00,travelpayouts,round_trip,latest,1570
+YTO,Toronto,MAD,Madrid,2026-10-01 00:00:00+00:00,,,,730,USD,1,,2026-09-29 22:09:02.833315+00:00,travelpayouts,round_trip,latest,2405
+YTO,Toronto,MAD,Madrid,2026-11-23 00:00:00+00:00,,,,334,USD,1,,2026-09-29 22:09:03.350765+00:00,travelpayouts,one_way,month-matrix,745
+YTO,Toronto,MAD,Madrid,,,TP,262,334,USD,1,,2026-09-29 22:09:03.863117+00:00,travelpayouts,one_way,prices_for_dates,745
+YTO,Toronto,MAD,Madrid,2026-11-23 00:00:00+00:00,,,,331,USD,1,,2026-09-29 22:09:04.387746+00:00,travelpayouts,one_way,latest,745
+YTO,Toronto,MAD,Madrid,,2026-11-15 15:20:00+00:00,AA,4369,733,USD,1,,2026-09-29 22:09:05.961650+00:00,travelpayouts,round_trip,prices_for_dates,2272
+YTO,Toronto,MAD,Madrid,2026-11-01 00:00:00+00:00,,,,727,USD,1,,2026-09-29 22:09:06.437780+00:00,travelpayouts,round_trip,latest,2272
+YTO,Toronto,MAD,Madrid,,,TP,258,633,USD,1,2026-09-29 23:09:08+00:00,2026-09-29 22:09:08.611133+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,MAD,Madrid,,2026-12-13 06:40:00+00:00,TP,258,633,USD,1,,2026-09-29 22:09:10.108810+00:00,travelpayouts,round_trip,prices_for_dates,1475
+YTO,Toronto,MAD,Madrid,2026-12-01 00:00:00+00:00,,,,628,USD,1,,2026-09-29 22:09:10.671294+00:00,travelpayouts,round_trip,latest,1475
+YTO,Toronto,SFO,San Francisco,2026-10-04 00:00:00+00:00,,,,287,USD,0,,2026-09-29 22:09:17.493683+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,SFO,San Francisco,2026-10-05 00:00:00+00:00,,,,287,USD,0,,2026-09-29 22:09:17.493683+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,SFO,San Francisco,2026-10-08 00:00:00+00:00,,,,330,USD,0,,2026-09-29 22:09:17.493683+00:00,travelpayouts,one_way,month-matrix,338
+YTO,Toronto,SFO,San Francisco,,,UA,565,330,USD,0,,2026-09-29 22:09:18.023153+00:00,travelpayouts,one_way,prices_for_dates,338
+YTO,Toronto,SFO,San Francisco,2026-10-04 00:00:00+00:00,,,,284,USD,0,,2026-09-29 22:09:18.539740+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,SFO,San Francisco,2026-10-05 00:00:00+00:00,,,,284,USD,0,,2026-09-29 22:09:18.539740+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,SFO,San Francisco,2026-10-08 00:00:00+00:00,,,,327,USD,0,,2026-09-29 22:09:18.539740+00:00,travelpayouts,one_way,latest,338
+YTO,Toronto,SFO,San Francisco,,2026-10-09 12:00:00+00:00,AC,7968,617,USD,1,,2026-09-29 22:09:20.121643+00:00,travelpayouts,round_trip,prices_for_dates,1414
+YTO,Toronto,SFO,San Francisco,2026-10-04 00:00:00+00:00,,,,612,USD,1,,2026-09-29 22:09:20.638949+00:00,travelpayouts,round_trip,latest,1414
+YTO,Toronto,SFO,San Francisco,,,PD,671,316,USD,0,2026-09-29 23:09:22+00:00,2026-09-29 22:09:22.732225+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,SFO,San Francisco,,2026-11-17 21:45:00+00:00,PD,671,316,USD,0,,2026-09-29 22:09:24.307984+00:00,travelpayouts,round_trip,prices_for_dates,649
+YTO,Toronto,SFO,San Francisco,2026-11-14 00:00:00+00:00,,,,314,USD,0,,2026-09-29 22:09:24.831425+00:00,travelpayouts,round_trip,latest,649
+YTO,Toronto,HKG,Hong Kong,2026-10-16 00:00:00+00:00,,,,517,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,2365
+YTO,Toronto,HKG,Hong Kong,2026-10-17 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-18 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-19 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-20 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-21 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-22 00:00:00+00:00,,,,519,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-23 00:00:00+00:00,,,,520,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,1925
+YTO,Toronto,HKG,Hong Kong,2026-10-07 00:00:00+00:00,,,,539,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,1790
+YTO,Toronto,HKG,Hong Kong,2026-10-03 00:00:00+00:00,,,,587,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,2340
+YTO,Toronto,HKG,Hong Kong,2026-10-08 00:00:00+00:00,,,,668,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-09 00:00:00+00:00,,,,668,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,668,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-11 00:00:00+00:00,,,,668,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-15 00:00:00+00:00,,,,689,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,1475
+YTO,Toronto,HKG,Hong Kong,2026-10-14 00:00:00+00:00,,,,700,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-06 00:00:00+00:00,,,,702,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-13 00:00:00+00:00,,,,711,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,1675
+YTO,Toronto,HKG,Hong Kong,2026-10-04 00:00:00+00:00,,,,726,USD,0,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,HKG,Hong Kong,2026-10-12 00:00:00+00:00,,,,796,USD,3,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,2405
+YTO,Toronto,HKG,Hong Kong,2026-10-05 00:00:00+00:00,,,,865,USD,2,,2026-09-29 22:10:13.029540+00:00,travelpayouts,one_way,month-matrix,1675
+YTO,Toronto,HKG,Hong Kong,,,WS,729,517,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,2365
+YTO,Toronto,HKG,Hong Kong,,,WS,3035,520,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,1925
+YTO,Toronto,HKG,Hong Kong,,,WS,719,539,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,1790
+YTO,Toronto,HKG,Hong Kong,,,WS,46,587,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,2340
+YTO,Toronto,HKG,Hong Kong,,,AC,739,689,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,1475
+YTO,Toronto,HKG,Hong Kong,,,AS,391,711,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,1675
+YTO,Toronto,HKG,Hong Kong,,,WS,627,796,USD,3,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,2405
+YTO,Toronto,HKG,Hong Kong,,,AS,391,865,USD,2,,2026-09-29 22:10:13.554820+00:00,travelpayouts,one_way,prices_for_dates,1675
+YTO,Toronto,HKG,Hong Kong,2026-10-16 00:00:00+00:00,,,,513,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,2365
+YTO,Toronto,HKG,Hong Kong,2026-10-17 00:00:00+00:00,,,,514,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-18 00:00:00+00:00,,,,514,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-19 00:00:00+00:00,,,,514,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-20 00:00:00+00:00,,,,514,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-21 00:00:00+00:00,,,,514,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-22 00:00:00+00:00,,,,514,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-23 00:00:00+00:00,,,,515,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,1925
+YTO,Toronto,HKG,Hong Kong,2026-10-07 00:00:00+00:00,,,,535,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,1790
+YTO,Toronto,HKG,Hong Kong,2026-10-03 00:00:00+00:00,,,,582,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,2340
+YTO,Toronto,HKG,Hong Kong,2026-10-08 00:00:00+00:00,,,,662,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-09 00:00:00+00:00,,,,662,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,662,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-11 00:00:00+00:00,,,,662,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-15 00:00:00+00:00,,,,684,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,1475
+YTO,Toronto,HKG,Hong Kong,2026-10-14 00:00:00+00:00,,,,694,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-06 00:00:00+00:00,,,,696,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-13 00:00:00+00:00,,,,705,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,1675
+YTO,Toronto,HKG,Hong Kong,2026-10-04 00:00:00+00:00,,,,720,USD,0,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-12 00:00:00+00:00,,,,789,USD,3,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,2405
+YTO,Toronto,HKG,Hong Kong,2026-10-05 00:00:00+00:00,,,,857,USD,2,,2026-09-29 22:10:14.086297+00:00,travelpayouts,one_way,latest,1675
+YTO,Toronto,HKG,Hong Kong,,2026-10-27 14:55:00+00:00,WS,3035,858,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,4370
+YTO,Toronto,HKG,Hong Kong,,2026-11-01 14:55:00+00:00,WS,729,876,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,4420
+YTO,Toronto,HKG,Hong Kong,,2026-10-30 05:30:00+00:00,WS,3035,878,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,3080
+YTO,Toronto,HKG,Hong Kong,,2026-10-22 15:15:00+00:00,WS,3035,878,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,4360
+YTO,Toronto,HKG,Hong Kong,,2026-10-21 14:55:00+00:00,AS,391,1161,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,2830
+YTO,Toronto,HKG,Hong Kong,,2026-10-27 14:55:00+00:00,PR,119,1288,USD,1,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,3805
+YTO,Toronto,HKG,Hong Kong,,2026-10-27 15:00:00+00:00,AS,391,1315,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,2860
+YTO,Toronto,HKG,Hong Kong,,2026-10-29 15:00:00+00:00,AS,391,1315,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,2860
+YTO,Toronto,HKG,Hong Kong,,2026-10-22 11:40:00+00:00,AS,391,1415,USD,2,,2026-09-29 22:10:15.692694+00:00,travelpayouts,round_trip,prices_for_dates,3025
+YTO,Toronto,HKG,Hong Kong,2026-10-15 00:00:00+00:00,,,,851,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,4370
+YTO,Toronto,HKG,Hong Kong,2026-10-29 00:00:00+00:00,,,,869,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,4420
+YTO,Toronto,HKG,Hong Kong,2026-10-05 00:00:00+00:00,,,,870,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,3080
+YTO,Toronto,HKG,Hong Kong,2026-10-16 00:00:00+00:00,,,,870,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,4360
+YTO,Toronto,HKG,Hong Kong,2026-10-13 00:00:00+00:00,,,,1151,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,2830
+YTO,Toronto,HKG,Hong Kong,2026-10-08 00:00:00+00:00,,,,1277,USD,1,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,3805
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1304,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,2860
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1304,USD,0,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1304,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,2860
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1353,USD,0,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1353,USD,0,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1353,USD,0,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1353,USD,0,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-10-10 00:00:00+00:00,,,,1403,USD,2,,2026-09-29 22:10:16.227303+00:00,travelpayouts,round_trip,latest,3025
+YTO,Toronto,HKG,Hong Kong,,,WS,737,1115,USD,1,2026-09-29 23:10:17+00:00,2026-09-29 22:10:18.304340+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,HKG,Hong Kong,,2026-11-30 15:00:00+00:00,WS,737,1115,USD,1,,2026-09-29 22:10:19.854924+00:00,travelpayouts,round_trip,prices_for_dates,4385
+YTO,Toronto,HKG,Hong Kong,2026-11-01 00:00:00+00:00,,,,1105,USD,1,,2026-09-29 22:10:20.416344+00:00,travelpayouts,round_trip,latest,4385
+YTO,Toronto,HKG,Hong Kong,2026-12-25 00:00:00+00:00,,,,515,USD,2,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,2075
+YTO,Toronto,HKG,Hong Kong,2026-12-28 00:00:00+00:00,,,,516,USD,2,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,2195
+YTO,Toronto,HKG,Hong Kong,2026-12-27 00:00:00+00:00,,,,529,USD,2,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,1730
+YTO,Toronto,HKG,Hong Kong,2026-12-29 00:00:00+00:00,,,,529,USD,2,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,1730
+YTO,Toronto,HKG,Hong Kong,2026-12-26 00:00:00+00:00,,,,540,USD,2,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,1865
+YTO,Toronto,HKG,Hong Kong,2026-12-30 00:00:00+00:00,,,,620,USD,1,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,1825
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,845,USD,3,,2026-09-29 22:10:20.912951+00:00,travelpayouts,one_way,month-matrix,2285
+YTO,Toronto,HKG,Hong Kong,,,WS,3039,515,USD,2,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,2075
+YTO,Toronto,HKG,Hong Kong,,,WS,729,516,USD,2,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,2195
+YTO,Toronto,HKG,Hong Kong,,,WS,713,529,USD,2,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,1730
+YTO,Toronto,HKG,Hong Kong,,,WS,713,529,USD,2,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,1730
+YTO,Toronto,HKG,Hong Kong,,,WS,713,540,USD,2,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,1865
+YTO,Toronto,HKG,Hong Kong,,,MU,208,620,USD,1,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,1825
+YTO,Toronto,HKG,Hong Kong,,,UA,1810,845,USD,3,,2026-09-29 22:10:21.464478+00:00,travelpayouts,one_way,prices_for_dates,2285
+YTO,Toronto,HKG,Hong Kong,2026-12-25 00:00:00+00:00,,,,511,USD,2,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,2075
+YTO,Toronto,HKG,Hong Kong,2026-12-28 00:00:00+00:00,,,,512,USD,2,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,2195
+YTO,Toronto,HKG,Hong Kong,2026-12-27 00:00:00+00:00,,,,525,USD,2,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,1730
+YTO,Toronto,HKG,Hong Kong,2026-12-29 00:00:00+00:00,,,,525,USD,2,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,1730
+YTO,Toronto,HKG,Hong Kong,2026-12-26 00:00:00+00:00,,,,536,USD,2,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,1865
+YTO,Toronto,HKG,Hong Kong,2026-12-30 00:00:00+00:00,,,,615,USD,1,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,1825
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,838,USD,3,,2026-09-29 22:10:22.014233+00:00,travelpayouts,one_way,latest,2285
+YTO,Toronto,HKG,Hong Kong,,2027-01-06 05:30:00+00:00,PR,119,813,USD,1,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,4565
+YTO,Toronto,HKG,Hong Kong,,2027-01-06 05:30:00+00:00,WS,729,887,USD,2,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,4925
+YTO,Toronto,HKG,Hong Kong,,2027-01-06 03:25:00+00:00,WS,3039,954,USD,2,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,4585
+YTO,Toronto,HKG,Hong Kong,,2027-01-07 15:00:00+00:00,PR,119,1348,USD,1,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,3900
+YTO,Toronto,HKG,Hong Kong,,2027-01-07 14:55:00+00:00,PR,119,1610,USD,1,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,3865
+YTO,Toronto,HKG,Hong Kong,,2027-01-03 05:30:00+00:00,PR,119,1675,USD,1,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,2990
+YTO,Toronto,HKG,Hong Kong,,2027-01-04 04:35:00+00:00,AA,1169,1792,USD,2,,2026-09-29 22:10:23.536142+00:00,travelpayouts,round_trip,prices_for_dates,3490
+YTO,Toronto,HKG,Hong Kong,2026-12-10 00:00:00+00:00,,,,806,USD,2,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,4565
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,879,USD,2,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,4925
+YTO,Toronto,HKG,Hong Kong,2026-12-23 00:00:00+00:00,,,,946,USD,2,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,4585
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,1328,USD,0,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,HKG,Hong Kong,2026-12-10 00:00:00+00:00,,,,1336,USD,1,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,3900
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,1597,USD,1,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,3865
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,1661,USD,2,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,2990
+YTO,Toronto,HKG,Hong Kong,2026-12-24 00:00:00+00:00,,,,1777,USD,2,,2026-09-29 22:10:24.047853+00:00,travelpayouts,round_trip,latest,3490
+YTO,Toronto,SIN,Singapore,2026-10-12 00:00:00+00:00,,,,372,USD,1,,2026-09-29 22:10:30.864891+00:00,travelpayouts,one_way,month-matrix,1415
+YTO,Toronto,SIN,Singapore,2026-10-08 00:00:00+00:00,,,,544,USD,2,,2026-09-29 22:10:30.864891+00:00,travelpayouts,one_way,month-matrix,2460
+YTO,Toronto,SIN,Singapore,2026-10-23 00:00:00+00:00,,,,612,USD,2,,2026-09-29 22:10:30.864891+00:00,travelpayouts,one_way,month-matrix,2060
+YTO,Toronto,SIN,Singapore,2026-10-13 00:00:00+00:00,,,,715,USD,2,,2026-09-29 22:10:30.864891+00:00,travelpayouts,one_way,month-matrix,2015
+YTO,Toronto,SIN,Singapore,,,AI,190,372,USD,1,,2026-09-29 22:10:31.389173+00:00,travelpayouts,one_way,prices_for_dates,1415
+YTO,Toronto,SIN,Singapore,,,WS,729,544,USD,2,,2026-09-29 22:10:31.389173+00:00,travelpayouts,one_way,prices_for_dates,2460
+YTO,Toronto,SIN,Singapore,,,PD,2129,612,USD,2,,2026-09-29 22:10:31.389173+00:00,travelpayouts,one_way,prices_for_dates,2060
+YTO,Toronto,SIN,Singapore,,,UA,5874,715,USD,2,,2026-09-29 22:10:31.389173+00:00,travelpayouts,one_way,prices_for_dates,2015
+YTO,Toronto,SIN,Singapore,2026-10-12 00:00:00+00:00,,,,368,USD,1,,2026-09-29 22:10:31.921607+00:00,travelpayouts,one_way,latest,1415
+YTO,Toronto,SIN,Singapore,2026-10-08 00:00:00+00:00,,,,540,USD,2,,2026-09-29 22:10:31.921607+00:00,travelpayouts,one_way,latest,2460
+YTO,Toronto,SIN,Singapore,2026-10-23 00:00:00+00:00,,,,607,USD,2,,2026-09-29 22:10:31.921607+00:00,travelpayouts,one_way,latest,2060
+YTO,Toronto,SIN,Singapore,2026-10-13 00:00:00+00:00,,,,709,USD,2,,2026-09-29 22:10:31.921607+00:00,travelpayouts,one_way,latest,2015
+YTO,Toronto,SIN,Singapore,,2026-10-19 12:35:00+00:00,UA,5874,1178,USD,2,,2026-09-29 22:10:33.483418+00:00,travelpayouts,round_trip,prices_for_dates,3360
+YTO,Toronto,SIN,Singapore,2026-10-13 00:00:00+00:00,,,,1168,USD,2,,2026-09-29 22:10:34.049741+00:00,travelpayouts,round_trip,latest,3360
+YTO,Toronto,SIN,Singapore,,,PR,3037,956,USD,2,2026-09-29 23:10:42+00:00,2026-09-29 22:10:42.471505+00:00,travelpayouts,one_way,calendar,
+YTO,Toronto,SIN,Singapore,,2027-01-02 06:20:00+00:00,PR,3039,956,USD,2,,2026-09-29 22:10:43.999149+00:00,travelpayouts,round_trip,prices_for_dates,3890
+YTO,Toronto,SIN,Singapore,2026-12-25 00:00:00+00:00,,,,948,USD,2,,2026-09-29 22:10:44.499389+00:00,travelpayouts,round_trip,latest,3890
+YTO,Toronto,DEL,New Delhi,2026-09-30 00:00:00+00:00,,,,599,USD,2,,2026-09-29 22:10:45.061013+00:00,travelpayouts,one_way,month-matrix,2550
+YTO,Toronto,DEL,New Delhi,2026-09-29 00:00:00+00:00,,,,676,USD,2,,2026-09-29 22:10:45.061013+00:00,travelpayouts,one_way,month-matrix,2400
+YTO,Toronto,DEL,New Delhi,,,PD,605,599,USD,2,,2026-09-29 22:10:45.544407+00:00,travelpayouts,one_way,prices_for_dates,2550
+YTO,Toronto,DEL,New Delhi,,,AA,4438,676,USD,2,,2026-09-29 22:10:45.544407+00:00,travelpayouts,one_way,prices_for_dates,2400
+YTO,Toronto,DEL,New Delhi,2026-09-30 00:00:00+00:00,,,,594,USD,2,,2026-09-29 22:10:46.105062+00:00,travelpayouts,one_way,latest,2550
+YTO,Toronto,DEL,New Delhi,2026-09-29 00:00:00+00:00,,,,752,USD,3,,2026-09-29 22:10:46.105062+00:00,travelpayouts,one_way,latest,2720
+YTO,Toronto,DEL,New Delhi,2026-10-15 00:00:00+00:00,,,,549,USD,3,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,3340
+YTO,Toronto,DEL,New Delhi,2026-10-07 00:00:00+00:00,,,,562,USD,2,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,1689
+YTO,Toronto,DEL,New Delhi,2026-10-11 00:00:00+00:00,,,,579,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-12 00:00:00+00:00,,,,579,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-13 00:00:00+00:00,,,,579,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-14 00:00:00+00:00,,,,579,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-08 00:00:00+00:00,,,,586,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-09 00:00:00+00:00,,,,586,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-02 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-03 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-04 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-05 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-06 00:00:00+00:00,,,,608,USD,0,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-10-10 00:00:00+00:00,,,,609,USD,3,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,2875
+YTO,Toronto,DEL,New Delhi,2026-10-01 00:00:00+00:00,,,,654,USD,2,,2026-09-29 22:10:50.264034+00:00,travelpayouts,one_way,month-matrix,2475
+YTO,Toronto,DEL,New Delhi,,,P3,2463,549,USD,3,,2026-09-29 22:10:50.789659+00:00,travelpayouts,one_way,prices_for_dates,3340
+YTO,Toronto,DEL,New Delhi,,,AA,4542,562,USD,2,,2026-09-29 22:10:50.789659+00:00,travelpayouts,one_way,prices_for_dates,1689
+YTO,Toronto,DEL,New Delhi,,,TS,230,609,USD,3,,2026-09-29 22:10:50.789659+00:00,travelpayouts,one_way,prices_for_dates,2875
+YTO,Toronto,DEL,New Delhi,,,AC,716,654,USD,2,,2026-09-29 22:10:50.789659+00:00,travelpayouts,one_way,prices_for_dates,2475
+YTO,Toronto,DEL,New Delhi,2026-10-15 00:00:00+00:00,,,,544,USD,3,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,3340
+YTO,Toronto,DEL,New Delhi,2026-10-07 00:00:00+00:00,,,,558,USD,2,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,1689
+YTO,Toronto,DEL,New Delhi,2026-10-11 00:00:00+00:00,,,,574,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-12 00:00:00+00:00,,,,574,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-13 00:00:00+00:00,,,,574,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-14 00:00:00+00:00,,,,574,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-08 00:00:00+00:00,,,,581,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-09 00:00:00+00:00,,,,581,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-02 00:00:00+00:00,,,,603,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-03 00:00:00+00:00,,,,603,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-04 00:00:00+00:00,,,,603,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-05 00:00:00+00:00,,,,603,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-06 00:00:00+00:00,,,,603,USD,0,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-10 00:00:00+00:00,,,,604,USD,3,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,2875
+YTO,Toronto,DEL,New Delhi,2026-10-01 00:00:00+00:00,,,,648,USD,2,,2026-09-29 22:10:51.311558+00:00,travelpayouts,one_way,latest,2475
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1341,USD,2,,2026-09-29 22:10:51.886621+00:00,travelpayouts,round_trip,month-matrix,2660
+YTO,Toronto,DEL,New Delhi,,2026-11-03 16:05:00+00:00,AA,4542,909,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,3413
+YTO,Toronto,DEL,New Delhi,,2026-11-17 16:05:00+00:00,AA,4542,910,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,3413
+YTO,Toronto,DEL,New Delhi,,2026-11-07 22:15:00+00:00,AC,1512,1007,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,3575
+YTO,Toronto,DEL,New Delhi,,2026-10-29 23:05:00+00:00,TS,308,1107,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,3684
+YTO,Toronto,DEL,New Delhi,,2026-10-12 17:15:00+00:00,AA,4556,1145,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,4130
+YTO,Toronto,DEL,New Delhi,,2026-11-14 00:10:00+00:00,AA,4438,1209,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,5079
+YTO,Toronto,DEL,New Delhi,,2026-11-14 00:20:00+00:00,UA,8714,1237,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,3285
+YTO,Toronto,DEL,New Delhi,,2026-10-24 17:20:00+00:00,AA,4542,1341,USD,2,,2026-09-29 22:10:52.927703+00:00,travelpayouts,round_trip,prices_for_dates,2660
+YTO,Toronto,DEL,New Delhi,2026-10-14 00:00:00+00:00,,,,901,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,3413
+YTO,Toronto,DEL,New Delhi,2026-10-07 00:00:00+00:00,,,,903,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,3413
+YTO,Toronto,DEL,New Delhi,2026-10-24 00:00:00+00:00,,,,999,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,3575
+YTO,Toronto,DEL,New Delhi,2026-10-10 00:00:00+00:00,,,,1098,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,3684
+YTO,Toronto,DEL,New Delhi,2026-10-03 00:00:00+00:00,,,,1135,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,4130
+YTO,Toronto,DEL,New Delhi,2026-10-22 00:00:00+00:00,,,,1199,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,5079
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1227,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,3285
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1278,USD,0,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,0
+YTO,Toronto,DEL,New Delhi,2026-10-23 00:00:00+00:00,,,,1330,USD,2,,2026-09-29 22:10:53.454158+00:00,travelpayouts,round_trip,latest,2660
+YTO,Toronto,DEL,New Delhi,2026-11-27 00:00:00+00:00,,,,556,USD,2,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,2670
+YTO,Toronto,DEL,New Delhi,2026-11-11 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-12 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-13 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-14 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-15 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-16 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-17 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-18 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-19 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-20 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-21 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-22 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-23 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-24 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-25 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-26 00:00:00+00:00,,,,563,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-10 00:00:00+00:00,,,,570,USD,2,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,2315
+YTO,Toronto,DEL,New Delhi,2026-11-07 00:00:00+00:00,,,,595,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-08 00:00:00+00:00,,,,595,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-09 00:00:00+00:00,,,,595,USD,0,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-11-06 00:00:00+00:00,,,,621,USD,2,,2026-09-29 22:10:53.971809+00:00,travelpayouts,one_way,month-matrix,1635
+YTO,Toronto,DEL,New Delhi,,,AI,192,556,USD,2,,2026-09-29 22:10:54.493972+00:00,travelpayouts,one_way,prices_for_dates,2670
+YTO,Toronto,DEL,New Delhi,,,AA,4438,570,USD,2,,2026-09-29 22:10:54.493972+00:00,travelpayouts,one_way,prices_for_dates,2315
+YTO,Toronto,DEL,New Delhi,,,AA,4542,621,USD,2,,2026-09-29 22:10:54.493972+00:00,travelpayouts,one_way,prices_for_dates,1635
+YTO,Toronto,DEL,New Delhi,2026-11-27 00:00:00+00:00,,,,551,USD,2,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,2670
+YTO,Toronto,DEL,New Delhi,2026-11-11 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-12 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-13 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-14 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-15 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-16 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-17 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-18 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-19 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-20 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-21 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-22 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-23 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-24 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-25 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-26 00:00:00+00:00,,,,558,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-10 00:00:00+00:00,,,,565,USD,2,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,2315
+YTO,Toronto,DEL,New Delhi,2026-11-07 00:00:00+00:00,,,,590,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-08 00:00:00+00:00,,,,590,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-09 00:00:00+00:00,,,,590,USD,0,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-11-06 00:00:00+00:00,,,,616,USD,2,,2026-09-29 22:10:54.985330+00:00,travelpayouts,one_way,latest,1635
+YTO,Toronto,DEL,New Delhi,,2026-11-22 16:35:00+00:00,AA,4623,1156,USD,2,,2026-09-29 22:10:56.604235+00:00,travelpayouts,round_trip,prices_for_dates,3975
+YTO,Toronto,DEL,New Delhi,,2026-12-03 22:55:00+00:00,EY,22,1309,USD,1,,2026-09-29 22:10:56.604235+00:00,travelpayouts,round_trip,prices_for_dates,3910
+YTO,Toronto,DEL,New Delhi,,2027-01-02 13:00:00+00:00,AA,4542,1465,USD,2,,2026-09-29 22:10:56.604235+00:00,travelpayouts,round_trip,prices_for_dates,4807
+YTO,Toronto,DEL,New Delhi,2026-11-05 00:00:00+00:00,,,,1146,USD,2,,2026-09-29 22:10:57.118984+00:00,travelpayouts,round_trip,latest,3975
+YTO,Toronto,DEL,New Delhi,2026-11-13 00:00:00+00:00,,,,1298,USD,1,,2026-09-29 22:10:57.118984+00:00,travelpayouts,round_trip,latest,3910
+YTO,Toronto,DEL,New Delhi,2026-11-27 00:00:00+00:00,,,,1452,USD,2,,2026-09-29 22:10:57.118984+00:00,travelpayouts,round_trip,latest,4807
+YTO,Toronto,DEL,New Delhi,2026-12-31 00:00:00+00:00,,,,525,USD,2,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,2668
+YTO,Toronto,DEL,New Delhi,2026-12-21 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-22 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-23 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-24 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-25 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-26 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-27 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-28 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-29 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-30 00:00:00+00:00,,,,830,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-15 00:00:00+00:00,,,,838,USD,3,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,1825
+YTO,Toronto,DEL,New Delhi,2026-12-14 00:00:00+00:00,,,,870,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-13 00:00:00+00:00,,,,901,USD,3,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,1715
+YTO,Toronto,DEL,New Delhi,2026-12-16 00:00:00+00:00,,,,987,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-17 00:00:00+00:00,,,,987,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-18 00:00:00+00:00,,,,987,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-19 00:00:00+00:00,,,,987,USD,0,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,0
+YTO,Toronto,DEL,New Delhi,2026-12-20 00:00:00+00:00,,,,1135,USD,4,,2026-09-29 22:10:57.638506+00:00,travelpayouts,one_way,month-matrix,2855
+YTO,Toronto,DEL,New Delhi,,,AA,4623,525,USD,2,,2026-09-29 22:10:58.129799+00:00,travelpayouts,one_way,prices_for_dates,2668
+YTO,Toronto,DEL,New Delhi,,,PD,525,838,USD,3,,2026-09-29 22:10:58.129799+00:00,travelpayouts,one_way,prices_for_dates,1825
+YTO,Toronto,DEL,New Delhi,,,P3,2477,901,USD,3,,2026-09-29 22:10:58.129799+00:00,travelpayouts,one_way,prices_for_dates,1715
+YTO,Toronto,DEL,New Delhi,,,AA,6211,1135,USD,4,,2026-09-29 22:10:58.129799+00:00,travelpayouts,one_way,prices_for_dates,2855
+YTO,Toronto,DEL,New Delhi,2026-12-31 00:00:00+00:00,,,,521,USD,2,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,2668
+YTO,Toronto,DEL,New Delhi,2026-12-21 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-22 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-23 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-24 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-25 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-26 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-27 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-28 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-29 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-30 00:00:00+00:00,,,,823,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-15 00:00:00+00:00,,,,831,USD,3,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,1825
+YTO,Toronto,DEL,New Delhi,2026-12-14 00:00:00+00:00,,,,862,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-13 00:00:00+00:00,,,,893,USD,3,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,1715
+YTO,Toronto,DEL,New Delhi,2026-12-16 00:00:00+00:00,,,,978,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-17 00:00:00+00:00,,,,978,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-18 00:00:00+00:00,,,,978,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-19 00:00:00+00:00,,,,978,USD,0,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,0
+YTO,Toronto,DEL,New Delhi,2026-12-20 00:00:00+00:00,,,,1125,USD,4,,2026-09-29 22:10:58.656064+00:00,travelpayouts,one_way,latest,2855
+YTO,Toronto,DEL,New Delhi,,2027-01-21 16:05:00+00:00,AA,4542,856,USD,2,,2026-09-29 22:11:00.226715+00:00,travelpayouts,round_trip,prices_for_dates,3550
+YTO,Toronto,DEL,New Delhi,,2026-12-04 05:05:00+00:00,AC,8546,1248,USD,2,,2026-09-29 22:11:00.226715+00:00,travelpayouts,round_trip,prices_for_dates,3452
+YTO,Toronto,DEL,New Delhi,,2027-01-18 21:50:00+00:00,AA,5884,1636,USD,2,,2026-09-29 22:11:00.226715+00:00,travelpayouts,round_trip,prices_for_dates,2835
+YTO,Toronto,DEL,New Delhi,,2027-01-10 17:15:00+00:00,QR,768,2100,USD,1,,2026-09-29 22:11:00.226715+00:00,travelpayouts,round_trip,prices_for_dates,3005
+YTO,Toronto,DEL,New Delhi,2026-12-02 00:00:00+00:00,,,,849,USD,2,,2026-09-29 22:11:00.749267+00:00,travelpayouts,round_trip,latest,3550
+YTO,Toronto,DEL,New Delhi,2026-12-01 00:00:00+00:00,,,,1237,USD,2,,2026-09-29 22:11:00.749267+00:00,travelpayouts,round_trip,latest,3452
+YTO,Toronto,DEL,New Delhi,2026-12-15 00:00:00+00:00,,,,1622,USD,2,,2026-09-29 22:11:00.749267+00:00,travelpayouts,round_trip,latest,2835
+YTO,Toronto,DEL,New Delhi,2026-12-18 00:00:00+00:00,,,,2083,USD,1,,2026-09-29 22:11:00.749267+00:00,travelpayouts,round_trip,latest,3005
