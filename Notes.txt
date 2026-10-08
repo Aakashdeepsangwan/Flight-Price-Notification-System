@@ -20,6 +20,7 @@ Purpose of Database
 
 
 
+
 2. BUG — trip_duration is in DAYS, not weeks
 Problem:
 - Config has round_trip_stay_days: [7, 14] (meaning 7- and 14-day stays), but the code divides by 7 before sending:
@@ -35,6 +36,7 @@ ACTION: remove trip_duration from the month-matrix call.
   - returns all stay lengths, at half the API calls
   - filter by length later:  (return_at - departure_at).days
  
+
 
 
 
@@ -65,3 +67,292 @@ Affected (7 of 20 routes) — rows lost per fetch cycle:
 
 FIX (chosen): change config/routes.json to city codes
       JFK->NYC   CDG->PAR   LHR->LON   YUL->YMQ   NRT->TYO   ICN->SEL   PVG->SHA
+
+
+
+
+
+------- Sun Oct 04 -------
+1. NEW FEATURES — found_at, return_stops, origin_airport, destination_airport
+Problem:
+- The API already sends these fields, but the normalizers never read them, so they were thrown away.
+- Raw reply (YTO -> CUN, Nov 02 - Nov 08, $305) showed what we were losing:
+      month-matrix:      found_at = 2026-09-29T16:13:06Z      (we stored fetched_at = Oct 04)
+      prices_for_dates:  return_transfers = 0, origin_airport = YHM, link = ...search_date=29092026...
+
+Why each one matters:
+- found_at -> when the price was REALLY seen. Prices are cached, this one was 5 days old but saved as "now".
+  Wrong timeline for the ML model + alerts can point to prices that are gone.
+- return_stops -> stops on the way BACK. `stops` only counted the way there, so a round trip
+  with 2 stops coming home looked non-stop (and "cheap for no reason").
+- origin_airport / destination_airport -> YTO covers YYZ, YTZ and YHM (Hamilton). Hamilton is
+  often cheaper, and before this the data could not tell them apart.
+
+Where each one comes from:
+                       found_at                    return_stops        origin/destination_airport
+  month-matrix         found_at (exact time, UTC)  -                   -
+  latest               found_at (exact time, UTC)  -                   -
+  prices_for_dates     search_date in `link`       return_transfers    origin_airport / destination_airport
+                       (day only, e.g. 29092026)
+  calendar / cheap     -                           -                   -
+  ("-" = the endpoint does not send it -> saved as empty)
+
+ACTION:
+  - File: `src/ingestion/normalizer.py`
+      - add the 4 columns to CSV_COLUMNS and DISPLAY_COLUMNS
+      - read them in normalize_month_matrix / normalize_latest_prices / normalize_prices_for_dates / _base_snapshot
+      - new helper _found_date_from_link() pulls search_date out of the prices_for_dates link
+      - snapshots_to_dataframe(): found_at -> datetime, return_stops -> Int64
+  - Files: `fetch_snapshots.py` (_dedupe_key) and `fetch_multi.py` (_row_key)
+      - add return_stops + origin_airport: same price/dates but different return stops or airport = different trip
+      - found_at NOT added: the same fare seen twice is still the same fare
+  - Old rows in snapshots.csv get empty values for the 4 columns (that info was never collected).
+    write_snapshots_csv() rewrites the header automatically on the next fetch.
+
+
+
+
+
+------- Tue Oct 06 -------
+1. CHANGE — drop the `latest` endpoint
+Problem:
+- latest copies the other endpoints. Checked on 2 fetches, matching on found_at (= same search):
+                                       Oct 04 fetch   Oct 05 fetch
+      same search as another endpoint      92%            91%
+      new dates nobody else has             4%             4%
+- Same search, but the price is slightly off (Oct 04: ~$1 cheaper, Oct 05: ~1.8% pricier)
+  -> looks like currency conversion, not a real price.
+- It is NOT fresher than month-matrix (both median 18h old, oldest 7 days).
+
+Impact:
+- ~1,400 duplicate rows per fetch -> same fare counted 2x in the ML data.
+- 160 API calls per cycle (20 routes x 4 months x 2 trip types) for ~60 new rows.
+
+ACTION:
+  - File: `fetch_snapshots.py` -> delete the latest block in _fetch_month() + the normalize_latest_prices import
+  - Keep get_latest_prices / normalize_latest_prices (harmless, easy to bring back)
+
+
+
+
+2. CHANGE — remove month-matrix copies of prices_for_dates
+Problem:
+- month-matrix often returns the SAME fare prices_for_dates already gave us, with fewer details:
+      prices_for_dates:  YTO -> CUN, 2026-10-25T12:15:00-04:00, $171, 1 stop, PD 2259, YTZ
+      month-matrix:      YTO -> CUN, 2026-10-25,                $171, 1 stop, (no airline / airport)
+- _dedupe_key needs EVERY field equal; departure_at (time vs day) and airline (PD vs None) differ,
+  so both rows were saved -> 669 of 1313 month-matrix rows (51%) were copies.
+
+Impact:
+- ML: days covered by prices_for_dates counted 2x.
+- Stats: "airline unknown" looked like 78% instead of 73%.
+- Alerts: one price drop -> one alert per copy.
+
+ACTION:
+  - File: `src/ingestion/normalizer.py` -> new drop_redundant_offers()
+      - same route, trip type, departure DAY, return DAY, stops, price + one row has an airline
+        -> drop the row WITHOUT airline (the month-matrix copy), keep the prices_for_dates row
+      - before dropping, move the copy's exact found_at onto the prices_for_dates row
+  - Called in fetch_route_snapshots() (every new fetch) and rebuild_csv.py (existing data)
+  - Result: month-matrix 1313 -> 644 rows, prices_for_dates 715 unchanged, tests 10/10 pass
+
+
+
+
+3. CHANGE — month-matrix `stops` on round trips + new max_stops column
+Problem:
+- month-matrix sends `number_of_changes`, normalizer.py saves it as `stops`.
+- On a round trip it is the HIGHER of the two directions, not the way there and not the total.
+  Tested every round trip where the same fare is in both endpoints and the two directions differ (121 cases, 2 fetches):
+      way there only          fails 35 cases
+      way there + way back    fails 40 cases
+      max(there, back)        fits ALL 121
+- Example (same fare, same search):
+      YTO -> CUN, round trip, Oct 17 - 24, $408, United
+      prices_for_dates:  stops 2 (there), return_stops 1 (back)
+      month-matrix:      stops 2          <- max(2, 1), the traveller actually makes 3 stops
+- So `stops` means 2 different things on round trips:
+      prices_for_dates   stops = way there only
+      month-matrix       stops = max(way there, way back)
+- stops = 0 is the only value with no lost detail: month-matrix 0 <=> prices_for_dates 0 there AND 0 back
+  (72 / 72 cases, 0 exceptions).
+
+Impact:
+- The copy check (item 2) compared stops -> 0 != 1 -> round-trip copies were kept (26 + 31 + 29 in 3 fetches).
+- ML: the same trip is "0 stops" in one row and "1 stop" in another.
+- month-matrix can't tell WHICH direction has the stops or the total -> that detail is lost, can't be recovered.
+
+ACTION:
+  - File: `src/ingestion/normalizer.py`
+      - new column max_stops (round trips only, empty for everything else):
+          prices_for_dates round trip:  max(stops, return_stops)
+          month-matrix round trip:      stops (already the max)
+      - canonicalize_snapshot() fills max_stops for raw JSON saved before the column existed
+      - drop_redundant_offers(): compares max_stops instead of stops (falls back to stops when empty),
+        and both rows must have the same found_at DAY (= same search) for safety
+  - Tests added: round-trip copy dropped / different search day kept / max_stops values. Tests 12/12 pass.
+
+Result:
+                     month-matrix rows after copy check
+                     old rule (stops)   new rule (max_stops + found_at)
+      Oct 04 fetch        644                 618        (-26)
+      Oct 05 fetch        716                 685        (-31)
+      Oct 06 fetch        661                 632        (-29)
+  - Every copy the old rule caught is still caught.
+  - max_stops filled on 100% of prices_for_dates + month-matrix round trips.
+  - Old data deleted, fresh fetch saved: data/snapshots/1791306228.json, snapshots.csv = 2768 rows x 22 columns.
+
+
+
+
+
+
+
+
+4. BUG FIXED — month-matrix flight_duration_min = 0 and stops = 0 mean UNKNOWN (not "0 minutes", not "non-stop")
+Problem:
+- Fresh fetch (Oct 06): 627 of 628 month-matrix rows said stops = 0, and 626 had flight_duration_min = 0.
+- A flight can't take 0 minutes, and the "non-stop" flights don't exist:
+                     month-matrix says non-stop    prices_for_dates non-stop outbound
+      Tokyo                 24 / 24                        0 / 44
+      Shanghai              25 / 25                        0 / 24
+      Hong Kong             16 / 16                        0 / 33
+      Seoul                 37 / 37                        0 / 12
+- Proof (Oct 04 fetch, saved before the copy check): every month-matrix row that matched a real
+  prices_for_dates flight had duration > 0 and the CORRECT stops (695 / 695). No duration-0 row ever matched.
+- So when month-matrix has only a price and no flight behind it, it sends number_of_changes = 0 and
+  duration = 0 as placeholders.
+- Why almost all are like this now: the copy check (item 2) drops the month-matrix rows that copy
+  prices_for_dates, and those were exactly the rows WITH real details.
+- Correction to item 3: "month-matrix stops = 0 <=> non-stop both ways" is only true when duration > 0.
+
+Impact:
+- ML would learn that 45% of all rows are non-stop, including Toronto -> Shanghai in 0 minutes.
+
+Rule:
+      flight_duration_min 0 (or missing)  -> stops, max_stops, flight_duration_min = unknown (empty / NaN)
+      flight_duration_min > 0, stops 0    -> real non-stop, keep 0
+      flight_duration_min > 0, stops 2    -> real 2 stops, keep 2
+  Empty (NaN), not the word "unknown": the columns are numbers, text would break max_stops == 0 etc.
+  Price, dates and found_at are real -> rows are KEPT (dropping them = dropping month-matrix,
+  -473 one-way days, coverage 34% -> 14%).
+
+ACTION:
+  - File: `src/ingestion/normalizer.py`
+      - normalize_month_matrix(): if duration is 0 or missing -> stops / max_stops / flight_duration_min = None
+      - canonicalize_snapshot(): same cleanup for raw JSON saved before the fix (so rebuild_csv cleans old files)
+  - Test added: test_month_matrix_duration_zero_means_unknown. Tests 13/13 pass.
+
+Result (snapshots.csv rebuilt from data/snapshots/1791306228.json):
+  - month-matrix: 626 rows -> stops / flight_duration_min empty, 2 rows with real duration kept as they were
+      (one-way 0 stops 430 min, round trip 2 stops 974 min)
+  - no flight_duration_min = 0 left anywhere
+  - row count unchanged (1379), prices_for_dates + calendar rows unchanged
+
+How to use month-matrix rows from now on:
+  - price-over-time / cheapest-per-day model -> use all rows
+  - model that uses stops / duration / airline -> only rows where stops is filled (data[data.stops.notna()])
+  - alerts ("book this flight") -> prices_for_dates rows only
+  - check unknown durations with .isna(), not != np.nan (NaN is never equal to anything)
+  - don't guess the missing stops / duration
+
+
+
+
+5. BUG FIXED — the CSV changed the travel DAY of evening / early-morning flights (UTC conversion)
+Problem:
+- snapshots_to_dataframe() converts departure_at / return_at to UTC (pd.to_datetime(..., utc=True)).
+  Same moment in time, but the DATE can move to another day:
+      raw JSON (Toronto):  2027-01-31T22:45:00-05:00   -> Jan 31, 22:45
+      CSV (UTC):           2027-02-01 03:45:00+00:00   -> Feb 1        <- wrong travel day
+- Date format of every field (raw JSON):
+                     prices_for_dates                 month-matrix   calendar
+      departure_at   local Toronto time (-04 / -05)   date only      local Toronto time
+      return_at      local time of the RETURN city    date only      (one-way only)
+                     (Tokyo +09:00, Delhi +05:30, London Z ...)
+      found_at       UTC (Z)                          UTC (Z)        -
+      expires_at     -                                -              UTC (Z)
+      fetched_at     UTC (our clock)                  UTC            UTC
+- So the shift goes both ways:
+      behind UTC (Toronto, Vancouver ...):  evening flights      -> NEXT day
+      ahead of UTC (Tokyo, Hong Kong ...):  early-morning flights -> PREVIOUS day
+          e.g. Tokyo return 2026-11-20T08:40:00+09:00 -> CSV Nov 19, 23:40
+
+Impact (Oct 06 fetch):
+- 199 of 751 departures (prices_for_dates + calendar) on the wrong day in the CSV.
+- 72 of 416 returns on the wrong day (52 next day, 20 previous day).
+- A Jan 31 London flight showed up as February 2027 (outside the Oct - Jan fetch window).
+- Day of week, days before departure, cheapest per day, stay length, and matching
+  prices_for_dates with month-matrix (date only) were all off by a day for those rows.
+- month-matrix itself was not affected (date only -> midnight UTC -> same day).
+
+ACTION:
+  - Keep departure_at / return_at as they are (UTC = exact moment, fine for sorting).
+  - File: `src/ingestion/normalizer.py` -> new columns, taken from the RAW text before the UTC conversion:
+        departure_date   departure_at[:10]          2027-01-31   (local travel day)
+        return_date      return_at[:10]             2026-11-20   (empty for one-way)
+        stay_days        return_date - departure_date   7        (empty for one-way)
+        departure_hour   departure_at[11:13]        22           (local hour; empty for month-matrix, day only)
+    Raw values always START with the local day, so [:10] is right for every endpoint.
+  - Computed in canonicalize_snapshot(), only when missing.
+  - Safeguard: text that pandas already turned into UTC (`2027-02-01 03:45:00+00:00`, space instead of T)
+    is refused -> left empty instead of a wrong day. (write_snapshots_csv() re-reads old CSV rows
+    when the header changes; those rows hold UTC text.)
+  - Tests added: test_local_dates_survive_utc_conversion, test_local_date_refuses_utc_text. Tests 15/15 pass.
+
+Result (snapshots.csv rebuilt from data/snapshots/1791306228.json):
+  - 1379 rows x 26 columns (4 new). Old columns unchanged.
+  - departure_date == raw departure_at[:10] for 1379 / 1379 rows; same for return_date.
+  - No February 2027 departure anymore (Jan 31 London flight back in January).
+  - stay_days: filled for every round trip, empty for every one-way, never negative.
+  - departure_hour: prices_for_dates 740/740, calendar 11/11, month-matrix 0/628 (day only).
+
+How to use:
+  - anything about the DAY (day of week, days before departure, cheapest per day, stay length,
+    comparing endpoints) -> departure_date / return_date / stay_days
+  - anything about the exact moment -> departure_at / return_at (UTC)
+  - departure_hour -> local time-of-day feature (red-eye / early flights)
+
+
+
+
+------- Thu Oct 08 -------
+1. BUG FIXED — month-matrix found_at on placeholder rows is FAKE (midnight UTC of the fetch day)
+Problem:
+- The month-matrix rows with no flight details (duration 0, see Oct 06 item 4) ALL have
+  found_at = 00:00:00 UTC of the day we fetched. Checked on 4 fetches, no exceptions:
+                                         placeholder rows   found_at = fetch day 00:00 UTC
+      Oct 04 fetch                             617                  617 / 617
+      Oct 05 fetch (evening = Oct 06 UTC)      684                  684 / 684
+      Oct 06 fetch (morning)                   630                  630 / 630
+      Oct 06 fetch (current data)              626                  626 / 626
+- Rows WITH real details have real search times (e.g. 05:46:08), never midnight.
+- So the API stamps "today" when it has no flight behind the price -> it is NOT when the price was seen.
+  Same placeholder behaviour as stops = 0 and duration = 0.
+- Correction: "month-matrix prices are fresher (median 17 hours)" was WRONG. The fetch ran at ~17:00 UTC,
+  17 hours = time since midnight. The freshness of month-matrix placeholder prices is UNKNOWN.
+
+Impact:
+- ML: "how old is this price" would be wrong for ~45% of rows.
+- Alerts: a "fresh price" filter would trust them.
+- Copy check (drop_redundant_offers) compares the found_at day -> not affected, placeholder rows never matched.
+
+ACTION:
+  - File: `src/ingestion/normalizer.py`
+      - normalize_month_matrix(): no details (duration 0 or missing) -> found_at = None
+        (together with stops / max_stops / flight_duration_min)
+      - canonicalize_snapshot(): same cleanup for raw JSON saved before the fix
+  - Tests: placeholder row -> found_at empty, real row keeps its exact time (08:29:29), old raw row cleaned.
+    Sample month-matrix row in an older test got a duration (it is meant to be a real row). Tests 15/15 pass.
+
+Result (snapshots.csv rebuilt from data/snapshots/1791306228.json):
+  - only found_at changed, only on the 626 month-matrix placeholder rows; row count unchanged (1379)
+  - 2 real month-matrix rows keep their exact times (2026-10-04 23:15:22, 2026-10-03 07:08:18)
+  - found_at empty: month-matrix 626, calendar 11 (never sends it), prices_for_dates 0
+  - 14 prices_for_dates rows still show midnight: NOT fake. Their found_at comes from search_date
+    in the link (day only) -> the day is right, the time is unknown.
+
+Lesson:
+  - When one field of a row is a placeholder, check EVERY field of those rows.
+  - Check patterns, not only ranges: round values (exactly 0, exactly midnight) and values that
+    always equal something else (here: always the fetch day).

@@ -16,7 +16,7 @@ import logging
 from pathlib import Path
 from typing import Any
 
-from src.ingestion.normalizer import canonicalize_snapshot, write_snapshots_csv
+from src.ingestion.normalizer import canonicalize_snapshot, drop_redundant_offers, write_snapshots_csv
 
 logger = logging.getLogger(__name__)
 
@@ -27,8 +27,11 @@ DEFAULT_CSV_PATH = Path("data/snapshots.csv")
 def load_all_snapshots(json_dir: Path) -> list[dict[str, Any]]:
     all_snapshots: list[dict[str, Any]] = []
     for path in sorted(json_dir.glob("*.json")):
-        rows = json.loads(path.read_text())
-        all_snapshots.extend(canonicalize_snapshot(row) for row in rows)
+        rows = [canonicalize_snapshot(row) for row in json.loads(path.read_text())]
+        for row in rows:
+            if row.get("trip_type") == "one_way":
+                row["return_stops"] = None  # raw files saved before the one-way fix
+        all_snapshots.extend(drop_redundant_offers(rows))  # one file = one fetch run
     return all_snapshots
 
 

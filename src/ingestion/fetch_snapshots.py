@@ -24,10 +24,10 @@ from dotenv import load_dotenv
 
 from src.ingestion.api_client import TravelpayoutsClient, TravelpayoutsAPIError
 from src.ingestion.normalizer import (
+    drop_redundant_offers,
     filter_snapshots,
     normalize_calendar_prices,
     normalize_cheapest_prices,
-    normalize_latest_prices,
     normalize_month_matrix,
     normalize_prices_for_dates,
 )
@@ -130,6 +130,7 @@ def fetch_route_snapshots(
                 )
 
     kept, stats = filter_snapshots(collected)
+    kept = drop_redundant_offers(kept)
     origin_u, dest_u = origin.upper(), destination.upper()
     kept = [
         row
@@ -213,30 +214,8 @@ def _fetch_month(
         )
     )
 
-    latest = _call(
-        client.get_latest_prices,
-        sleep_seconds,
-        origin=origin,
-        destination=destination,
-        period_type="month",
-        beginning_of_period=f"{month}-01",
-        one_way=one_way,
-        currency=currency,
-        limit=1000,
-        show_to_affiliates=False,
-    )
-    if latest:
-        latest_rows = normalize_latest_prices(
-            latest, currency=currency, trip_type=trip_type
-        )
-        prefix = month
-        rows.extend(
-            r
-            for r in latest_rows
-            if str(r.get("origin") or "").upper() == origin.upper()
-            and str(r.get("destination") or "").upper() == destination.upper()
-            and str(r.get("departure_at") or "").startswith(prefix)
-        )
+    # /v2/prices/latest is not called: ~91% of its rows are the same search as a
+    # month-matrix or prices_for_dates row (same found_at), with a slightly off price.
 
     if rows:
         return rows
@@ -349,6 +328,9 @@ def _dedupe_key(row: dict[str, Any]) -> tuple[Any, ...]:
         row.get("flight_number"),
         row.get("price"),
         row.get("stops"),
+        row.get("return_stops"),
+        row.get("origin_airport"),
+        row.get("destination_airport"),
         row.get("trip_type"),
     )
 

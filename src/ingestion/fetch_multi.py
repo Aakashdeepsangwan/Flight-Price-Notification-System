@@ -161,6 +161,9 @@ def _row_key(row: dict[str, Any]) -> tuple[Any, ...]:
         row.get("flight_number"),
         row.get("price"),
         row.get("stops"),
+        row.get("return_stops"),
+        row.get("origin_airport"),
+        row.get("destination_airport"),
         row.get("trip_type"),
     )
 
