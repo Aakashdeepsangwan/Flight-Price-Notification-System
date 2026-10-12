@@ -7,11 +7,21 @@ or as a `token` query parameter. Get a token at
 https://www.travelpayouts.com/programs/100/tools/api
 
 Endpoints wrapped here:
-    GET /v1/prices/cheap              - cheapest non-stop / 1-stop / 2-stop offers for a route
+    GET /aviasales/v3/prices_for_dates - cheapest offer per day (one-way) or per
+                                         departure+return pair (round trip), with
+                                         airline, flight, airports, stops, duration.
+                                         The only endpoint the collector uses.
+   
+
+The last four are kept for exploration only: their real fares are already in
+prices_for_dates, and the rest are price-only placeholders (duration 0,
+found_at at midnight) with no flight behind them.
+
+ GET /v1/prices/cheap              - cheapest non-stop / 1-stop / 2-stop offers for a route
     GET /v1/prices/calendar           - one cheapest offer per calendar day for a route+month
     GET /v2/prices/latest             - prices found by real travelers in the last 48h
     GET /v2/prices/month-matrix       - cheapest fare per day, grouped by stop count
-    GET /aviasales/v3/prices_for_dates - many cached offers for a route+month
+
 """
 
 from __future__ import annotations
@@ -215,10 +225,12 @@ class TravelpayoutsClient:
         limit: int = 1000,
         page: int = 1,
     ) -> dict[str, Any]:
-        """Many cached offers for a route and month (or exact date).
+        """Cheapest cached offer per departure day (one-way) or per
+        departure+return pair (round trip) for a route and month.
 
         Maps to `GET /aviasales/v3/prices_for_dates`. `departure_at` is
-        `yyyy-mm` or `yyyy-mm-dd`. Omit `return_at` for one-way.
+        `yyyy-mm` or `yyyy-mm-dd`. Omit `return_at` for one-way, or for round
+        trips with any return date. `direct=True` keeps non-stop offers only.
         """
         params: dict[str, Any] = {
             "origin": origin.upper(),
@@ -328,18 +340,13 @@ if __name__ == "__main__":
     import json
 
     parser = argparse.ArgumentParser(
-        description="Fetch flight prices from the Travelpayouts Data API."
+        description="Fetch flight prices from /aviasales/v3/prices_for_dates."
     )
     parser.add_argument("origin", help="IATA code of the departure city, e.g. DEL")
     parser.add_argument("destination", help="IATA code of the destination city, e.g. BOM")
-    parser.add_argument(
-        "--mode",
-        choices=["cheap", "calendar"],
-        default="cheap",
-        help="cheap = /v1/prices/cheap, calendar = /v1/prices/calendar",
-    )
-    parser.add_argument("--depart-date", default=None, help="yyyy-mm or yyyy-mm-dd")
-    parser.add_argument("--return-date", default=None, help="yyyy-mm or yyyy-mm-dd")
+    parser.add_argument("--depart-date", required=True, help="yyyy-mm or yyyy-mm-dd")
+    parser.add_argument("--return-date", default=None, help="yyyy-mm or yyyy-mm-dd (implies --round-trip)")
+    parser.add_argument("--round-trip", action="store_true", help="Round trips with any return date")
     parser.add_argument("--currency", default="usd")
     args = parser.parse_args()
 
@@ -347,23 +354,13 @@ if __name__ == "__main__":
 
     client = _build_client_from_env()
 
-    if args.mode == "cheap":
-        result = client.get_cheapest_prices(
-            origin=args.origin,
-            destination=args.destination,
-            depart_date=args.depart_date,
-            return_date=args.return_date,
-            currency=args.currency,
-        )
-    else:
-        if not args.depart_date:
-            raise SystemExit("--depart-date (yyyy-mm) is required for --mode calendar")
-        result = client.get_calendar_prices(
-            origin=args.origin,
-            destination=args.destination,
-            departure_date=args.depart_date,
-            return_date=args.return_date,
-            currency=args.currency,
-        )
+    result = client.get_prices_for_dates(
+        origin=args.origin,
+        destination=args.destination,
+        departure_at=args.depart_date,
+        return_at=args.return_date,
+        one_way=not (args.round_trip or args.return_date),
+        currency=args.currency,
+    )
 
     print(json.dumps(result, indent=2))

@@ -1,8 +1,7 @@
 """Fetch flight price snapshots for every route in `config/routes.json`.
 
-Reads fetch criteria from `config/fetch.json` (horizon, trip types, stay
-buckets) so a later 6-12h scheduler can call `run_fetch()` with no date
-argument. Each run:
+Reads fetch criteria from `config/fetch.json` (horizon, trip types) so a
+later 6-12h scheduler can call `run_fetch()` with no date argument. Each run:
 
     1. writes snapshots to `data/snapshots/<timestamp>.json` (audit log)
     2. appends them to `data/snapshots.csv` (ML-ready price history)
@@ -147,7 +146,7 @@ def fetch_all_routes(
     months = [depart_date] if depart_date and len(depart_date) == 7 else None
     result = run_fetch(client, routes, fetch_cfg=cfg, months=months, currency=currency)
     if return_date:
-        logger.info("return_date=%s is ignored by the multi-endpoint collector (stay buckets apply)", return_date)
+        logger.info("return_date=%s is ignored: round trips cover every return date in the month", return_date)
     return result
 
 

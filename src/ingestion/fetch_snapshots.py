@@ -5,9 +5,10 @@ Run directly:
     python -m src.ingestion.fetch_snapshots DEL BOM
     python -m src.ingestion.fetch_snapshots DEL BOM --depart-date 2026-09
 
-Reads fetch criteria from `config/fetch.json` (horizon, trip types, stay
-buckets) unless `--depart-date` pins a single month. `scheduler.py` will
-call `fetch_route_snapshots` on each polling cycle.
+Reads fetch criteria from `config/fetch.json` (horizon, trip types) unless
+`--depart-date` pins a single month. Every snapshot comes from
+`/aviasales/v3/prices_for_dates`, the only endpoint that returns full flight
+details. `scheduler.py` will call `fetch_route_snapshots` on each polling cycle.
 """
 
 from __future__ import annotations
@@ -23,14 +24,7 @@ from typing import Any, Callable
 from dotenv import load_dotenv
 
 from src.ingestion.api_client import TravelpayoutsClient, TravelpayoutsAPIError
-from src.ingestion.normalizer import (
-    drop_redundant_offers,
-    filter_snapshots,
-    normalize_calendar_prices,
-    normalize_cheapest_prices,
-    normalize_month_matrix,
-    normalize_prices_for_dates,
-)
+from src.ingestion.normalizer import filter_snapshots, normalize_prices_for_dates
 
 logger = logging.getLogger(__name__)
 
@@ -39,7 +33,6 @@ DEFAULT_FETCH_CONFIG_PATH = Path("config/fetch.json")
 DEFAULT_FETCH_CONFIG: dict[str, Any] = {
     "horizon_months": 4,
     "trip_types": ["one_way", "round_trip"],
-    "round_trip_stay_days": [7, 14],
     "currency": "usd",
     "sleep_seconds": 0.4,
     "market": "in",
@@ -77,13 +70,13 @@ def fetch_route_snapshots(
     months: list[str] | None = None,
     fetch_cfg: dict[str, Any] | None = None,
     depart_date: str | None = None,
-    return_date: str | None = None,
     currency: str | None = None,
 ) -> list[dict[str, Any]]:
     """Fetches price snapshots for one route across months and trip types.
 
     `depart_date` (yyyy-mm) still works as a single-month debug override.
-    `return_date` is accepted for the cheap/calendar fallback only.
+    Round trips are fetched without a return date, so every stay length in
+    the cache comes back; `stay_days` is derived from the dates downstream.
     """
     cfg = dict(DEFAULT_FETCH_CONFIG)
     if fetch_cfg:
@@ -91,7 +84,6 @@ def fetch_route_snapshots(
     currency = currency or cfg.get("currency") or "usd"
     sleep_seconds = float(cfg.get("sleep_seconds") or 0)
     trip_types = list(cfg.get("trip_types") or ["one_way", "round_trip"])
-    stay_days = [int(d) for d in (cfg.get("round_trip_stay_days") or [7, 14])]
 
     if depart_date and len(depart_date) == 7:
         months = [depart_date]
@@ -103,16 +95,15 @@ def fetch_route_snapshots(
 
     for month in months:
         for trip_type in trip_types:
-            month_rows = _fetch_month(
+            month_rows = _prices_for_dates_pages(
                 client=client,
                 origin=origin,
                 destination=destination,
                 month=month,
-                trip_type=trip_type,
+                one_way=trip_type == "one_way",
                 currency=currency,
-                stay_days=stay_days,
+                trip_type=trip_type,
                 sleep_seconds=sleep_seconds,
-                return_date=return_date,
             )
             for row in month_rows:
                 key = _dedupe_key(row)
@@ -130,7 +121,6 @@ def fetch_route_snapshots(
                 )
 
     kept, stats = filter_snapshots(collected)
-    kept = drop_redundant_offers(kept)
     origin_u, dest_u = origin.upper(), destination.upper()
     kept = [
         row
@@ -148,125 +138,6 @@ def fetch_route_snapshots(
             stats["expired"],
         )
     return kept
-
-
-def _fetch_month(
-    *,
-    client: TravelpayoutsClient,
-    origin: str,
-    destination: str,
-    month: str,
-    trip_type: str,
-    currency: str,
-    stay_days: list[int],
-    sleep_seconds: float,
-    return_date: str | None,
-) -> list[dict[str, Any]]:
-    one_way = trip_type == "one_way"
-    rows: list[dict[str, Any]] = []
-
-    if one_way:
-        payload = _call(
-            client.get_month_matrix,
-            sleep_seconds,
-            origin=origin,
-            destination=destination,
-            month=month,
-            one_way=True,
-            currency=currency,
-        )
-        if payload:
-            rows.extend(
-                normalize_month_matrix(
-                    payload, origin, destination, currency, trip_type="one_way"
-                )
-            )
-    else:
-        # No trip_duration: it filters to an exact stay length in days, and the
-        # cache holds few exact matches. Omitting it returns every stay length
-        # in one call; filter on return_at - departure_at downstream instead.
-        payload = _call(
-            client.get_month_matrix,
-            sleep_seconds,
-            origin=origin,
-            destination=destination,
-            month=month,
-            one_way=False,
-            currency=currency,
-        )
-        if payload:
-            rows.extend(
-                normalize_month_matrix(
-                    payload, origin, destination, currency, trip_type="round_trip"
-                )
-            )
-
-    rows.extend(
-        _prices_for_dates_pages(
-            client=client,
-            origin=origin,
-            destination=destination,
-            month=month,
-            one_way=one_way,
-            currency=currency,
-            trip_type=trip_type,
-            sleep_seconds=sleep_seconds,
-        )
-    )
-
-    # /v2/prices/latest is not called: ~91% of its rows are the same search as a
-    # month-matrix or prices_for_dates row (same found_at), with a slightly off price.
-
-    if rows:
-        return rows
-
-    lengths = [None] if one_way else stay_days
-    for length in lengths:
-        calendar_payload = _call(
-            client.get_calendar_prices,
-            sleep_seconds,
-            origin=origin,
-            destination=destination,
-            departure_date=month,
-            return_date=None if one_way else return_date,
-            length=length,
-            currency=currency,
-        )
-        if calendar_payload:
-            rows.extend(
-                normalize_calendar_prices(
-                    calendar_payload,
-                    origin=origin,
-                    destination=destination,
-                    currency=currency,
-                    trip_type=trip_type,
-                )
-            )
-
-    if rows:
-        return rows
-
-    cheap = _call(
-        client.get_cheapest_prices,
-        sleep_seconds,
-        origin=origin,
-        destination=destination,
-        depart_date=month,
-        return_date=None if one_way else return_date,
-        currency=currency,
-    )
-    if cheap:
-        rows.extend(
-            normalize_cheapest_prices(
-                cheap, origin=origin, currency=currency, trip_type=trip_type
-            )
-        )
-        rows = [
-            r
-            for r in rows
-            if str(r.get("destination") or "").upper() == destination.upper()
-        ]
-    return rows
 
 
 def _prices_for_dates_pages(
@@ -346,7 +217,6 @@ def main() -> None:
     parser.add_argument("origin", help="IATA code of the departure city, e.g. DEL")
     parser.add_argument("destination", help="IATA code of the destination city, e.g. BOM")
     parser.add_argument("--depart-date", default=None, help="yyyy-mm to fetch a single month (debug)")
-    parser.add_argument("--return-date", default=None, help="yyyy-mm or yyyy-mm-dd (fallback only)")
     parser.add_argument("--currency", default=None)
     parser.add_argument("--fetch-config", type=Path, default=DEFAULT_FETCH_CONFIG_PATH)
     parser.add_argument("--horizon-months", type=int, default=None)
@@ -370,7 +240,6 @@ def main() -> None:
         destination=args.destination,
         fetch_cfg=fetch_cfg,
         depart_date=args.depart_date,
-        return_date=args.return_date,
         currency=args.currency,
     )
 

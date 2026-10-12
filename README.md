@@ -16,23 +16,23 @@ Get a token from [Travelpayouts](https://www.travelpayouts.com/programs/100/tool
 Fetch a route's price snapshots directly from the command line:
 
 ```bash
-# Rolling 4-month horizon, one-way + 7/14-day round-trip (see config/fetch.json)
+# Rolling 4-month horizon, one-way + round-trip (see config/fetch.json)
 python -m src.ingestion.fetch_snapshots DEL BOM
 
 # Single month, for debugging
 python -m src.ingestion.fetch_snapshots DEL BOM --depart-date 2026-09
 ```
 
-This calls `src/ingestion/api_client.py` (Travelpayouts month-matrix,
-prices-for-dates, latest, with calendar/cheap fallback) and
-`src/ingestion/normalizer.py` (flattens responses into the internal
+This calls `src/ingestion/api_client.py` (Travelpayouts
+`/aviasales/v3/prices_for_dates`, the only endpoint with full flight details)
+and `src/ingestion/normalizer.py` (flattens responses into the internal
 snapshot schema), printing the resulting snapshots as JSON.
 `scheduler.py` will call `fetch_multi.run_fetch()` on a cron cadence
 once storage (Phase 0) is wired up.
 
 To fetch every route in `config/routes.json` and persist them, use
 `fetch_multi.py`. Criteria live in `config/fetch.json` (horizon, trip
-types, stay buckets, market). On every run it:
+types, market). On every run it:
 
 1. writes snapshots to `data/snapshots/<timestamp>.json` (audit log)
 2. appends them, as a typed pandas `DataFrame`, to `data/snapshots.csv` — the ML-ready price-history file Phases 1-3 train against
@@ -160,7 +160,7 @@ Rule-based threshold alerts fire from day 1. ML activates after ~4 weeks of pric
 | Per snapshot | origin, destination, departure date, airline, price, stops, timestamp |
 | Fetch cadence | Every 6–12 hours per route |
 | Data source | Travelpayouts Data API — free, self-serve, cached/aggregated fares (no MAU gate, unlike its live Aviasales Search API) |
-| Key endpoints | `/v1/prices/calendar` (300 RPM) · `/v1/prices/latest` · `/aviasales/v3/get_latest_prices` |
+| Key endpoints | `/aviasales/v3/prices_for_dates` only — the other Data API endpoints return the same fares with fewer fields, plus price-only placeholder days |
 | Rate limiting | Endpoint RPM caps are generous relative to a 6–12h polling cadence; Redis (`cache.py`) memoizes responses per route to stay well under limits and avoid redundant calls |
 | Trade-off | Prices are cached/aggregated by Travelpayouts, not live shopping results — acceptable for trend/alert detection, not for guaranteeing bookable fares at the exact quoted price |
 
