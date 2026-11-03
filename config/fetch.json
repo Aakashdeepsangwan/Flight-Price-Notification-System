@@ -3,5 +3,7 @@
   "trip_types": ["one_way", "round_trip"],
   "currency": "usd",
   "sleep_seconds": 0.4,
-  "market": "ca"
+  "market": "ca",
+  "interval_hours": 12
 }
+

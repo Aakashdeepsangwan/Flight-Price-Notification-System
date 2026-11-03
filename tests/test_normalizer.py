@@ -218,6 +218,31 @@ class NormalizerTests(unittest.TestCase):
             self.assertIn("origin_city", header)
             self.assertGreaterEqual(len(text.splitlines()), 3)
 
+    def test_write_csv_dedupes_unchanged_cached_offers_across_runs(self) -> None:
+        run1 = normalize_prices_for_dates(
+            PRICES_FOR_DATES_PAYLOAD, origin="DEL", destination="BOM", currency="usd", trip_type="one_way"
+        )
+        run2_unchanged = [
+            {**run1[0], "fetched_at": "2026-08-30T12:00:00+00:00"}
+        ]
+        run3_price_changed = [
+            {**run1[0], "price": 99, "fetched_at": "2026-08-31T00:00:00+00:00"}
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "snapshots.csv"
+            write_snapshots_csv(run1, path, append=True, dedupe=True)
+            self.assertEqual(len(pd.read_csv(path)), 1)
+
+            # Same offer & found_at, only fetched_at changed -> skipped
+            write_snapshots_csv(run2_unchanged, path, append=True, dedupe=True)
+            self.assertEqual(len(pd.read_csv(path)), 1)
+
+            # Price changed -> appended
+            write_snapshots_csv(run3_price_changed, path, append=True, dedupe=True)
+            df = pd.read_csv(path)
+            self.assertEqual(len(df), 2)
+            self.assertEqual(df["price"].tolist(), [110, 99])
+
 
 class DropRedundantOffersTest(unittest.TestCase):
     def test_drops_copy_and_keeps_exact_found_at(self) -> None:

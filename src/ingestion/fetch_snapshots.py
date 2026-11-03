@@ -36,6 +36,7 @@ DEFAULT_FETCH_CONFIG: dict[str, Any] = {
     "currency": "usd",
     "sleep_seconds": 0.4,
     "market": "in",
+    "interval_hours": 12,
 }
 
 

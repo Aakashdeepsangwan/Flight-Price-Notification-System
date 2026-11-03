@@ -11,3 +11,4 @@ test.ipynb
 *.before_*.csv
 *.bak
 .DS_Store
+data/.scheduler.lock

@@ -38,6 +38,7 @@ against Travelpayouts' own reference data — see `reference.py`.
 
 from __future__ import annotations
 
+import io
 import logging
 import re
 from datetime import datetime, timezone
@@ -499,16 +500,24 @@ def snapshots_to_dataframe(
     return df[DISPLAY_COLUMNS]
 
 
+CSV_DEDUPE_COLUMNS = [
+    col for col in DISPLAY_COLUMNS if col not in ("fetched_at", "expires_at")
+]
+
+
 def write_snapshots_csv(
     snapshots: list[dict[str, Any]],
     path: str | Path,
     append: bool = True,
+    dedupe: bool = True,
 ) -> Path:
     """Writes snapshots to a CSV file — the final, ML-ready form.
 
-    Appends by default. If the existing file's header does not match the
-    current schema, the file is rewritten (old rows + new rows) instead of
-    appending misaligned columns.
+    Appends by default. If `dedupe=True`, skips offers whose route, dates,
+    flight details, price, and `found_at` already exist in `path` so 12h
+    polling cycles only append rows when the cached offer actually changed.
+    If the existing file's header does not match the current schema, the file
+    is rewritten (old rows + new rows) instead of appending misaligned columns.
     """
     path = Path(path)
     if not snapshots:
@@ -517,6 +526,7 @@ def write_snapshots_csv(
     df = snapshots_to_dataframe(snapshots)
 
     path.parent.mkdir(parents=True, exist_ok=True)
+    existing_str: pd.DataFrame | None = None
     if append and path.exists() and path.stat().st_size > 0:
         existing = pd.read_csv(path)
         existing = _canonicalize_dataframe(existing)
@@ -530,15 +540,47 @@ def write_snapshots_csv(
                 [canonicalize_snapshot(r) for r in old_rows] + snapshots
             )
             append = False
-        else:
-            # Keep datetime columns consistent when appending.
-            pass
+        elif dedupe:
+            existing_str = pd.read_csv(path, dtype=str, keep_default_na=False)
+
+    if dedupe and not df.empty:
+        df = _filter_unseen_csv_rows(df, existing_str=existing_str)
+        if df.empty:
+            logger.info("No new or changed offers to append to %s", path)
+            return path
 
     file_exists = path.exists() and path.stat().st_size > 0
     write_header = not (append and file_exists)
     mode = "a" if append and file_exists else "w"
     df.to_csv(path, mode=mode, header=write_header, index=False)
     return path
+
+
+def _filter_unseen_csv_rows(
+    df: pd.DataFrame,
+    existing_str: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    """Keep only rows whose serialized CSV offer key is not already present."""
+    seen: set[tuple[str, ...]] = set()
+    if existing_str is not None and not existing_str.empty:
+        seen.update(
+            existing_str[CSV_DEDUPE_COLUMNS].itertuples(index=False, name=None)
+        )
+
+    formatted = pd.read_csv(
+        io.StringIO(df.to_csv(index=False)),
+        dtype=str,
+        keep_default_na=False,
+    )
+    keep_mask: list[bool] = []
+    for key in formatted[CSV_DEDUPE_COLUMNS].itertuples(index=False, name=None):
+        if key in seen:
+            keep_mask.append(False)
+        else:
+            seen.add(key)
+            keep_mask.append(True)
+
+    return df.iloc[keep_mask].reset_index(drop=True)
 
 
 def _canonicalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
