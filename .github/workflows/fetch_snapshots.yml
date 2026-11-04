@@ -2,8 +2,8 @@ name: Fetch Flight Price Snapshots
 
 on:
   schedule:
-    # Runs every 12 hours at 00:00 UTC and 12:00 UTC
-    - cron: "0 */12 * * *"
+    # Runs every 6 hours at 00:00, 06:00, 12:00 and 18:00 UTC
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}
 
 permissions:

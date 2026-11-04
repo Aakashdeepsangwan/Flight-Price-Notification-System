@@ -3,12 +3,12 @@
 Supports both cloud cron execution (GitHub Actions / OS cron) and a local
 background polling loop:
 
-    # Single run and exit (used by GitHub Actions every 12h)
+    # Single run and exit (used by GitHub Actions every 6h)
     python -m src.ingestion.scheduler --once
 
     # Continuous background loop (uses interval_hours from config/fetch.json)
     python -m src.ingestion.scheduler
-    python -m src.ingestion.scheduler --interval-hours 12
+    python -m src.ingestion.scheduler --interval-hours 6
 
 Each cycle:
     1. Acquires a lock file (`data/.scheduler.lock`) so overlapping runs skip cleanly
@@ -208,7 +208,7 @@ def main() -> None:
         )
 
     fetch_cfg = load_fetch_config(args.fetch_config)
-    interval_hours = float(args.interval_hours or fetch_cfg.get("interval_hours") or 12)
+    interval_hours = float(args.interval_hours or fetch_cfg.get("interval_hours") or 6)
     routes = load_routes(args.routes)
     market = os.environ.get("TRAVELPAYOUTS_MARKET") or fetch_cfg.get("market") or "in"
     client = TravelpayoutsClient(token=token, market=market)

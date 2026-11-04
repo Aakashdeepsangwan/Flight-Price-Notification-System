@@ -4,6 +4,6 @@
   "currency": "usd",
   "sleep_seconds": 0.4,
   "market": "ca",
-  "interval_hours": 12
+  "interval_hours": 6
 }
 
