@@ -9,6 +9,8 @@
 
     build_features() runs Input -> Task 1 -> Task 2 -> Task 3.
 
+    model_matrix(features) then turns that feature table into the model table: only the
+    columns a model learns from, as numbers, with no empty cells.
 """
 
 from __future__ import annotations
@@ -70,6 +72,33 @@ AIRLINE_ALIASES = {
 HOLIDAY_WINDOWS = [("12-18", "01-04")]
 DEPARTURE_WEEKEND = [4, 5, 6]  # Fri, Sat, Sun: one-way departures +3.9%
 RETURN_WEEKEND = [5, 6]        # Sat, Sun: +6.9% / +8.3% vs Wednesday; Friday returns were not pricier
+
+# Model table (model_matrix). Only these feature-table columns go to a model; names, dates,
+# raw prices, dollar amounts and text stay out (they name the row, or a feature already
+# carries their information).
+MODEL_CATEGORIES = ["destination_cat", "airline_cat", "origin_airport_cat", "destination_airport_cat"]
+MODEL_NUMBERS = [
+    "is_round_trip", "stops", "return_stops", "max_stops", "flight_duration_min", "is_direct", "stay_days",
+    "price_vs_route_avg_30d", "price_vs_route_min_30d", "route_std_7d",
+    "days_until_departure", "price_age_days",
+    "departure_is_weekend", "return_is_weekend", "is_holiday_season",
+]
+MODEL_CALENDAR = ["departure_hour", "return_hour", "departure_dow", "return_dow", "departure_month"]
+
+# Empty cells a model can't take, and what they become.
+# "Doesn't apply": a one-way trip has no return; is_round_trip = 0 tells the model why.
+ONE_WAY_FILL = {
+    "return_stops": 0, "stay_days": 0, "return_is_weekend": 0,
+    "return_hour": -1, "return_dow": -1,  # -1, because 0 already means midnight / Monday
+}
+# "No history yet": the route's first round. The price is treated as the route's usual one.
+NO_HISTORY_FILL = {"price_vs_route_avg_30d": 1.0, "price_vs_route_min_30d": 1.0, "route_std_7d": 0.0}
+
+# For linear models: hours as parts of the day (0-5, 6-11, 12-17, 18-23).
+HOUR_BAND_EDGES = [0, 6, 12, 18, 24]
+HOUR_BANDS = ["night", "morning", "afternoon", "evening"]
+DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
 def build_features(runs_log: Path = DEFAULT_RUNS_LOG, root: Path | None = None) -> pd.DataFrame:
@@ -358,3 +387,60 @@ def _in_windows(days: pd.Series, windows: list[tuple[str, str]]) -> pd.Series:
             inside = (month_day >= start) | (month_day <= end)
         inside_any |= inside.fillna(False).astype(bool)
     return inside_any
+
+
+# ------------------------------------------------------------------------ Model table
+
+
+def model_matrix(features: pd.DataFrame, kind: str = "tree") -> pd.DataFrame:
+    """The model table: only the columns a model learns from, as numbers, with no empty cells.
+
+    It has the same rows and index as `features`, so row i of the model table is row i of
+    the feature table. That's how a prediction is linked back to its trip.
+
+    kind="tree"    For tree models (Random Forest, XGBoost). Each category becomes its code
+                   (AA -> 0, AC -> 1, ...); hours, weekdays and months stay numbers.
+    kind="linear"  For linear models (Ridge, Logistic Regression), which would read codes and
+                   hours as amounts (UA = 15 "bigger" than AA = 0, 23:00 "bigger" than 01:00).
+                   Categories, weekdays and months become one 0/1 column per value (one-hot),
+                   and hours become night / morning / afternoon / evening. A one-way trip
+                   gets 0 in every return column. Scale the columns (StandardScaler) inside
+                   the model's pipeline.
+
+    Empty cells are filled by ONE_WAY_FILL and NO_HISTORY_FILL. Any other empty cell is a
+    data problem, so it raises an error instead of being guessed.
+    """
+    if kind not in ("tree", "linear"):
+        raise ValueError(f'kind must be "tree" or "linear", not {kind!r}')
+
+    values = features[MODEL_NUMBERS + MODEL_CALENDAR].astype(float)
+    one_way = features["is_round_trip"] == 0
+    for col, fill in ONE_WAY_FILL.items():
+        values.loc[one_way, col] = values.loc[one_way, col].fillna(fill)
+    values = values.fillna(NO_HISTORY_FILL)
+    empty = values.isna().sum()
+    if empty.any():
+        raise ValueError(f"Unexpected empty cells (column: rows): {empty[empty > 0].to_dict()}")
+
+    if kind == "tree":
+        codes = pd.DataFrame(
+            {col: features[col].cat.codes.astype(float) for col in MODEL_CATEGORIES}, index=features.index
+        )
+        return pd.concat([codes, values], axis=1)
+
+    def one_hot(labels: pd.Series, prefix: str) -> pd.DataFrame:
+        # One column per possible value, even values missing from these rows, so the
+        # columns are always the same. An empty label (one-way return) gets all 0s.
+        return pd.get_dummies(labels, prefix=prefix, dtype=float)
+
+    parts = [values[MODEL_NUMBERS]]
+    for col in MODEL_CATEGORIES:
+        parts.append(one_hot(features[col], col.removesuffix("_cat")))
+    for side in ["departure", "return"]:
+        band = pd.cut(values[f"{side}_hour"], HOUR_BAND_EDGES, right=False, labels=HOUR_BANDS)
+        parts.append(one_hot(band, f"{side}_time"))
+        day = values[f"{side}_dow"].map(dict(enumerate(DAY_NAMES)))
+        parts.append(one_hot(pd.Series(pd.Categorical(day, categories=DAY_NAMES), index=features.index), f"{side}_day"))
+    month = values["departure_month"].map(dict(enumerate(MONTH_NAMES, start=1)))
+    parts.append(one_hot(pd.Series(pd.Categorical(month, categories=MONTH_NAMES), index=features.index), "departure_month"))
+    return pd.concat(parts, axis=1)
